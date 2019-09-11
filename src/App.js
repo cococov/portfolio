@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
-import logo from './static/img/workinprogressheader.png';
-import Button from '@material-ui/core/Button';
+import { observable, decorate  } from 'mobx';
 import {cv} from './config.json'
 import './static/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LateralBar from './components/LateralBar.js';
+import Projects from './components/Projects.js';
 
-class App extends Component { 
-  constructor(props){
+class App extends Component {
+  pageState = {};
+
+  /**
+   * Class constructor.
+   */
+  constructor (props) {
     super(props);
-    this.state = {
-    }
+
+    // Set the initial component state.
+    this.pageState = {
+    };
   }
 
   openCv = () => {
@@ -18,15 +27,20 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Button variant="contained" size="small" onClick={this.openCv}>
-            curriculum
-          </Button>
-        </header>
+        <LateralBar />
+        <Projects />
       </div>
     );
   }
 }
+
+// Define received props types for validation.
+App.propTypes = {
+};
+
+decorate(App, {
+  pageState: observable,
+  current: observable
+});
 
 export default App;
