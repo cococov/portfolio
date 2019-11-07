@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { observable, decorate  } from 'mobx';
-import { menuStyles } from '../styles';
+import { lateralBarStyles } from '../styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -61,4 +61,4 @@ decorate(LateralBar, {
   pageState: observable
 });
 
-export default withStyles(menuStyles)(LateralBar);
+export default withStyles(lateralBarStyles)(LateralBar);

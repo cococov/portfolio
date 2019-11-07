@@ -39,8 +39,7 @@ App.propTypes = {
 };
 
 decorate(App, {
-  pageState: observable,
-  current: observable
+  pageState: observable
 });
 
 export default App;

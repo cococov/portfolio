@@ -1,11 +1,15 @@
-import React, {Component} from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import React, {Component, Fragment} from 'react';
 import { observable, decorate  } from 'mobx';
+import clsx from 'clsx';
+import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {List, ListItem, Typography, Box } from '@material-ui/core';
+import {List, ListItem, Typography, Box} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Drawer from '@material-ui/core/Drawer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const resetClasses = 'p-0 mb-0 mt-0';
 
 class Projects extends Component {
   pageState = {};
@@ -18,11 +22,13 @@ class Projects extends Component {
 
     // Set the initial component state.
     this.pageState = {
+      isProjectsOpen: false,
     };
   }
 
   render () {
     const { classes } = this.props;
+    const { isProjectsOpen } = this.pageState;
     return (
       <div
         className={classes.list}
@@ -37,14 +43,16 @@ class Projects extends Component {
             paper: classes.drawerPaper,
           }}
         >
-          <Box component="span" m={1} className={classes.box}>
-            <Typography variant="caption" className="ml-3 p-0 mt-0"> Explorer</Typography>
+          <Box component="span" m={0} className={classes.box}>
+            <Typography variant="caption" className={clsx(resetClasses,'ml-3')}> Explorer</Typography>
           </Box>
-          <div className="form-inline ml-3 p-0 mb-0 mt-0">
-            <Typography variant="caption" align="left" className="p-0 mt-0 mb-0">˅</Typography>
-            <Typography  className="ml-2 p-0 mt-0 mb-0"> PROJECTS</Typography>
+          <div className={clsx(classes.category,'form-inline ml-3',resetClasses)}>
+            <Fragment align="left" className={resetClasses}>
+              { isProjectsOpen ? <ExpandMoreIcon /> : <ExpandLessIcon /> }
+            </Fragment>
+            <Typography  className={clsx('ml-2',resetClasses)}> PROJECTS</Typography>
           </div>
-          <Box component="span" m={1} className={classes.box} style={{height: '87%'}}>
+          <Box component="span" m={0} className={classes.box} style={{height: '87%'}}>
           <List
             component="nav"
             className={classes.list}
