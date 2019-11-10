@@ -1,7 +1,8 @@
 export const primaryColor = {
   light: '#333842',
   main: '#282c34',
-  dark: '#070709'
+  dark: '#070709',
+  text: '#E8F3F8'
 };
 
 export const secondaryColor = {
@@ -45,8 +46,7 @@ export const baseStyles = {
   app: {
     minHeight: '100%',
     minWidth: '100%',
-    position: 'absolute',
-    backgroundColor: '#BDBDBD',
+    position: 'absolute'
   },
   content: {
     padding: 10
@@ -62,7 +62,7 @@ export const lateralBarStyles = theme => ({
   drawerPaper: {
     boxShadow: '1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.23)',
     backgroundColor: primaryColor.light,
-    color: 'white',
+    color: primaryColor.text,
     width: drawerWidth,
   },
   list: {
@@ -83,6 +83,13 @@ export const lateralBarStyles = theme => ({
       backgroundColor: primaryColor.light,
     }
   },
+  lateralIcon: {
+    height: 40,
+    width: 40,
+    marginLeft: -5,
+    marginTop: 3,
+    padding: 0
+  }
 });
 
 const projectDrawerWidth = 250;
@@ -95,7 +102,7 @@ export const ProjectsStyles = theme => ({
     left: 60,
     boxShadow: '1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.23)',
     backgroundColor: primaryColor.light,
-    color: 'white',
+    color: primaryColor.text,
     width: projectDrawerWidth,
   },
   list: {
@@ -109,7 +116,7 @@ export const ProjectsStyles = theme => ({
   category: {
     boxShadow: '2px 2px 2px rgba(0, 0, 0, 0.16), 2px 2px 2px rgba(0, 0, 0, 0.23)',
     backgroundColor: primaryColor.light,
-    color: 'white',
+    color: primaryColor.text,
     height: 30,
   },
   nestedList: {
@@ -117,15 +124,47 @@ export const ProjectsStyles = theme => ({
     marginLeft: 20,
   },
   nestedItem: {
-    '&:hover': {
-      backgroundColor: primaryColor.light,
-    }
+      '&:hover': {
+        backgroundColor: primaryColor.light,
+      }
   },
   box: {
     backgroundColor: primaryColor.main,
-    color: 'white',
+    color: primaryColor.text,
     paddingLeft: 10,
     flexShrink: 0,    
+  }
+});
+
+
+export const TabsStyles = theme => ({
+  header: {
+    flexShrink: 0,
+    height: 35,
+    width: (window.screen.width - 310),
+    marginLeft: 310,
+    backgroundColor: primaryColor.main
+  }
+});
+
+export const TabStyles = theme => ({
+  tab: {
+    height: 35,
+    width: 140,
+    padding: 0,
+    marginTop: -30,
+    color: primaryColor.text,
+    backgroundColor: primaryColor.main,
+    cursor:'pointer'
+  },
+  selected: {
+    height: 35,
+    width: 140,
+    padding: 0,
+    marginTop: -30,
+    color: primaryColor.text,
+    backgroundColor: primaryColor.dark,
+    cursor:'pointer'
   }
 });
 

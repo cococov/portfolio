@@ -1,6 +1,6 @@
-- quitar padding a la lista de proyectos y ponerle unmargen a los elementos de la lista
+- quitar padding a la lista de proyectos y ponerle un margen a los elementos de la lista
 - poner en mayúscula la palabra 'EXPLORER'
-- Crear navbar superiro con las pestañas (tabs)
+- Crear navbar superior con las pestañas (tabs)
 - Crear contenido:
   - Información personal y una especie de curriculum con foto
   - experienia

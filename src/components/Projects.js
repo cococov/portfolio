@@ -47,7 +47,7 @@ class Projects extends Component {
             <Typography variant="caption" className={clsx(resetClasses,'ml-3')}> Explorer</Typography>
           </Box>
           <div className={clsx(classes.category,'form-inline ml-3',resetClasses)}>
-            <Fragment align="left" className={resetClasses}>
+            <Fragment>
               { isProjectsOpen ? <ExpandMoreIcon /> : <ExpandLessIcon /> }
             </Fragment>
             <Typography  className={clsx('ml-2',resetClasses)}> PROJECTS</Typography>

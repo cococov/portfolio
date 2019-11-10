@@ -5,8 +5,10 @@ import { lateralBarStyles } from '../styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Drawer from '@material-ui/core/Drawer';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 class LateralBar extends Component {
@@ -21,6 +23,24 @@ class LateralBar extends Component {
     // Set the initial component state.
     this.pageState = {
     };
+  }
+
+  onClickIcon = (index) => {
+    let url = null;
+    switch (index) {
+      case 'download':
+        url = 'https://1drv.ms/b/s!AmfDX1skph9SgsRIoPRgSCOYKwqaAg?e=wKz8SA';
+        break;
+      case 'linkedin':
+        url = 'https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/';
+        break;
+      case 'github':
+        url = 'https://github.com/cococov';
+        break;
+      default:
+    }
+    let win = url? window.open(url, '_blank'):window;
+    win.focus();
   }
 
   render () {
@@ -40,11 +60,14 @@ class LateralBar extends Component {
           }}
         >
           <List>
-            <ListItem button key={'1'}>
-              <ListItemText primary={'1'} />
+            <ListItem button key={'Download'} title="Download CV" onClick={()=>this.onClickIcon('download')}>
+              <CloudDownloadIcon className={classes.lateralIcon} />
             </ListItem>
-            <ListItem button key={'2'}>
-              <ListItemText primary={'2'} />
+            <ListItem button key={'LinkedIn'} title="LinkedIn" onClick={()=>this.onClickIcon('linkedin')}>
+              <LinkedInIcon className={classes.lateralIcon} />
+            </ListItem>
+            <ListItem button key={'GitHub'} title="GitHub" onClick={()=>this.onClickIcon('github')}>
+              <GitHubIcon className={classes.lateralIcon} />
             </ListItem>
           </List>
         </Drawer>
