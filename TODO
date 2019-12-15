@@ -6,3 +6,4 @@
   - ultima pestaña que muestre "seleccione un proyecto del explorador" y se muestre en el panel principal
 - si se selecciona un proyecto se cambia la pestaa actual a la de proyecto y se muestra el proyecto seleccionado
 - simular footer de VSCOde para seleccionar idioma
+- reducir cantidad de imports utilizando {}
