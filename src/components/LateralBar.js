@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { observable, decorate } from 'mobx';
 import { withStyles } from '@material-ui/core/styles';
-import { observable, decorate  } from 'mobx';
+import { cv, linkedin, github } from '../config.json';
 import { lateralBarStyles } from '../styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import List from '@material-ui/core/List';
@@ -10,76 +11,88 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-
+/*
+  LateralBar Main Class
+*/
 class LateralBar extends Component {
   pageState = {};
 
-  /**
-   * Class constructor.
-   */
-  constructor (props) {
+  constructor(props) {
     super(props);
+    this.pageState = {};
+  };
 
-    // Set the initial component state.
-    this.pageState = {
-    };
-  }
-
-  onClickIcon = (index) => {
+  onClickIcon = index => {
     let url = null;
     switch (index) {
       case 'download':
-        url = 'https://1drv.ms/b/s!AmfDX1skph9SgsRIoPRgSCOYKwqaAg?e=wKz8SA';
+        url = cv;
         break;
       case 'linkedin':
-        url = 'https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/';
+        url = linkedin;
         break;
       case 'github':
-        url = 'https://github.com/cococov';
+        url = github;
         break;
       default:
     }
-    let win = url? window.open(url, '_blank'):window;
+    let win = url ? window.open(url, '_blank') : window;
     win.focus();
-  }
+  };
 
-  render () {
+  render() {
     const { classes } = this.props;
     return (
-      <div
-        className={classes.list}
-        role="presentation"
-      >
+      <div className={classes.list} role="presentation">
         <Drawer
           className={classes.drawer}
           variant="persistent"
           anchor="left"
           open={true}
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
         >
           <List>
-            <ListItem button key={'Download'} title="Download CV" onClick={()=>this.onClickIcon('download')}>
+            <ListItem
+              button
+              key={'Download'}
+              title="Download CV"
+              onClick={() => this.onClickIcon('download')}
+            >
               <CloudDownloadIcon className={classes.lateralIcon} />
             </ListItem>
-            <ListItem button key={'LinkedIn'} title="LinkedIn" onClick={()=>this.onClickIcon('linkedin')}>
+            <ListItem
+              button
+              key={'LinkedIn'}
+              title="LinkedIn"
+              onClick={() => this.onClickIcon('linkedin')}
+            >
               <LinkedInIcon className={classes.lateralIcon} />
             </ListItem>
-            <ListItem button key={'GitHub'} title="GitHub" onClick={()=>this.onClickIcon('github')}>
+            <ListItem
+              button
+              key={'GitHub'}
+              title="GitHub"
+              onClick={() => this.onClickIcon('github')}
+            >
               <GitHubIcon className={classes.lateralIcon} />
             </ListItem>
           </List>
         </Drawer>
       </div>
     );
-  }
+  };
 }
 
-// Define received props types for validation.
-LateralBar.propTypes = {
-};
+/*  
+  Define received props types for validation. 
+*/
+LateralBar.propTypes = {};
 
+/*
+  MobX decorations.
+*/
 decorate(LateralBar, {
   pageState: observable
 });

@@ -1,6 +1,3 @@
-- quitar padding a la lista de proyectos y ponerle un margen a los elementos de la lista
-- poner en mayúscula la palabra 'EXPLORER'
-- Crear navbar superior con las pestañas (tabs)
 - Crear contenido:
   - Información personal y una especie de curriculum con foto
   - experienia
@@ -8,8 +5,4 @@
   - skills
   - ultima pestaña que muestre "seleccione un proyecto del explorador" y se muestre en el panel principal
 - si se selecciona un proyecto se cambia la pestaa actual a la de proyecto y se muestra el proyecto seleccionado
-- en la barra lateral poner con icono de fontawesome:
-  - linkedin
-  - github
-  - descargar curriculum
 - simular footer de VSCOde para seleccionar idioma

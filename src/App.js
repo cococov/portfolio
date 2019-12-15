@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import { observable, decorate  } from 'mobx';
-import {cv} from './config.json'
+import React, { Component, Fragment } from 'react';
+import { observable, decorate } from 'mobx';
 import './static/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { withStyles } from '@material-ui/core/styles';
@@ -9,43 +8,42 @@ import clsx from 'clsx';
 import LateralBar from './components/LateralBar.js';
 import Projects from './components/Projects.js';
 import Tabs from './components/Tabs.js';
+import Content from './components/Content.js';
 
+/*
+  App Main Class
+*/
 class App extends Component {
   pageState = {};
 
-  /**
-   * Class constructor.
-   */
-  constructor (props) {
+  constructor(props) {
     super(props);
-
-    // Set the initial component state.
-    this.pageState = {
-    };
+    this.pageState = {};
   }
 
-  openCv = () => {
-    window.open(cv);
-  }
-
-  render(){
-    const {classes} = this.props;
+  render() {
+    const { classes } = this.props;
     return (
-      <div>
+      <Fragment>
         <Tabs />
-        <div className={clsx("App", classes.app)}>
+        <div className={clsx('App', classes.app)}>
           <LateralBar />
-          <Projects />
+          <Projects />          
+          <Content />          
         </div>
-      </div>
+      </Fragment>
     );
   }
 }
 
-// Define received props types for validation.
-App.propTypes = {
-};
+/* 
+  Define received props types for validation. 
+*/
+App.propTypes = {};
 
+/*
+  MobX decorations.
+*/
 decorate(App, {
   pageState: observable
 });

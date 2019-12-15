@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Container scroll property */
+html {
+  --scrollbarBG: #1d2026;
+  --thumbBG: #333842;
+}
+
+.Content::-webkit-scrollbar {
+  width: 15px;
+}
+
+.Content {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.Content::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.Content::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border: 0px solid var(--scrollbarBG);
+}

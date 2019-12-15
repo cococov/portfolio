@@ -1,8 +1,12 @@
+/* 
+  Base colors
+*/
 export const primaryColor = {
   light: '#333842',
   main: '#282c34',
   dark: '#070709',
-  text: '#E8F3F8'
+  text: '#E8F3F8',
+  backgroundColor: '#1d2026'
 };
 
 export const secondaryColor = {
@@ -11,6 +15,9 @@ export const secondaryColor = {
   dark: '#C2551A'
 };
 
+/* 
+  Root Styles
+*/
 export const rootStyles = {
   outerLoading: {
     position: 'fixed',
@@ -42,22 +49,29 @@ export const rootStyles = {
   },
 };
 
+/* 
+  Base Styles
+*/
 export const baseStyles = {
   app: {
-    minHeight: '100%',
+    //minHeight: '100%',
     minWidth: '100%',
-    position: 'absolute'
+    position: 'absolute',
+    overflow: 'hidden'
   },
   content: {
     padding: 10
   },
 };
 
+/* 
+  Lateral Bar Styles (link icons)
+*/
 const drawerWidth = 60;
 export const lateralBarStyles = theme => ({
   drawer: {
     width: drawerWidth,
-    flexShrink: 0,    
+    flexShrink: 0,
   },
   drawerPaper: {
     boxShadow: '1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.23)',
@@ -92,6 +106,9 @@ export const lateralBarStyles = theme => ({
   }
 });
 
+/* 
+  Projects list Styles
+*/
 const projectDrawerWidth = 250;
 export const ProjectsStyles = theme => ({
   drawer: {
@@ -124,29 +141,45 @@ export const ProjectsStyles = theme => ({
     marginLeft: 20,
   },
   nestedItem: {
-      '&:hover': {
-        backgroundColor: primaryColor.light,
-      }
+    '&:hover': {
+      backgroundColor: primaryColor.light,
+    }
   },
   box: {
     backgroundColor: primaryColor.main,
     color: primaryColor.text,
     paddingLeft: 10,
-    flexShrink: 0,    
+    flexShrink: 0,
   }
 });
 
-
+/* 
+  Header Tabs Styles
+*/
 export const TabsStyles = theme => ({
+  headerContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
   header: {
     flexShrink: 0,
     height: 35,
     width: (window.screen.width - 310),
     marginLeft: 310,
     backgroundColor: primaryColor.main
+  },
+  subHeader: {
+    flexShrink: 0,
+    height: 25,
+    width: (window.screen.width - 310),
+    marginLeft: 310,
+    backgroundColor: primaryColor.backgroundColor
   }
 });
 
+/* 
+  Tabs Styles
+*/
 export const TabStyles = theme => ({
   tab: {
     height: 35,
@@ -155,7 +188,7 @@ export const TabStyles = theme => ({
     marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.main,
-    cursor:'pointer'
+    cursor: 'pointer'
   },
   selected: {
     height: 35,
@@ -164,10 +197,13 @@ export const TabStyles = theme => ({
     marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.dark,
-    cursor:'pointer'
+    cursor: 'pointer'
   }
 });
 
+/* 
+  Loading Style
+*/
 export const loadingStyle = {
   height: '-webkit-fill-available',
   top: 0
@@ -178,6 +214,25 @@ export const priorityFormStyles = {
     paddingBottom: 100
   }
 };
+
+/* 
+  Container Style (content)
+*/
+export const ContentStyles = theme => ({
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    height: '93.35vh',
+    width: '84%',
+    marginLeft: 'auto',
+    marginTop: '0.1%',
+  },
+  content: {
+    flex: 1,
+    paddingTop: '0.5%',
+    overflowY: 'scroll'
+  }
+});
 
 const stylesheet = {};
 
