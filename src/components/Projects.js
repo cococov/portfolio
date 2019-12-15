@@ -3,10 +3,8 @@ import { observable, decorate } from 'mobx';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
-import { List, ListItem, Typography, Box } from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import Drawer from '@material-ui/core/Drawer';
+import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
+import { ExpandMore, ExpandLess } from '@material-ui/icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
@@ -47,7 +45,7 @@ class Projects extends Component {
             className={clsx(classes.category, 'form-inline ml-3', resetClasses)}
           >
             <Fragment>
-              {isProjectsOpen ? <ExpandMoreIcon /> : <ExpandLessIcon />}
+              {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
             </Fragment>
             <Typography className={clsx('ml-2', resetClasses)}>PROJECTS</Typography>
           </div>

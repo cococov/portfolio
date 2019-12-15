@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { withStyles } from '@material-ui/core/styles';
 import { baseStyles } from './styles.js';
 import clsx from 'clsx';
-import LateralBar from './components/LateralBar.js';
-import Projects from './components/Projects.js';
-import Tabs from './components/Tabs.js';
-import Content from './components/Content.js';
+import LateralBar from './components/LateralBar';
+import Projects from './components/Projects';
+import Tabs from './components/Tabs';
+import Content from './components/Content';
 
 /*
   App Main Class

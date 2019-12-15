@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { observable, decorate } from 'mobx';
 import { withStyles } from '@material-ui/core/styles';
-import { cv, linkedin, github } from '../config.json';
 import { lateralBarStyles } from '../styles';
+import { cv, linkedin, github } from '../config.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Drawer from '@material-ui/core/Drawer';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { List, ListItem, Drawer } from '@material-ui/core';
+import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
 
 /*
   LateralBar Main Class
@@ -60,7 +56,7 @@ class LateralBar extends Component {
               title="Download CV"
               onClick={() => this.onClickIcon('download')}
             >
-              <CloudDownloadIcon className={classes.lateralIcon} />
+              <CloudDownload className={classes.lateralIcon} />
             </ListItem>
             <ListItem
               button
@@ -68,7 +64,7 @@ class LateralBar extends Component {
               title="LinkedIn"
               onClick={() => this.onClickIcon('linkedin')}
             >
-              <LinkedInIcon className={classes.lateralIcon} />
+              <LinkedIn className={classes.lateralIcon} />
             </ListItem>
             <ListItem
               button
@@ -76,7 +72,7 @@ class LateralBar extends Component {
               title="GitHub"
               onClick={() => this.onClickIcon('github')}
             >
-              <GitHubIcon className={classes.lateralIcon} />
+              <GitHub className={classes.lateralIcon} />
             </ListItem>
           </List>
         </Drawer>
