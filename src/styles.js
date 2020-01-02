@@ -150,6 +150,13 @@ export const ProjectsStyles = theme => ({
     color: primaryColor.text,
     paddingLeft: 10,
     flexShrink: 0,
+  },
+  projects: {
+    backgroundColor: primaryColor.main,
+    color: primaryColor.text,
+    paddingLeft: 10,
+    flexShrink: 0,
+    height: '87%'
   }
 });
 

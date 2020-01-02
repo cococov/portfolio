@@ -6,8 +6,9 @@ import { TabsStyles } from '../styles';
 import clsx from 'clsx';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Person, School, Work, Build } from '@material-ui/icons';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tab from './Tab'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   Tabs Main Class
@@ -17,18 +18,15 @@ class Tabs extends Component {
 
   constructor(props) {
     super(props);
-    this.pageState = {
-      value: 0
-    };
+    this.pageState = {};
   }
 
   handleChange = (newValue) => {
-    this.pageState.value = newValue;
+    this.props.handleChangeTab(newValue);
   };
 
   render() {
-    const { classes } = this.props;
-    const { value } = this.pageState;
+    const { classes, selectedTab, selectedProject } = this.props;
     return (
       <div className={clsx('headerContainer', classes.headerContainer)}>
         <AppBar className={clsx('header', classes.header)} position="sticky">
@@ -36,7 +34,7 @@ class Tabs extends Component {
             <Tab
               index={0}
               text="Profile"
-              selected={(value === 0)}
+              selected={(selectedTab === 0)}
               className="border border-dark"
               handleClick={this.handleChange}
               ico={<Person className="mr-2" />}
@@ -44,7 +42,7 @@ class Tabs extends Component {
             <Tab
               index={1}
               text="Experience"
-              selected={(value === 1)}
+              selected={(selectedTab === 1)}
               className="border border-dark"
               handleClick={this.handleChange}
               ico={<Work className="mr-2" />}
@@ -52,7 +50,7 @@ class Tabs extends Component {
             <Tab
               index={2}
               text="Education"
-              selected={(value === 2)}
+              selected={(selectedTab === 2)}
               className="border border-dark"
               handleClick={this.handleChange}
               ico={<School className="mr-2" />}
@@ -60,18 +58,34 @@ class Tabs extends Component {
             <Tab
               index={3}
               text="Skills"
-              selected={(value === 3)}
+              selected={(selectedTab === 3)}
               className="border border-dark"
               handleClick={this.handleChange}
               ico={<Build className="mr-2" />}
             />
+            {
+              (() => {
+                if (selectedProject) {
+                  return (
+                    <Tab
+                      index={4}
+                      text="Project"
+                      selected={(selectedTab === 4)}
+                      className="border border-dark"
+                      handleClick={this.handleChange}
+                      ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', '']} />}
+                    />
+                  )
+                }
+              })()
+            }
           </Toolbar>
         </AppBar>
         <AppBar className={clsx('subHeader', classes.subHeader)} position="sticky">
           <Typography variant="caption" className={clsx('m-1 ml-3')}>
             src > portfolio > {
               (() => {
-                switch (value) {
+                switch (selectedTab) {
                   case 0:
                     return 'Profile'
                   case 1:
@@ -81,7 +95,7 @@ class Tabs extends Component {
                   case 3:
                     return 'Skills'
                   default:
-                    return 'ERROR!'
+                    return `Projects > ${''}`
                 }
               })()
             }

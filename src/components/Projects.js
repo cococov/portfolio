@@ -1,8 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { observable, decorate } from 'mobx';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
+import projects from '../projects.json';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +16,7 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.pageState = {
-      isProjectsOpen: false,
+      isProjectsOpen: true,
     };
   }
 
@@ -28,46 +29,48 @@ class Projects extends Component {
         role="presentation"
       >
         <Drawer
-          open={true}
+          open={isProjectsOpen}
           anchor="left"
           variant="persistent"
           className={classes.drawer}
-          classes={{ paper: classes.drawerPaper, }}
+          classes={{ paper: classes.drawerPaper }}
         >
           <Box
-            m={0}
             component="span"
             className={classes.box}
           >
-            <Typography variant="caption" className={clsx(resetClasses, 'ml-3')}>EXPLORER</Typography>
+            <Typography
+              variant="caption"
+              className={clsx(resetClasses, 'ml-3')}
+            >
+              EXPLORER
+            </Typography>
           </Box>
           <div
             className={clsx(classes.category, 'form-inline ml-3', resetClasses)}
           >
-            <Fragment>
-              {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
-            </Fragment>
-            <Typography className={clsx('ml-2', resetClasses)}>PROJECTS</Typography>
+            {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
+            <Typography
+              className={clsx('ml-2', resetClasses)}
+            >
+              PROJECTS
+            </Typography>
           </div>
           <Box
-            m={0}
             component="span"
-            className={classes.box}
-            style={{ height: '87%' }}
+            className={classes.projects}
           >
             <List
               component="nav"
               className={classes.list}
             >
-              <ListItem button>
-                <Typography>FirstProject.js</Typography>
-              </ListItem>
-              <ListItem button>
-                <Typography>SecondProject.java</Typography>
-              </ListItem>
-              <ListItem button>
-                <Typography>ThirdProject.py</Typography>
-              </ListItem>
+              {
+                Object.keys(projects).map((project, index) => (
+                  <ListItem key={index} button>
+                    <Typography>{projects[project]['name']}</Typography>
+                  </ListItem>
+                ))
+              }
             </List>
           </Box>
         </Drawer>
