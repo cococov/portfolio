@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Person, School, Work, Build } from '@material-ui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { projects } from './content/projects';
 import Tab from './Tab'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -69,11 +70,11 @@ class Tabs extends Component {
                   return (
                     <Tab
                       index={4}
-                      text="Project"
+                      text={projects[selectedProject]['name']}
                       selected={(selectedTab === 4)}
                       className="border border-dark"
                       handleClick={this.handleChange}
-                      ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', '']} />}
+                      ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', projects[selectedProject]['ico']]} />}
                     />
                   )
                 }
@@ -95,7 +96,7 @@ class Tabs extends Component {
                   case 3:
                     return 'Skills'
                   default:
-                    return `Projects > ${''}`
+                    return `Projects > ${projects[selectedProject]['name']}`
                 }
               })()
             }

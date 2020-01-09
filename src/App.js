@@ -6,10 +6,7 @@ import { baseStyles } from './styles.js';
 import clsx from 'clsx';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import LateralBar from './components/LateralBar';
-import Projects from './components/Projects';
-import Tabs from './components/Tabs';
-import Content from './components/Content';
+import { LateralBar, Content, Projects, Tabs } from './components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './static/css/App.css';
 
@@ -30,6 +27,7 @@ class App extends Component {
 
   handleChangeProject = (project) => {
     this.pageState.selectedProject = project;
+    this.pageState.selectedTab = 4;
   };
 
   handleChangeTab = (tab) => {
@@ -48,8 +46,14 @@ class App extends Component {
         />
         <div className={clsx('App', classes.app)}>
           <LateralBar />
-          <Projects />
-          <Content />
+          <Projects
+            selectedProject={selectedProject}
+            handleChangeProject={this.handleChangeProject}
+          />
+          <Content
+            selectedTab={selectedTab}
+            selectedProject={selectedProject}
+          />
         </div>
       </Fragment>
     );

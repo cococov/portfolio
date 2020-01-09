@@ -1,15 +1,16 @@
+- terminar de implementar el cambio de proyecto en los Tabs y enlazarlo con Projects
 - mover logica al componente padre para poder controlar los contenidos
+- si se selecciona un proyecto se cambia la pestaña actual a la de proyecto y se muestra el proyecto seleccionado
 - Crear contenido:
   - Información personal y una especie de curriculum con foto
   - experienia
   - estudios
   - skills
   - ultima pestaña que muestre "seleccione un proyecto del explorador" y se muestre en el panel principal
-- si se selecciona un proyecto se cambia la pestaña actual a la de proyecto y se muestra el proyecto seleccionado
-- simular footer de VSCOde para seleccionar idioma
-- implementar React-Bootstrap para reemplazar el bootstrap normal
+- subir automata a github
 - actualizar el buscaminas haciendo uso de conocimientos actuales de java
 - hacer algo en python para agregar al portafolio
-- subir automata a github
+- simular footer de VSCOde para seleccionar idioma
+- implementar React-Bootstrap para reemplazar el bootstrap normal
 - comenzar a utilizar propTypes
-- terminar de implementar el cambio de proyecto en los Tabs y enlazarlo con Projects
+- Usar Hooks

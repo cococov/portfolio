@@ -3,9 +3,9 @@ import { observable, decorate } from 'mobx';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
-import projects from '../projects.json';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
+import { projects } from './content/projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
@@ -21,7 +21,7 @@ class Projects extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, selectedProject, handleChangeProject } = this.props;
     const { isProjectsOpen } = this.pageState;
     return (
       <div
@@ -66,7 +66,14 @@ class Projects extends Component {
             >
               {
                 Object.keys(projects).map((project, index) => (
-                  <ListItem key={index} button>
+                  <ListItem
+                    key={index}
+                    className={(project == selectedProject) ? classes.selectedItem : ''}
+                    button
+                    onClick={() => {
+                      handleChangeProject(project);
+                    }}
+                  >
                     <Typography>{projects[project]['name']}</Typography>
                   </ListItem>
                 ))

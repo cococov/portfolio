@@ -154,9 +154,11 @@ export const ProjectsStyles = theme => ({
   projects: {
     backgroundColor: primaryColor.main,
     color: primaryColor.text,
-    paddingLeft: 10,
     flexShrink: 0,
     height: '87%'
+  },
+  selectedItem: {
+    backgroundColor: primaryColor.light,
   }
 });
 
@@ -190,8 +192,9 @@ export const TabsStyles = theme => ({
 export const TabStyles = theme => ({
   tab: {
     height: 35,
-    width: 140,
     padding: 0,
+    paddingLeft: 10,
+    paddingRight: 20,
     marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.main,
@@ -199,8 +202,9 @@ export const TabStyles = theme => ({
   },
   selected: {
     height: 35,
-    width: 140,
     padding: 0,
+    paddingLeft: 10,
+    paddingRight: 20,
     marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.dark,
