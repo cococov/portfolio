@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 import { observable, decorate } from 'mobx';
 import { observer } from 'mobx-react';
 import { withStyles } from '@material-ui/core/styles';
-import { baseStyles } from './styles.js';
-import clsx from 'clsx';
+import { baseStyles } from '../styles.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { LateralBar, Content, Projects, Tabs } from './components';
+import { LateralBar, Container, Projects, Tabs } from '../components';
+import clsx from 'clsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './static/css/App.css';
+import '../static/css/App.css';
 
 /*
   App Main Class
@@ -50,7 +50,7 @@ class App extends Component {
             selectedProject={selectedProject}
             handleChangeProject={this.handleChangeProject}
           />
-          <Content
+          <Container
             selectedTab={selectedTab}
             selectedProject={selectedProject}
           />
@@ -60,8 +60,8 @@ class App extends Component {
   }
 }
 
-/* 
-  Define received props types for validation. 
+/*
+  Define received props types for validation.
 */
 App.propTypes = {};
 

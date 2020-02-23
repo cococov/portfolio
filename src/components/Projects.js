@@ -68,7 +68,7 @@ class Projects extends Component {
                 Object.keys(projects).map((project, index) => (
                   <ListItem
                     key={index}
-                    className={(project == selectedProject) ? classes.selectedItem : ''}
+                    className={(project === selectedProject) ? classes.selectedItem : ''}
                     button
                     onClick={() => {
                       handleChangeProject(project);
@@ -86,7 +86,7 @@ class Projects extends Component {
   };
 }
 
-/*  
+/*
   Define received props types for validation.
 */
 Projects.propTypes = {

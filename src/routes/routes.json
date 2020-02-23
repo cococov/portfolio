@@ -1,0 +1,12 @@
+{
+  "hostname": "http://localhost:3000",
+  "basename": "",
+  "client": {
+    "home": "/",
+    "education": "/education",
+    "experience": "/experience",
+    "profile": "/profile",
+    "skills": "/skills",
+    "project": "/project"
+  }
+}

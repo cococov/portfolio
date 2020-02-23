@@ -3,9 +3,9 @@ import { observable, decorate } from 'mobx';
 import { withStyles } from '@material-ui/core/styles';
 import { lateralBarStyles } from '../styles';
 import { cv, linkedin, github } from '../config.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { List, ListItem, Drawer } from '@material-ui/core';
 import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   LateralBar Main Class
@@ -81,8 +81,8 @@ class LateralBar extends Component {
   };
 }
 
-/*  
-  Define received props types for validation. 
+/*
+  Define received props types for validation.
 */
 LateralBar.propTypes = {};
 

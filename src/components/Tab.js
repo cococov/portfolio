@@ -41,7 +41,7 @@ class Tab extends Component {
   };
 }
 
-/*  
+/*
   Define received props types for validation.
 */
 Tab.propTypes = {

@@ -1,3 +1,4 @@
+- Usar React routes para crear el contenido de la aplicación que irá en el Iframe
 - terminar de implementar el cambio de proyecto en los Tabs y enlazarlo con Projects
 - mover logica al componente padre para poder controlar los contenidos
 - si se selecciona un proyecto se cambia la pestaña actual a la de proyecto y se muestra el proyecto seleccionado

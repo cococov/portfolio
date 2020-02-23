@@ -1,4 +1,4 @@
-/* 
+/*
   Base colors
 */
 export const primaryColor = {
@@ -15,7 +15,7 @@ export const secondaryColor = {
   dark: '#C2551A'
 };
 
-/* 
+/*
   Root Styles
 */
 export const rootStyles = {
@@ -49,7 +49,7 @@ export const rootStyles = {
   },
 };
 
-/* 
+/*
   Base Styles
 */
 export const baseStyles = {
@@ -64,7 +64,7 @@ export const baseStyles = {
   },
 };
 
-/* 
+/*
   Lateral Bar Styles (link icons)
 */
 const drawerWidth = 60;
@@ -106,7 +106,7 @@ export const lateralBarStyles = theme => ({
   }
 });
 
-/* 
+/*
   Projects list Styles
 */
 const projectDrawerWidth = 250;
@@ -162,7 +162,7 @@ export const ProjectsStyles = theme => ({
   }
 });
 
-/* 
+/*
   Header Tabs Styles
 */
 export const TabsStyles = theme => ({
@@ -186,7 +186,7 @@ export const TabsStyles = theme => ({
   }
 });
 
-/* 
+/*
   Tabs Styles
 */
 export const TabStyles = theme => ({
@@ -212,7 +212,7 @@ export const TabStyles = theme => ({
   }
 });
 
-/* 
+/*
   Loading Style
 */
 export const loadingStyle = {
@@ -226,22 +226,39 @@ export const priorityFormStyles = {
   }
 };
 
-/* 
+/*
   Container Style (content)
 */
 export const ContentStyles = theme => ({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    height: '93.35vh',
+    height: '100vh',
     width: '84%',
     marginLeft: 'auto',
-    marginTop: '0.1%',
   },
   content: {
     flex: 1,
-    paddingTop: '0.5%',
-    overflowY: 'scroll'
+    /* overflowY: 'scroll' */
+  }
+});
+
+/*
+  Container Style (content)
+*/
+export const ProjectsContent = theme => ({
+  container: {
+    backgroundColor: primaryColor.backgroundColor,
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'row',
+    minHeight: '100vh',
+    width: '100%',
+    marginLeft: 'auto',
+    padding: 10
+  },
+  content: {
+    flex: 1
   }
 });
 
