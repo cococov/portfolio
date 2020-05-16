@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
   NotFoundPage Class
 */
-class Education extends Component {
+class NotFoundPage extends Component {
   pageState = {};
 
   constructor(props) {
@@ -15,9 +15,9 @@ class Education extends Component {
 
   render() {
     return (
-      <h1>Education</h1>
+      <h1>ERROR 404</h1>
     );
   }
 }
 
-export default Education;
+export default NotFoundPage;

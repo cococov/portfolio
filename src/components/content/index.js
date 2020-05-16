@@ -1,5 +1,5 @@
-export { default as Experience } from './Experience';
-export { default as Education } from './Education';
-export { default as Profile } from './Profile';
-export { default as Project } from './Project';
-export { default as Skills } from './Skills';
+export { default as profile } from './profile.md';
+export { default as education } from './education.md';
+export { default as experience } from './experience.md';
+export { default as skills } from './skills.md';
+export { default as error } from './error404.md';

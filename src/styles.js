@@ -239,7 +239,59 @@ export const ContentStyles = theme => ({
   },
   content: {
     flex: 1,
-    /* overflowY: 'scroll' */
+    color: 'white',
+    overflowY: 'scroll',
+    paddingLeft: 10,
+    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
+    paddingBottom: 60
+  },
+  h1: {
+    textAlign: 'center',
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+  h2: {
+    paddingTop: 5,
+    paddingBottom: 5,
+  },
+  h3: {
+    paddingTop: 5,
+    paddingBottom: 5,
+  },
+  hr: {
+    backgroundColor: primaryColor.light,
+    maxWidth: '50%',
+    marginRight: '50%'
+
+  },
+  p: {
+    fontSize: '1rem',
+    padding: 10
+  },
+  ul: {
+    fontSize: '1rem',
+    marginLeft: 20
+  },
+  pre: {
+    fontSize: '1rem',
+    marginLeft: 20,
+    backgroundColor: primaryColor.light,
+    padding: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+    maxWidth:'50%',
+    width: 'min-content',
+    color: secondaryColor.main
+  },
+  img: {
+    borderRadius: 4,
+    maxWidth: 250,
+    maxHeigh: 250
+  },
+  imgProfile: {
+    float: 'right',
+    marginRight: '10%',
+    marginTop: 30
   }
 });
 

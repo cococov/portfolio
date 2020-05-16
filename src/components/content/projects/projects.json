@@ -1,15 +1,22 @@
 {
-  "portfolio.js": {
+  "portfolio.jsx": {
     "uri": "project/portfoliojs",
     "name": "portfolio.js",
     "title": "portfolio",
     "language": "javaScript",
     "ico": "react"
   },
-  "SQLite&MySQL.js": {
+  "SQLite&MySQL.jsx": {
     "uri": "project/sqlitemysqljs",
     "name": "SQLite&MySQL.js",
     "title": "SQLite and MySQL Sync",
+    "language": "javaScript",
+    "ico": "react"
+  },
+  "magiclife.jsx": {
+    "uri": "project/magiclife",
+    "name": "magiclife.js",
+    "title": "Magic Life",
     "language": "javaScript",
     "ico": "react"
   },

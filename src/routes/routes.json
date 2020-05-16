@@ -1,12 +1,7 @@
 {
   "hostname": "http://localhost:3000",
-  "basename": "",
+  "basename": "portfolio",
   "client": {
-    "home": "/",
-    "education": "/education",
-    "experience": "/experience",
-    "profile": "/profile",
-    "skills": "/skills",
-    "project": "/project"
+    "home": "/"
   }
 }
