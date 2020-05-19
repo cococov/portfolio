@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Person, School, Work, Build } from '@material-ui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { projects } from './content/projects';
+import { projects } from '../content/projects';
 import Tab from './Tab'
 import 'bootstrap/dist/css/bootstrap.min.css';
 

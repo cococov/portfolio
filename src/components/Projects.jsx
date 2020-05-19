@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
-import { projects } from './content/projects';
+import { projects } from '../content/projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
