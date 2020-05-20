@@ -7,7 +7,7 @@
 
 ---
 
-Técnico electrónico y actual estudiante de ingeniería en computación e informática en la universidad Católica del Norte. Con interés en el desarrollo de tecnologías y manejo de estas.Facilidad y rapidez, en lo que respecta a aprendizaje.
+Técnico electrónico y actual estudiante de ingeniería en computación e informática en la universidad Católica del Norte. Con interés en el desarrollo de tecnologías y manejo de estas. Facilidad y rapidez, en lo que respecta a aprendizaje.
 
 ### Contacto
 
