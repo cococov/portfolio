@@ -290,7 +290,8 @@ export const ContentStyles = theme => ({
   },
   imgProfile: {
     float: 'right',
-    marginRight: '10%',
+    marginRight: '5%',
+    marginLeft: '5%',
     marginTop: 30
   }
 });
