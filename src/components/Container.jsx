@@ -6,7 +6,7 @@ import { ContentStyles } from '../styles.js';
 import ReactMarkdown from 'markdown-to-jsx';
 import { profile, education, experience, skills, error } from '../content';
 import clsx from 'clsx';
-import { Title, SubTitle, H3, Hr, Paraph, Ul, Pre, Img } from './MarkDownComponents';
+import { override } from './MarkDownComponents';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
@@ -49,68 +49,14 @@ class Container extends Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes, width } = this.props;
     const { markdown } = this.pageState;
     this.loadMd();
 
     return (
-      <div className={clsx('Container', classes.container)}>
+      <div className={clsx('Container', classes.container)} style={{ width: width }}>
         <div className={clsx('Content', classes.content)}>
-          <ReactMarkdown
-            options={{
-              overrides: {
-                h1: {
-                  component: Title,
-                  props: {
-                    className: classes.h1,
-                  },
-                },
-                h2: {
-                  component: SubTitle,
-                  props: {
-                    className: classes.h2,
-                  },
-                },
-                h3: {
-                  component: H3,
-                  props: {
-                    className: classes.h3,
-                  },
-                },
-                hr: {
-                  component: Hr,
-                  props: {
-                    className: classes.hr,
-                  },
-                },
-                p: {
-                  component: Paraph,
-                  props: {
-                    className: classes.p,
-                  },
-                },
-                ul: {
-                  component: Ul,
-                  props: {
-                    className: classes.ul,
-                  },
-                },
-                pre: {
-                  component: Pre,
-                  props: {
-                    className: classes.pre,
-                  },
-                },
-                img: {
-                  component: Img,
-                  props: {
-                    className: classes.img,
-                    classNameProfile: classes.imgProfile,
-                  },
-                },
-              },
-            }}
-          >
+          <ReactMarkdown options={override(classes)}>
             {markdown}
           </ReactMarkdown>
         </div>

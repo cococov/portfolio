@@ -162,6 +162,13 @@ export const ProjectsStyles = theme => ({
   }
 });
 
+export const getWidth = () => {
+  if (window.innerWidth < 400)
+    return window.innerWidth;
+  let width = (window.innerWidth - 310);
+  return width;
+};
+
 /*
   Header Tabs Styles
 */
@@ -169,19 +176,16 @@ export const TabsStyles = theme => ({
   headerContainer: {
     display: 'flex',
     flexDirection: 'column',
+    marginLeft: 'auto'
   },
   header: {
     flexShrink: 0,
     height: 35,
-    width: (window.screen.width - 310),
-    marginLeft: 310,
     backgroundColor: primaryColor.main
   },
   subHeader: {
     flexShrink: 0,
     height: 25,
-    width: (window.screen.width - 310),
-    marginLeft: 310,
     backgroundColor: primaryColor.backgroundColor
   }
 });
@@ -234,14 +238,13 @@ export const ContentStyles = theme => ({
     display: 'flex',
     flexDirection: 'row',
     height: '100vh',
-    width: '84%',
     marginLeft: 'auto',
   },
   content: {
     flex: 1,
-    color: 'white',
+    color: primaryColor.text,
     overflowY: 'scroll',
-    paddingLeft: 10,
+    paddingLeft: 20,
     fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
     paddingBottom: 60
   },
@@ -279,7 +282,7 @@ export const ContentStyles = theme => ({
     padding: 10,
     paddingLeft: 15,
     paddingRight: 15,
-    maxWidth:'50%',
+    maxWidth: '80%',
     width: 'min-content',
     color: secondaryColor.main
   },
@@ -293,6 +296,28 @@ export const ContentStyles = theme => ({
     marginRight: '5%',
     marginLeft: '5%',
     marginTop: 30
+  },
+  tableContainer: {
+    width: 'fit-content',
+    maxWidth: '90%',
+    marginLeft: '5%',
+    backgroundColor: primaryColor.light
+  },
+  table: {
+    width: 'fit-content'
+  },
+  tableTitleBar: {
+
+  },
+  tableTitle: {
+    color: primaryColor.text,
+  },
+  tableRow: {
+
+  },
+  tableData: {
+    color: primaryColor.text,
+    minWidth: 120
   }
 });
 

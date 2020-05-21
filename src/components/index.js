@@ -5,3 +5,4 @@ export { default as Container } from './Container.jsx';
 export { default as Tabs } from './Tabs.jsx';
 export { default as Tab } from './Tab.jsx';
 export { default as Root } from './Root.jsx';
+export { default as Snackbar } from './UnderConstructionSnackbar.jsx';

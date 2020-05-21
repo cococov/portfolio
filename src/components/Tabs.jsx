@@ -20,21 +20,21 @@ class Tabs extends Component {
   constructor(props) {
     super(props);
     this.pageState = {};
-  }
+  };
 
   handleChange = (newValue) => {
     this.props.handleChangeTab(newValue);
   };
 
   render() {
-    const { classes, selectedTab, selectedProject } = this.props;
+    const { classes, selectedTab, selectedProject, width } = this.props;
     return (
-      <div className={clsx('headerContainer', classes.headerContainer)}>
+      <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
         <AppBar className={clsx('header', classes.header)} position="sticky">
           <Toolbar className="pl-0">
             <Tab
               index={0}
-              text="Profile"
+              text={width > 730 ? "Profile" : ""}
               selected={(selectedTab === 0)}
               className="border border-dark"
               handleClick={this.handleChange}
@@ -42,7 +42,7 @@ class Tabs extends Component {
             />
             <Tab
               index={1}
-              text="Experience"
+              text={width > 730 ? "Experience" : ""}
               selected={(selectedTab === 1)}
               className="border border-dark"
               handleClick={this.handleChange}
@@ -50,7 +50,7 @@ class Tabs extends Component {
             />
             <Tab
               index={2}
-              text="Education"
+              text={width > 730 ? "Education" : ""}
               selected={(selectedTab === 2)}
               className="border border-dark"
               handleClick={this.handleChange}
@@ -58,7 +58,7 @@ class Tabs extends Component {
             />
             <Tab
               index={3}
-              text="Skills"
+              text={width > 730 ? "Skills" : ""}
               selected={(selectedTab === 3)}
               className="border border-dark"
               handleClick={this.handleChange}
@@ -70,7 +70,7 @@ class Tabs extends Component {
                   return (
                     <Tab
                       index={4}
-                      text={projects[selectedProject]['name']}
+                      text={width > 730 ? projects[selectedProject]['name'] : ""}
                       selected={(selectedTab === 4)}
                       className="border border-dark"
                       handleClick={this.handleChange}

@@ -16,7 +16,7 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.pageState = {
-      isProjectsOpen: true,
+      isProjectsOpen: true
     };
   }
 
@@ -33,7 +33,7 @@ class Projects extends Component {
           anchor="left"
           variant="persistent"
           className={classes.drawer}
-          classes={{ paper: classes.drawerPaper }}
+          classes={{ paper: clsx('Content', classes.drawerPaper) }}
         >
           <Box
             component="span"

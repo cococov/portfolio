@@ -16,12 +16,19 @@
 - Desarrollo móvil usando React Native y SQLite
 - Scripting con Python 3.7
 
+
+	Metodología de desarrollo: Scrum
+	Desarrollo de proyectos para distintas empresas, entre las que se encuentran: CAP, FCAB y Minera Los Pelambres.
+
 **Enero 2019 – Abril 2019.**<br/>
 **Práctica profesional. Centro de inteligencia de negocios, Universidad Católica del Norte.**
 
 - Desarrollo frontend con JavaScript, React.js y D3
 - Desarrollo backend con node.js y postgresql
 - Scripting con Python 3.7
+
+
+	Desarrollo de sistema web, con el objetivo de información, tracking y proyección gráfica de trenes para la empresa FCAB.
 
 **Enero 2014 – Octubre 2019.**<br/>
 **Técnico electrónico e informático. Servicio técnico Mundo reparación.**

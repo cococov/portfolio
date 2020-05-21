@@ -1,4 +1,4 @@
-### Antecedentesacadémicos
+### Antecedentes académicos
 
 ---
 
