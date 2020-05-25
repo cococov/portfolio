@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -15,7 +15,7 @@ code {
 /* Container scroll property */
 html {
   --scrollbarBG: #1d2026;
-  --thumbBG: #333842;
+  --thumbBG    : #333842;
 }
 
 .Content::-webkit-scrollbar {
@@ -33,5 +33,5 @@ html {
 
 .Content::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
-  border: 0px solid var(--scrollbarBG);
+  border          : 0px solid var(--scrollbarBG);
 }

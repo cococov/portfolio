@@ -10,6 +10,12 @@ import {
   Paper
 } from '@material-ui/core';
 
+/**
+ * H1 custom component (Title)
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
 export const Title = ({ children, className }) => {
   return (
     <h1
@@ -20,6 +26,12 @@ export const Title = ({ children, className }) => {
   );
 };
 
+/**
+ * H2 custom component (SubTitle)
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
 export const SubTitle = ({ children, className }) => {
   return (
     <h2
@@ -30,6 +42,12 @@ export const SubTitle = ({ children, className }) => {
   );
 };
 
+/**
+ * H3 custom component
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
 export const H3 = ({ children, className }) => {
   return (
     <h3
@@ -40,6 +58,11 @@ export const H3 = ({ children, className }) => {
   );
 };
 
+/**
+ * HR custom component
+ * @param {Object} props
+ * @param {String} props.className
+ */
 export const Hr = ({ className }) => {
   return (
     <hr
@@ -48,6 +71,12 @@ export const Hr = ({ className }) => {
   );
 };
 
+/**
+ * P custom component (Paraph)
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
 export const Paraph = ({ children, className }) => {
   return (
     <p
@@ -58,6 +87,12 @@ export const Paraph = ({ children, className }) => {
   );
 };
 
+/**
+ * UL custom component
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
 export const Ul = ({ children, className }) => {
   return (
     <ul
@@ -68,6 +103,12 @@ export const Ul = ({ children, className }) => {
   );
 };
 
+/**
+ * PRE custom component
+ * @param {Object} props
+ * @param {HTMLElement} props.children
+ * @param {String} props.className
+ */
 export const Pre = ({ children, className }) => {
   return (
     <pre
@@ -78,6 +119,14 @@ export const Pre = ({ children, className }) => {
   );
 };
 
+/**
+ * IMG custom component
+ * @param {Object} props
+ * @param {String} props.src
+ * @param {String} props.className
+ * @param {String} props.title
+ * @param {String} props.classNameProfile
+ */
 export const Img = ({ src, className, title, classNameProfile }) => {
   return (
     <img
@@ -88,6 +137,14 @@ export const Img = ({ src, className, title, classNameProfile }) => {
   );
 };
 
+/**
+ * Table custom component
+ * @param {Object} props
+ * @param {Array} props.children
+ * @param {HTMLTableElement} props.children[0]
+ * @param {HTMLTableElement} props.children[1]
+ * @param {Object} props.classes
+ */
 export const CustomTable = ({ children, classes }) => {
   let thead = children[0];
   let tbody = children[1];
@@ -142,6 +199,10 @@ export const CustomTable = ({ children, classes }) => {
   );
 };
 
+/**
+ * HTML elements override method
+ * @param {Object} classes: withStyles Classes
+ */
 export const override = (classes) => {
   return {
     overrides: {

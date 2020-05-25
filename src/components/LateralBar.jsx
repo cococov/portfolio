@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { observable, decorate } from 'mobx';
+import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { lateralBarStyles } from '../styles';
 import { cv, linkedin, github } from '../config.json';
@@ -18,7 +19,7 @@ class LateralBar extends Component {
     this.pageState = {};
   };
 
-  onClickIcon = index => {
+  onClickIcon = async index => {
     let url = null;
     switch (index) {
       case 'download':
@@ -46,7 +47,7 @@ class LateralBar extends Component {
           anchor="left"
           open={true}
           classes={{
-            paper: classes.drawerPaper
+            paper: clsx('Content', classes.drawerPaper)
           }}
         >
           <List>

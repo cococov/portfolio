@@ -4,10 +4,12 @@ import { observer } from 'mobx-react';
 import { withStyles } from '@material-ui/core/styles';
 import { ContentStyles } from '../styles.js';
 import ReactMarkdown from 'markdown-to-jsx';
-import { profile, education, experience, skills, error } from '../content';
+import {error } from '../content';
+import { profile, education, experience, skills } from '../content/spa';
 import clsx from 'clsx';
 import { override } from './MarkDownComponents';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../static/css/markdown.css';
 
 /*
   Content Main Class
