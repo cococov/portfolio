@@ -19,7 +19,7 @@
 | Tecnología  |    Conocimiento   | Descripción |
 | ----------- | ----------------- | ----------- |
 | React       | ⭐⭐⭐⭐⭐⭐🔳 | Poseo 1 año y medio de experiencia profesional con esta biblioteca/framework , aplicandola en desarrollo web y móvil. Es una de las tecnologías que más me apasiona.|
-| React-Native| ⭐⭐⭐⭐⭐🔳🔳 | 4 meses de experiencia profesional en esta tecnología, aplicada en problemas complejos, como la necesidad de sincronización sin acceso constante a internet.
+| React Native| ⭐⭐⭐⭐⭐🔳🔳 | 4 meses de experiencia profesional en esta tecnología, aplicada en problemas complejos, como la necesidad de sincronización sin acceso constante a internet.
 | SQL         | ⭐⭐⭐⭐⭐🔳🔳 | Fui ayudante del ramo de 'Bases de datos' en mi universidad y poseo 1 año y medio de uso profesional, principalmente en PostgreSQL y un poco SQL Sever.|
 | HTML5       | ⭐⭐⭐⭐⭐🔳🔳 | La base del desarrollo web, lo conozco lo suficiente para desempeñarme sin problemas en la indrustria, además de conocer algunas prácticas para mejorar el SEO.        |
 | Linux       | ⭐⭐⭐⭐⭐🔳🔳 | Sistema operativo que llevo usando desde los 15 años y que actualmente, gracias a WSL, lo uso a diario.        |
