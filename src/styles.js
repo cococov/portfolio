@@ -81,7 +81,12 @@ export const lateralBarStyles = theme => ({
   },
   list: {
     width: 250,
-    textAlign: "left",
+    textAlign: 'left'
+  },
+  listInside: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column'
   },
   listItem: {
     '&:hover': {
@@ -102,7 +107,18 @@ export const lateralBarStyles = theme => ({
     width: 40,
     marginLeft: -5,
     marginTop: 3,
-    padding: 0
+    padding: 0,
+    justifyContent: 'center'
+  },
+  about: {
+    display: 'flex',
+    flexGrow: 'inherit',
+    justifyContent: 'flex-end',
+    textAlign: 'center',
+    flexDirection: 'column',
+  },
+  aboutText: {
+    marginLeft: '-0.5rem'
   }
 });
 
@@ -162,6 +178,10 @@ export const ProjectsStyles = theme => ({
   }
 });
 
+/**
+ * Display Width getter
+ * @returns {Number} display Width - Drawer width
+ */
 export const getWidth = () => {
   if (window.innerWidth < 400)
     return window.innerWidth;
@@ -327,7 +347,7 @@ export const ContentStyles = theme => ({
 export const ProjectsContent = theme => ({
   container: {
     backgroundColor: primaryColor.backgroundColor,
-    color: 'white',
+    color: primaryColor.text,
     display: 'flex',
     flexDirection: 'row',
     minHeight: '100vh',
@@ -337,6 +357,44 @@ export const ProjectsContent = theme => ({
   },
   content: {
     flex: 1
+  }
+});
+
+/**
+ * About Modal Style
+ */
+export const About = theme => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  card: {
+    color: primaryColor.text,
+    backgroundColor: primaryColor.light,
+    padding: 5,
+    outline: 'none'
+  },
+  icon: {
+    color: primaryColor.text,
+    '&:focus': {
+      outline: 'none',
+    }
+  },
+  close: {
+    '&:focus': {
+      outline: 'none',
+    }
+  },
+  item: {
+    flex: 2
+  },
+  data: {
+    flex: 6,
+    marginLeft: 10
+  },
+  lineContainer: {
+    display: 'flex'
   }
 });
 

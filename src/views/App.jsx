@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { baseStyles, getWidth } from '../styles.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faJava, faReact, faPython } from '@fortawesome/free-brands-svg-icons'
-import { LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
+import { About, LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
 import clsx from 'clsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/css/App.css';
@@ -22,6 +22,7 @@ class App extends Component {
       selectedProject: null,
       selectedTab: 0,
       width: getWidth(),
+      isAboutOpen: false
     };
     library.add([faJava, faReact, faPython]);
   };
@@ -44,12 +45,24 @@ class App extends Component {
     this.pageState.selectedTab = tab;
   };
 
+  handleClickAbout = () => {
+    this.pageState.isAboutOpen = true;
+  };
+
+  handleCloseAbout = () => {
+    this.pageState.isAboutOpen = false;
+  };
+
   render() {
-    const { selectedProject, selectedTab, width } = this.pageState;
+    const { selectedProject, selectedTab, width, isAboutOpen } = this.pageState;
     const { classes } = this.props;
     return (
       <Fragment>
         <Snackbar />
+        <About
+          isOpen={isAboutOpen}
+          handleClose={this.handleCloseAbout}
+        />
         <Tabs
           selectedTab={selectedTab}
           selectedProject={selectedProject}
@@ -57,7 +70,7 @@ class App extends Component {
           width={width}
         />
         <div className={clsx('App', classes.app)}>
-          <LateralBar />
+          <LateralBar handleClickAbout={this.handleClickAbout} />
           <Projects
             selectedProject={selectedProject}
             handleChangeProject={this.handleChangeProject}

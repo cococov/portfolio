@@ -6,10 +6,10 @@
     "language": "javaScript",
     "ico": "react"
   },
-  "SQLite&MySQL.jsx": {
-    "uri": "project/sqlitemysqljsx",
-    "name": "SQLite&MySQL.jsx",
-    "title": "SQLite and MySQL Sync",
+  "user-crud.jsx": {
+    "uri": "project/user-crud",
+    "name": "userCrud.jsx",
+    "title": "User CRUD - SQLite and MySQL Sync",
     "language": "javaScript",
     "ico": "react"
   },

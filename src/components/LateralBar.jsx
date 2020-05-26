@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { lateralBarStyles } from '../styles';
 import { cv, linkedin, github } from '../config.json';
-import { List, ListItem, Drawer } from '@material-ui/core';
+import { List, ListItem, Drawer, Typography } from '@material-ui/core';
 import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -38,7 +38,7 @@ class LateralBar extends Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes, handleClickAbout } = this.props;
     return (
       <div className={classes.list} role="presentation">
         <Drawer
@@ -50,7 +50,7 @@ class LateralBar extends Component {
             paper: clsx('Content', classes.drawerPaper)
           }}
         >
-          <List>
+          <List className={classes.listInside}>
             <ListItem
               button
               key={'Download'}
@@ -75,6 +75,16 @@ class LateralBar extends Component {
             >
               <GitHub className={classes.lateralIcon} />
             </ListItem>
+            <div className={classes.about}>
+              <ListItem
+                button
+                key={'About'}
+                title="About"
+                onClick={handleClickAbout}
+              >
+                <Typography className={classes.aboutText}>About</Typography>
+              </ListItem>
+            </div>
           </List>
         </Drawer>
       </div>
