@@ -178,14 +178,14 @@ export const CustomTable = ({ children, classes }) => {
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow className={classes.tableTitleBar}>
-            {thNames.map((title) => (
-              <TableCell className={classes.tableTitle}>{title}</TableCell>
+            {thNames.map((title, index) => (
+              <TableCell key={index} className={classes.tableTitle}>{title}</TableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row[Object.keys(row)[0]]} className={classes.tableRow}>
+          {rows.map((row, index) => (
+            <TableRow key={index} className={classes.tableRow}>
               {Object.keys(row).map((key, index) => (
                 <TableCell scope="row" key={`${key}-${index}`} className={classes.tableData}>
                   {row[key]}

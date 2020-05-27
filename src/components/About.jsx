@@ -56,38 +56,28 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
         />
         <Divider />
         <CardContent>
-          <p className={classes.lineContainer}>
+          <div className={classes.lineContainer}>
             <Typography
               variant="body1"
-              component="body1"
-              className={classes.item}
-            >
-              Creador:
-          </Typography>
-            <Typography
-              variant="code"
-              component="code"
-              className={classes.data}
-            >
-              Juan Carlos Lamas Alfaro
-          </Typography>
-          </p>
-          <p className={classes.lineContainer}>
-            <Typography
-              variant="body1"
-              component="body1"
               className={classes.item}
             >
               E-mail:
           </Typography>
             <Typography
-              variant="code"
               component="code"
-              className={classes.data}
+              className={classes.mail}
             >
               jclamas.95@gmail.com
           </Typography>
-          </p>
+          </div>
+          <div className={classes.lineContainer}>
+            <Typography
+              component="body1"
+              className={classes.copyright}
+            >
+              © Juan Carlos Lamas Alfaro. All rights reserved.
+          </Typography>
+          </div>
         </CardContent>
         <CardActions>
           <IconButton

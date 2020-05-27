@@ -39,9 +39,9 @@ Tengo experiencia principalmente con metodologías agiles, entre las que destaca
 
 | Herranmienta  |    Conocimiento   | Descripción |
 | ----------- | ----------------- | ----------- |
-| Jira         | ⭐⭐⭐⭐⭐🔳🔳 |        |
-| Confluence   | ⭐⭐⭐⭐🔳🔳🔳 |        |
-| Trello       | ⭐⭐⭐⭐🔳🔳🔳 |        |
+| Jira         | ⭐⭐⭐⭐⭐🔳🔳 | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizandolo en mi memoria. |
+| Confluence   | ⭐⭐⭐⭐🔳🔳🔳 | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizandolo en mi memoria. |
+| Trello       | ⭐⭐⭐⭐🔳🔳🔳 | Utilizado para proyectos personales. |
 <br/>
 
 ### Idiomas

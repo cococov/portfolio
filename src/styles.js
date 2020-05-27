@@ -389,12 +389,16 @@ export const About = theme => ({
   item: {
     flex: 2
   },
-  data: {
+  copyright: {
+    flex: 1
+  },
+  mail: {
     flex: 6,
-    marginLeft: 10
+    marginBottom: '2rem'
   },
   lineContainer: {
-    display: 'flex'
+    display: 'flex',
+    alignItems: 'flex-start'
   }
 });
 
