@@ -19,7 +19,7 @@ import { About } from '../styles';
 */
 const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
 
-  const onClickIcon = async index => {
+  const goPage = async index => {
     let url = null;
     switch (index) {
       case 'linkedin':
@@ -82,13 +82,13 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
         <CardActions>
           <IconButton
             className={classes.icon}
-            onClick={() => onClickIcon('linkedin')}
+            onClick={() => goPage('linkedin')}
           >
             <LinkedIn />
           </IconButton>
           <IconButton
             className={classes.icon}
-            onClick={() => onClickIcon('github')}
+            onClick={() => goPage('github')}
           >
             <GitHub />
           </IconButton>
