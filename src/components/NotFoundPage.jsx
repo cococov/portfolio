@@ -1,23 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
-  NotFoundPage Class
+  NotFoundPage Component
 */
-class NotFoundPage extends Component {
-  pageState = {};
-
-  constructor(props) {
-    super(props);
-    this.pageState = {
-    };
-  }
-
-  render() {
-    return (
-      <h1>ERROR 404</h1>
-    );
-  }
-}
+const NotFoundPage = () => (
+  <h1 className="text-light text-center">
+    ERROR 404
+  </h1>
+);
 
 export default NotFoundPage;

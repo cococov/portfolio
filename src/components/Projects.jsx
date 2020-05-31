@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { observable, decorate } from 'mobx';
+import React, { useState } from 'react';
+import { decorate } from 'mobx';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
@@ -10,81 +10,74 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
 
-class Projects extends Component {
-  pageState = {};
+const Projects = withStyles(ProjectsStyles)(({
+  classes,
+  selectedProject,
+  handleChangeProject
+}) => {
+  const [isProjectsOpen] = useState(true);
 
-  constructor(props) {
-    super(props);
-    this.pageState = {
-      isProjectsOpen: true
-    };
-  }
-
-  render() {
-    const { classes, selectedProject, handleChangeProject } = this.props;
-    const { isProjectsOpen } = this.pageState;
-    return (
-      <div
-        className={classes.list}
-        role="presentation"
+  return (
+    <div
+      className={classes.list}
+      role="presentation"
+    >
+      <Drawer
+        open={isProjectsOpen}
+        anchor="left"
+        variant="persistent"
+        className={classes.drawer}
+        classes={{ paper: clsx('Content', classes.drawerPaper) }}
       >
-        <Drawer
-          open={isProjectsOpen}
-          anchor="left"
-          variant="persistent"
-          className={classes.drawer}
-          classes={{ paper: clsx('Content', classes.drawerPaper) }}
+        <Box
+          component="span"
+          className={classes.box}
         >
-          <Box
-            component="span"
-            className={classes.box}
+          <Typography
+            variant="caption"
+            className={clsx(resetClasses, 'ml-3')}
           >
-            <Typography
-              variant="caption"
-              className={clsx(resetClasses, 'ml-3')}
-            >
-              EXPLORER
+            EXPLORER
             </Typography>
-          </Box>
-          <div
-            className={clsx(classes.category, 'form-inline ml-3', resetClasses)}
+        </Box>
+        <div
+          className={clsx(classes.category, 'form-inline ml-3', resetClasses)}
+        >
+          {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
+          <Typography
+            className={clsx('ml-2', resetClasses)}
           >
-            {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
-            <Typography
-              className={clsx('ml-2', resetClasses)}
-            >
-              PROJECTS
+            PROJECTS
             </Typography>
-          </div>
-          <Box
-            component="span"
-            className={classes.projects}
+        </div>
+        <Box
+          component="span"
+          className={classes.projects}
+        >
+          <List
+            component="nav"
+            className={classes.list}
           >
-            <List
-              component="nav"
-              className={classes.list}
-            >
-              {
-                Object.keys(projects).map((project, index) => (
-                  <ListItem
-                    key={index}
-                    className={(project === selectedProject) ? classes.selectedItem : ''}
-                    button
-                    onClick={() => {
-                      handleChangeProject(project);
-                    }}
-                  >
-                    <Typography>{projects[project]['name']}</Typography>
-                  </ListItem>
-                ))
-              }
-            </List>
-          </Box>
-        </Drawer>
-      </div>
-    );
-  };
-}
+            {
+              Object.keys(projects).map((project, index) => (
+                <ListItem
+                  key={index}
+                  className={(project === selectedProject) ? classes.selectedItem : ''}
+                  button
+                  onClick={() => {
+                    handleChangeProject(project);
+                  }}
+                >
+                  <Typography>{projects[project]['name']}</Typography>
+                </ListItem>
+              ))
+            }
+          </List>
+        </Box>
+      </Drawer>
+    </div>
+  );
+});
 
 /*
   Define received props types for validation.
@@ -96,7 +89,6 @@ Projects.propTypes = {
   MobX decorations.
 */
 decorate(Projects, {
-  pageState: observable
 });
 
-export default withStyles(ProjectsStyles)(Projects);
+export default Projects;

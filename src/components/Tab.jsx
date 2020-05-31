@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { observable, decorate, action } from 'mobx';
+import React from 'react';
+import { decorate } from 'mobx';
 import { observer } from 'mobx-react';
 import { withStyles } from '@material-ui/core/styles';
 import { TabStyles } from '../styles';
@@ -8,25 +8,21 @@ import { Typography } from '@material-ui/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
-  Tap Main Class
+  Tab Component
 */
 const Tab = withStyles(TabStyles)(({
+  ico,
+  text,
+  index,
   classes,
   selected,
-  index,
-  text,
-  ico,
   handleClick
 }) => {
-
-  const handleClick = () => {
-    handleClick(index);
-  };
 
   return (
     <div
       className={clsx('', ((selected) ? classes.selected : classes.tab))}
-      onClick={handleClick}
+      onClick={() => handleClick(index)}
     >
       <Typography
         className={clsx('text-left align-middle mt-1 ml-2')}
@@ -48,8 +44,6 @@ Tab.propTypes = {
   MobX decorations.
 */
 decorate(Tab, {
-  pageState: observable,
-  handleClick: action
 });
 
-export default withStyles(TabStyles)(observer(Tab));
+export default observer(Tab);

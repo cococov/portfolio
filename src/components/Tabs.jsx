@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { observable, decorate } from 'mobx';
+import React from 'react';
+import { decorate } from 'mobx';
 import { observer } from 'mobx-react';
 import { withStyles } from '@material-ui/core/styles';
 import { TabsStyles } from '../styles';
@@ -14,98 +14,95 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
   Tabs Main Class
 */
-class Tabs extends Component {
-  pageState = {};
+const Tabs = withStyles(TabsStyles)(({
+  width,
+  classes,
+  selectedTab,
+  selectedProject,
+  handleChangeTab
+}) => {
 
-  constructor(props) {
-    super(props);
-    this.pageState = {};
+  const handleChange = (newValue) => {
+    handleChangeTab(newValue);
   };
 
-  handleChange = (newValue) => {
-    this.props.handleChangeTab(newValue);
-  };
-
-  render() {
-    const { classes, selectedTab, selectedProject, width } = this.props;
-    return (
-      <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
-        <AppBar className={clsx('header', classes.header)} position="sticky">
-          <Toolbar className="pl-0">
-            <Tab
-              index={0}
-              text={width > 730 ? "Profile" : ""}
-              selected={(selectedTab === 0)}
-              className="border border-dark"
-              handleClick={this.handleChange}
-              ico={<Person className="mr-2" />}
-            />
-            <Tab
-              index={1}
-              text={width > 730 ? "Experience" : ""}
-              selected={(selectedTab === 1)}
-              className="border border-dark"
-              handleClick={this.handleChange}
-              ico={<Work className="mr-2" />}
-            />
-            <Tab
-              index={2}
-              text={width > 730 ? "Education" : ""}
-              selected={(selectedTab === 2)}
-              className="border border-dark"
-              handleClick={this.handleChange}
-              ico={<School className="mr-2" />}
-            />
-            <Tab
-              index={3}
-              text={width > 730 ? "Skills" : ""}
-              selected={(selectedTab === 3)}
-              className="border border-dark"
-              handleClick={this.handleChange}
-              ico={<Build className="mr-2" />}
-            />
-            {
-              (() => {
-                if (selectedProject) {
-                  return (
-                    <Tab
-                      index={4}
-                      text={width > 730 ? projects[selectedProject]['name'] : ""}
-                      selected={(selectedTab === 4)}
-                      className="border border-dark"
-                      handleClick={this.handleChange}
-                      ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', projects[selectedProject]['ico']]} />}
-                    />
-                  )
-                }
-              })()
-            }
-          </Toolbar>
-        </AppBar>
-        <AppBar className={clsx('subHeader', classes.subHeader)} position="sticky">
-          <Typography variant="caption" className={clsx('m-1 ml-3')}>
-            src > portfolio > {
-              (() => {
-                switch (selectedTab) {
-                  case 0:
-                    return 'Profile'
-                  case 1:
-                    return 'Experience'
-                  case 2:
-                    return 'Education'
-                  case 3:
-                    return 'Skills'
-                  default:
-                    return `Projects > ${projects[selectedProject]['name']}`
-                }
-              })()
-            }
-          </Typography>
-        </AppBar>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
+      <AppBar className={clsx('header', classes.header)} position="sticky">
+        <Toolbar className="pl-0">
+          <Tab
+            index={0}
+            text={width > 730 ? "Profile" : ""}
+            selected={(selectedTab === 0)}
+            className="border border-dark"
+            handleClick={handleChange}
+            ico={<Person className="mr-2" />}
+          />
+          <Tab
+            index={1}
+            text={width > 730 ? "Experience" : ""}
+            selected={(selectedTab === 1)}
+            className="border border-dark"
+            handleClick={handleChange}
+            ico={<Work className="mr-2" />}
+          />
+          <Tab
+            index={2}
+            text={width > 730 ? "Education" : ""}
+            selected={(selectedTab === 2)}
+            className="border border-dark"
+            handleClick={handleChange}
+            ico={<School className="mr-2" />}
+          />
+          <Tab
+            index={3}
+            text={width > 730 ? "Skills" : ""}
+            selected={(selectedTab === 3)}
+            className="border border-dark"
+            handleClick={handleChange}
+            ico={<Build className="mr-2" />}
+          />
+          {
+            (() => {
+              if (selectedProject) {
+                return (
+                  <Tab
+                    index={4}
+                    text={width > 730 ? projects[selectedProject]['name'] : ""}
+                    selected={(selectedTab === 4)}
+                    className="border border-dark"
+                    handleClick={handleChange}
+                    ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', projects[selectedProject]['ico']]} />}
+                  />
+                )
+              }
+            })()
+          }
+        </Toolbar>
+      </AppBar>
+      <AppBar className={clsx('subHeader', classes.subHeader)} position="sticky">
+        <Typography variant="caption" className={clsx('m-1 ml-3')}>
+          src > portfolio > {
+            (() => {
+              switch (selectedTab) {
+                case 0:
+                  return 'Profile'
+                case 1:
+                  return 'Experience'
+                case 2:
+                  return 'Education'
+                case 3:
+                  return 'Skills'
+                default:
+                  return `Projects > ${projects[selectedProject]['name']}`
+              }
+            })()
+          }
+        </Typography>
+      </AppBar>
+    </div>
+  );
+});
 
 /*
   Define received props types for validation.
@@ -117,7 +114,6 @@ Tabs.propTypes = {
   MobX decorations.
 */
 decorate(Tabs, {
-  pageState: observable
 });
 
-export default withStyles(TabsStyles)(observer(Tabs));
+export default observer(Tabs);
