@@ -10,36 +10,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
   Tap Main Class
 */
-class Tab extends Component {
-  pageState = {};
+const Tab = withStyles(TabStyles)(({
+  classes,
+  selected,
+  index,
+  text,
+  ico,
+  handleClick
+}) => {
 
-  constructor(props) {
-    super(props);
-    this.pageState = {
-    };
+  const handleClick = () => {
+    handleClick(index);
   };
 
-  handleClick = () => {
-    this.props.handleClick(this.props.index);
-  };
-
-  render() {
-    const { classes, selected, text, ico } = this.props;
-    return (
-      <div
-        className={clsx('', ((selected) ? classes.selected : classes.tab))}
-        onClick={this.handleClick}
+  return (
+    <div
+      className={clsx('', ((selected) ? classes.selected : classes.tab))}
+      onClick={handleClick}
+    >
+      <Typography
+        className={clsx('text-left align-middle mt-1 ml-2')}
+        variant="inherit"
       >
-        <Typography
-          className={clsx('text-left align-middle mt-1 ml-2')}
-          variant="inherit"
-        >
-          {ico}{text}
-        </Typography>
-      </div>
-    );
-  };
-}
+        {ico}{text}
+      </Typography>
+    </div>
+  );
+});
 
 /*
   Define received props types for validation.
