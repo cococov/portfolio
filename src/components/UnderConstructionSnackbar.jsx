@@ -22,8 +22,8 @@ const UnderConstructionSnackbar = () => {
     >
       <Alert severity="info">
         <AlertTitle>Información</AlertTitle>
-            Esta página aún está en construcción, por lo que puede haber secciones sin contenido o con contenido a la mitad.
-          </Alert>
+        Esta página aún está en construcción, por lo que puede haber secciones sin contenido o con contenido a la mitad.
+      </Alert>
     </Snackbar>
   );
 }

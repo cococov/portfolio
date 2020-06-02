@@ -1,6 +1,4 @@
-import React, { Component, Fragment } from 'react';
-import { observable, decorate } from 'mobx';
-import { observer } from 'mobx-react';
+import React, { useState, useEffect, useCallback, Fragment } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { baseStyles, getWidth } from '../styles.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -11,91 +9,76 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/css/App.css';
 
 /*
-  App Main Class
+  App - Main Component
 */
-class App extends Component {
-  pageState = {};
+const App = withStyles(baseStyles)(({ classes }) => {
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [width, setWidth] = useState(() => getWidth());
+  const [isAboutOpen, setAboutOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  constructor(props) {
-    super(props);
-    this.pageState = {
-      selectedProject: null,
-      selectedTab: 0,
-      width: getWidth(),
-      isAboutOpen: false
-    };
+  useEffect(() => {
     library.add([faJava, faReact, faPython]);
+  });
+
+  useEffect(() => {
+    window.addEventListener("resize", resize);
+    resize();
+  }, []);
+
+  const resize = async () => {
+    setWidth(getWidth());
   };
 
-  componentDidMount() {
-    window.addEventListener("resize", this.resize);
-    this.resize();
-  };
+  const handleChangeProject = useCallback((project) => {
+    setSelectedProject(project);
+    setSelectedTab(4);
+  }, []);
 
-  resize = async () => {
-    this.pageState.width = getWidth();
-  };
+  const handleChangeTab = useCallback((tab) => {
+    setSelectedTab(tab);
+  }, []);
 
-  handleChangeProject = (project) => {
-    this.pageState.selectedProject = project;
-    this.pageState.selectedTab = 4;
-  };
+  const handleClickAbout = useCallback(() => {
+    setAboutOpen(true);
+  }, []);
 
-  handleChangeTab = (tab) => {
-    this.pageState.selectedTab = tab;
-  };
+  const handleCloseAbout = useCallback(() => {
+    setAboutOpen(false);
+  }, []);
 
-  handleClickAbout = () => {
-    this.pageState.isAboutOpen = true;
-  };
-
-  handleCloseAbout = () => {
-    this.pageState.isAboutOpen = false;
-  };
-
-  render() {
-    const { selectedProject, selectedTab, width, isAboutOpen } = this.pageState;
-    const { classes } = this.props;
-    return (
-      <Fragment>
-        <Snackbar />
-        <About
-          isOpen={isAboutOpen}
-          handleClose={this.handleCloseAbout}
+  return (
+    <Fragment>
+      <Snackbar />
+      <About
+        isOpen={isAboutOpen}
+        handleClose={handleCloseAbout}
+      />
+      <Tabs
+        selectedTab={selectedTab}
+        selectedProject={selectedProject}
+        handleChangeTab={handleChangeTab}
+        width={width}
+      />
+      <div className={clsx('App', classes.app)}>
+        <LateralBar handleClickAbout={handleClickAbout} />
+        <Projects
+          selectedProject={selectedProject}
+          handleChangeProject={handleChangeProject}
         />
-        <Tabs
+        <Container
           selectedTab={selectedTab}
           selectedProject={selectedProject}
-          handleChangeTab={this.handleChangeTab}
           width={width}
         />
-        <div className={clsx('App', classes.app)}>
-          <LateralBar handleClickAbout={this.handleClickAbout} />
-          <Projects
-            selectedProject={selectedProject}
-            handleChangeProject={this.handleChangeProject}
-          />
-          <Container
-            selectedTab={selectedTab}
-            selectedProject={selectedProject}
-            width={width}
-          />
-        </div>
-      </Fragment>
-    );
-  }
-}
+      </div>
+    </Fragment>
+  );
+});
 
 /*
   Define received props types for validation.
 */
 App.propTypes = {};
 
-/*
-  MobX decorations.
-*/
-decorate(App, {
-  pageState: observable
-});
-
-export default withStyles(baseStyles)(observer(App));
+export default App;

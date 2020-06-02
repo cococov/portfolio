@@ -1,6 +1,4 @@
-import React from 'react';
-import { decorate } from 'mobx';
-import { observer } from 'mobx-react';
+import React, { memo, useMemo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { TabsStyles } from '../styles';
 import clsx from 'clsx';
@@ -12,7 +10,7 @@ import Tab from './Tab'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
-  Tabs Main Class
+  Tabs Component
 */
 const Tabs = withStyles(TabsStyles)(({
   width,
@@ -21,10 +19,6 @@ const Tabs = withStyles(TabsStyles)(({
   selectedProject,
   handleChangeTab
 }) => {
-
-  const handleChange = (newValue) => {
-    handleChangeTab(newValue);
-  };
 
   return (
     <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
@@ -35,32 +29,32 @@ const Tabs = withStyles(TabsStyles)(({
             text={width > 730 ? "Profile" : ""}
             selected={(selectedTab === 0)}
             className="border border-dark"
-            handleClick={handleChange}
-            ico={<Person className="mr-2" />}
+            handleClick={handleChangeTab}
+            ico={useMemo(() => <Person className="mr-2" />, [])}
           />
           <Tab
             index={1}
             text={width > 730 ? "Experience" : ""}
             selected={(selectedTab === 1)}
             className="border border-dark"
-            handleClick={handleChange}
-            ico={<Work className="mr-2" />}
+            handleClick={handleChangeTab}
+            ico={useMemo(() => <Work className="mr-2" />, [])}
           />
           <Tab
             index={2}
             text={width > 730 ? "Education" : ""}
             selected={(selectedTab === 2)}
             className="border border-dark"
-            handleClick={handleChange}
-            ico={<School className="mr-2" />}
+            handleClick={handleChangeTab}
+            ico={useMemo(() => <School className="mr-2" />, [])}
           />
           <Tab
             index={3}
             text={width > 730 ? "Skills" : ""}
             selected={(selectedTab === 3)}
             className="border border-dark"
-            handleClick={handleChange}
-            ico={<Build className="mr-2" />}
+            handleClick={handleChangeTab}
+            ico={useMemo(() => <Build className="mr-2" />, [])}
           />
           {
             (() => {
@@ -71,7 +65,7 @@ const Tabs = withStyles(TabsStyles)(({
                     text={width > 730 ? projects[selectedProject]['name'] : ""}
                     selected={(selectedTab === 4)}
                     className="border border-dark"
-                    handleClick={handleChange}
+                    handleClick={handleChangeTab}
                     ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', projects[selectedProject]['ico']]} />}
                   />
                 )
@@ -107,13 +101,6 @@ const Tabs = withStyles(TabsStyles)(({
 /*
   Define received props types for validation.
 */
-Tabs.propTypes = {
-};
+Tabs.propTypes = {};
 
-/*
-  MobX decorations.
-*/
-decorate(Tabs, {
-});
-
-export default observer(Tabs);
+export default memo(Tabs);

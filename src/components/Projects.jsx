@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { decorate } from 'mobx';
+import React, { useState, memo } from 'react';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
@@ -10,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
 
+/*
+  Projects Component
+*/
 const Projects = withStyles(ProjectsStyles)(({
   classes,
   selectedProject,
@@ -82,13 +84,6 @@ const Projects = withStyles(ProjectsStyles)(({
 /*
   Define received props types for validation.
 */
-Projects.propTypes = {
-};
+Projects.propTypes = {};
 
-/*
-  MobX decorations.
-*/
-decorate(Projects, {
-});
-
-export default Projects;
+export default memo(Projects);

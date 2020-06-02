@@ -1,6 +1,4 @@
-import React from 'react';
-import { decorate } from 'mobx';
-import { observer } from 'mobx-react';
+import React, { memo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { TabStyles } from '../styles';
 import clsx from 'clsx';
@@ -37,13 +35,6 @@ const Tab = withStyles(TabStyles)(({
 /*
   Define received props types for validation.
 */
-Tab.propTypes = {
-};
+Tab.propTypes = {};
 
-/*
-  MobX decorations.
-*/
-decorate(Tab, {
-});
-
-export default observer(Tab);
+export default memo(Tab);

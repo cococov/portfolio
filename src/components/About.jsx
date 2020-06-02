@@ -15,7 +15,7 @@ import { linkedin, github } from '../config.json';
 import { About } from '../styles';
 
 /*
-  About Modal
+  About Modal Component
 */
 const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
 
@@ -72,7 +72,7 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
           </div>
           <div className={classes.lineContainer}>
             <Typography
-              component="body1"
+              variant="body1"
               className={classes.copyright}
             >
               © Juan Carlos Lamas Alfaro. All rights reserved.

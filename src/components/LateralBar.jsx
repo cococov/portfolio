@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { observable, decorate } from 'mobx';
+import React, { memo } from 'react';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { lateralBarStyles } from '../styles';
@@ -9,17 +8,11 @@ import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
-  LateralBar Main Class
+  LateralBar Component
 */
-class LateralBar extends Component {
-  pageState = {};
+const LateralBar = withStyles(lateralBarStyles)(({ classes, handleClickAbout }) => {
 
-  constructor(props) {
-    super(props);
-    this.pageState = {};
-  };
-
-  onClickIcon = async index => {
+  const onClickIcon = async index => {
     let url = null;
     switch (index) {
       case 'download':
@@ -37,71 +30,61 @@ class LateralBar extends Component {
     win.focus();
   };
 
-  render() {
-    const { classes, handleClickAbout } = this.props;
-    return (
-      <div className={classes.list} role="presentation">
-        <Drawer
-          className={classes.drawer}
-          variant="persistent"
-          anchor="left"
-          open={true}
-          classes={{
-            paper: clsx('Content', classes.drawerPaper)
-          }}
-        >
-          <List className={classes.listInside}>
+  return (
+    <div className={classes.list} role="presentation">
+      <Drawer
+        className={classes.drawer}
+        variant="persistent"
+        anchor="left"
+        open={true}
+        classes={{
+          paper: clsx('Content', classes.drawerPaper)
+        }}
+      >
+        <List className={classes.listInside}>
+          <ListItem
+            button
+            key={'Download'}
+            title="Download CV"
+            onClick={() => onClickIcon('download')}
+          >
+            <CloudDownload className={classes.lateralIcon} />
+          </ListItem>
+          <ListItem
+            button
+            key={'LinkedIn'}
+            title="LinkedIn"
+            onClick={() => onClickIcon('linkedin')}
+          >
+            <LinkedIn className={classes.lateralIcon} />
+          </ListItem>
+          <ListItem
+            button
+            key={'GitHub'}
+            title="GitHub"
+            onClick={() => onClickIcon('github')}
+          >
+            <GitHub className={classes.lateralIcon} />
+          </ListItem>
+          <div className={classes.about}>
             <ListItem
               button
-              key={'Download'}
-              title="Download CV"
-              onClick={() => this.onClickIcon('download')}
+              key={'About'}
+              title="About"
+              onClick={handleClickAbout}
             >
-              <CloudDownload className={classes.lateralIcon} />
+              <Typography className={classes.aboutText}>About</Typography>
             </ListItem>
-            <ListItem
-              button
-              key={'LinkedIn'}
-              title="LinkedIn"
-              onClick={() => this.onClickIcon('linkedin')}
-            >
-              <LinkedIn className={classes.lateralIcon} />
-            </ListItem>
-            <ListItem
-              button
-              key={'GitHub'}
-              title="GitHub"
-              onClick={() => this.onClickIcon('github')}
-            >
-              <GitHub className={classes.lateralIcon} />
-            </ListItem>
-            <div className={classes.about}>
-              <ListItem
-                button
-                key={'About'}
-                title="About"
-                onClick={handleClickAbout}
-              >
-                <Typography className={classes.aboutText}>About</Typography>
-              </ListItem>
-            </div>
-          </List>
-        </Drawer>
-      </div>
-    );
-  };
-}
+          </div>
+        </List>
+      </Drawer>
+    </div>
+  );
+});
 
 /*
   Define received props types for validation.
 */
 LateralBar.propTypes = {};
 
-/*
-  MobX decorations.
-*/
-decorate(LateralBar, {
-  pageState: observable
-});
-
-export default withStyles(lateralBarStyles)(LateralBar);
+export default memo(LateralBar);
