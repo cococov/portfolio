@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { baseStyles, getWidth } from '../styles.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faJava, faReact, faPython } from '@fortawesome/free-brands-svg-icons'
-import { About, LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
+import { About, LateralBar, Container, Projects, Tabs } from '../components';
 import clsx from 'clsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/css/App.css';
@@ -49,7 +49,6 @@ const App = withStyles(baseStyles)(({ classes }) => {
 
   return (
     <Fragment>
-      <Snackbar />
       <About
         isOpen={isAboutOpen}
         handleClose={handleCloseAbout}

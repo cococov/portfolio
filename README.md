@@ -7,6 +7,8 @@ This project is my personal porfolio, to show my profile, education, experience 
 ## Tecnologies used
 
 - React
+- Material-UI
+- Markdown
 
 ## Start Local Server
 ```

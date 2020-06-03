@@ -1,5 +1,11 @@
 import { useEffect, useRef } from 'react';
 
+/**
+ * Render optimization hook for developer test
+ * @param {String} name - Identifier to show in console
+ * @param {Object} props - the prop or props for testing
+ * use: useWhyDidYouUpdate('name to show in console', {...props})
+ */
 const useWhyDidYouUpdate = (name, props) => {
   const previousProps = useRef();
 
