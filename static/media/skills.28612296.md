@@ -57,3 +57,12 @@ Tengo experiencia principalmente con metodologías agiles, entre las que destaca
 ### Habilidades blandas
 
 ---
+
+- Me considero una persona proactiva y participativa.
+- No tengo problemas en aprender cosas nuevas, es más, me gusta aprender cosas nuevas.
+- La programación, ingeniería, tecnología y ciencias, además de una profesión, son un hobbie para mi y constantemente estoy aprendiendo cosas nuevas por mera entretención.
+- Me preocupo mucho por la calidad de mi código, siguiendo buenas prácticas. Incluso leí el libro ‘Clean Code’ con motivo de mejorar mi calidad de código.
+- A pesar de que mi personalidad es introvertida, me he estado esforzando constantemente en que no me afecte, permitiéndome desenvolverme como una persona normal, sin problemas.
+- Estoy constantemente aprendiendo cosas nuevas en mi tiempo libre, porque me gusta hacerlo.
+- Soy bueno trabajando en equipo, nutriéndome del conocimiento de los demás y ofreciendo el mío.
+- Tengo la costumbre de documentar mi código.
