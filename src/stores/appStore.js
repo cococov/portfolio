@@ -5,7 +5,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const [selectedTab, setSelectedTab] = useState(0);
   const [isAboutOpen, setAboutOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState('');
 
   const handleChangeProject = useCallback((project) => {
     setSelectedTab(4);
