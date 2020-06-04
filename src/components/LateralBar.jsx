@@ -1,16 +1,18 @@
-import React, { memo } from 'react';
+import React, { memo, useContext, useMemo } from 'react';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { lateralBarStyles } from '../styles';
 import { cv, linkedin, github } from '../config.json';
 import { List, ListItem, Drawer, Typography } from '@material-ui/core';
 import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
+import { AppContext } from '../stores';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   LateralBar Component
 */
-const LateralBar = withStyles(lateralBarStyles)(({ classes, handleClickAbout }) => {
+const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
+  const { handleClickAbout } = useContext(AppContext);
 
   const onClickIcon = async index => {
     let url = null;
@@ -30,7 +32,7 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes, handleClickAbout }) 
     win.focus();
   };
 
-  return (
+  return useMemo(() => (
     <div className={classes.list} role="presentation">
       <Drawer
         className={classes.drawer}
@@ -79,7 +81,7 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes, handleClickAbout }) 
         </List>
       </Drawer>
     </div>
-  );
+  ), [classes, handleClickAbout]);
 });
 
 /*

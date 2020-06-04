@@ -1,10 +1,11 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useContext, useMemo } from 'react';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { ProjectsStyles } from '../styles';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
 import { projects } from '../content/projects';
+import { AppContext } from '../stores';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const resetClasses = 'p-0 mb-0 mt-0';
@@ -12,14 +13,11 @@ const resetClasses = 'p-0 mb-0 mt-0';
 /*
   Projects Component
 */
-const Projects = withStyles(ProjectsStyles)(({
-  classes,
-  selectedProject,
-  handleChangeProject
-}) => {
+const Projects = withStyles(ProjectsStyles)(({ classes }) => {
   const [isProjectsOpen] = useState(true);
+  const { selectedProject, handleChangeProject } = useContext(AppContext);
 
-  return (
+  return useMemo(() => (
     <div
       className={classes.list}
       role="presentation"
@@ -78,7 +76,7 @@ const Projects = withStyles(ProjectsStyles)(({
         </Box>
       </Drawer>
     </div>
-  );
+  ), [classes, isProjectsOpen, selectedProject, handleChangeProject]);
 });
 
 /*

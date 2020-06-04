@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useCallback, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
+import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { baseStyles, getWidth } from '../styles.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faJava, faReact, faPython } from '@fortawesome/free-brands-svg-icons'
-import { About, LateralBar, Container, Projects, Tabs } from '../components';
-import clsx from 'clsx';
+import { About, LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
+import { AppProvider, ContentProvider } from '../stores';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/css/App.css';
 
@@ -12,10 +13,7 @@ import '../static/css/App.css';
   App - Main Component
 */
 const App = withStyles(baseStyles)(({ classes }) => {
-  const [selectedTab, setSelectedTab] = useState(0);
   const [width, setWidth] = useState(() => getWidth());
-  const [isAboutOpen, setAboutOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     library.add([faJava, faReact, faPython]);
@@ -30,53 +28,24 @@ const App = withStyles(baseStyles)(({ classes }) => {
     setWidth(getWidth());
   };
 
-  const handleChangeProject = useCallback((project) => {
-    setSelectedProject(project);
-    setSelectedTab(4);
-  }, []);
-
-  const handleChangeTab = useCallback((tab) => {
-    setSelectedTab(tab);
-  }, []);
-
-  const handleClickAbout = useCallback(() => {
-    setAboutOpen(true);
-  }, []);
-
-  const handleCloseAbout = useCallback(() => {
-    setAboutOpen(false);
-  }, []);
-
   return (
-    <Fragment>
-      <About
-        isOpen={isAboutOpen}
-        handleClose={handleCloseAbout}
-      />
-      <Tabs
-        selectedTab={selectedTab}
-        selectedProject={selectedProject}
-        handleChangeTab={handleChangeTab}
-        width={width}
-      />
+    <AppProvider>
+      <Snackbar />
+      <About />
+      <Tabs width={width} />
       <div className={clsx('App', classes.app)}>
-        <LateralBar handleClickAbout={handleClickAbout} />
-        <Projects
-          selectedProject={selectedProject}
-          handleChangeProject={handleChangeProject}
-        />
-        <Container
-          selectedTab={selectedTab}
-          selectedProject={selectedProject}
-          width={width}
-        />
+        <LateralBar />
+        <Projects />
+        <ContentProvider>
+          <Container width={width} />
+        </ContentProvider>
       </div>
-    </Fragment>
+    </AppProvider>
   );
 });
 
 /*
-  Define received props types for validation.
+Define received props types for validation.
 */
 App.propTypes = {};
 

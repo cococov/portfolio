@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useMemo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import {
   Card,
@@ -12,12 +12,14 @@ import {
 } from '@material-ui/core';
 import { LinkedIn, GitHub, Close } from '@material-ui/icons';
 import { linkedin, github } from '../config.json';
+import { AppContext } from '../stores';
 import { About } from '../styles';
 
 /*
   About Modal Component
 */
-const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
+const AboutModal = withStyles(About)(({ classes }) => {
+  const { isAboutOpen, handleCloseAbout } = useContext(AppContext);
 
   const goPage = async index => {
     let url = null;
@@ -34,10 +36,10 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
     win.focus();
   };
 
-  return (
+  return useMemo(() => (
     <Modal
-      open={isOpen}
-      onClose={handleClose}
+      open={isAboutOpen}
+      onClose={handleCloseAbout}
       className={classes.modal}
       disableAutoFocus={true}
       disableEnforceFocus={true}
@@ -48,7 +50,7 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
           action={
             <IconButton
               className={classes.close}
-              onClick={handleClose}
+              onClick={handleCloseAbout}
             >
               <Close />
             </IconButton>
@@ -95,7 +97,7 @@ const AboutModal = withStyles(About)(({ classes, isOpen, handleClose }) => {
         </CardActions>
       </Card >
     </Modal>
-  );
+  ), [classes, isAboutOpen, handleCloseAbout]);
 });
 
 export default AboutModal;

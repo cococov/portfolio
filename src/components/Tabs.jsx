@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo, useMemo, useContext } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { TabsStyles } from '../styles';
 import clsx from 'clsx';
@@ -7,18 +7,14 @@ import { Person, School, Work, Build } from '@material-ui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { projects } from '../content/projects';
 import Tab from './Tab'
+import { AppContext } from '../stores';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   Tabs Component
 */
-const Tabs = withStyles(TabsStyles)(({
-  width,
-  classes,
-  selectedTab,
-  selectedProject,
-  handleChangeTab
-}) => {
+const Tabs = withStyles(TabsStyles)(({ width, classes }) => {
+  const { selectedTab, selectedProject, handleChangeTab } = useContext(AppContext);
 
   return (
     <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
