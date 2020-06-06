@@ -1,7 +1,0 @@
-{
-  "hostname": "http://localhost:3000",
-  "basename": "portfolio",
-  "client": {
-    "home": "/"
-  }
-}

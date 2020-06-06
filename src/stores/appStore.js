@@ -1,7 +1,15 @@
 import React, { createContext, useState, useCallback } from 'react';
 
+/**
+ * App Context.
+ */
 const AppContext = createContext();
 
+/**
+ * App Provider.
+ * @param {Object} props
+ * @param {Component} props.children
+ */
 export const AppProvider = ({ children }) => {
   const [selectedTab, setSelectedTab] = useState(0);
   const [isAboutOpen, setAboutOpen] = useState(false);
