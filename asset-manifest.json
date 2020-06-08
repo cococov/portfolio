@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.35229cc0.chunk.css",
-    "main.js": "/portfolio/static/js/main.50372bcf.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.50372bcf.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.64ef1197.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.64ef1197.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.fb1b3dac.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.fb1b3dac.js.map",
     "static/css/2.af3c1da9.chunk.css": "/portfolio/static/css/2.af3c1da9.chunk.css",
     "static/js/2.c0f005da.chunk.js": "/portfolio/static/js/2.c0f005da.chunk.js",
     "static/js/2.c0f005da.chunk.js.map": "/portfolio/static/js/2.c0f005da.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.c702371cf78cfa84da6790521edae747.js": "/portfolio/precache-manifest.c702371cf78cfa84da6790521edae747.js",
+    "precache-manifest.cfc96d4ebf175962df32461255a004e8.js": "/portfolio/precache-manifest.cfc96d4ebf175962df32461255a004e8.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/portfolio/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.35229cc0.chunk.css.map": "/portfolio/static/css/main.35229cc0.chunk.css.map",
@@ -17,11 +17,11 @@
     "static/media/education.md": "/portfolio/static/media/education.be3717cf.md",
     "static/media/error404.md": "/portfolio/static/media/error404.c361ca1d.md",
     "static/media/experience.md": "/portfolio/static/media/experience.a9782ec0.md",
-    "static/media/magiclife.md": "/portfolio/static/media/magiclife.929d8559.md",
+    "static/media/magiclife.md": "/portfolio/static/media/magiclife.7ac4bd4e.md",
     "static/media/minesweeper.md": "/portfolio/static/media/minesweeper.0c225492.md",
-    "static/media/portfolio.md": "/portfolio/static/media/portfolio.3869e5f8.md",
-    "static/media/profile.md": "/portfolio/static/media/profile.3fecabd8.md",
-    "static/media/skills.md": "/portfolio/static/media/skills.28612296.md",
+    "static/media/portfolio.md": "/portfolio/static/media/portfolio.831fe383.md",
+    "static/media/profile.md": "/portfolio/static/media/profile.3cea90ab.md",
+    "static/media/skills.md": "/portfolio/static/media/skills.f1245e71.md",
     "static/media/usercrud.md": "/portfolio/static/media/usercrud.c1f7ed9d.md"
   },
   "entrypoints": [
@@ -29,6 +29,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.c0f005da.chunk.js",
     "static/css/main.35229cc0.chunk.css",
-    "static/js/main.50372bcf.chunk.js"
+    "static/js/main.64ef1197.chunk.js"
   ]
 }

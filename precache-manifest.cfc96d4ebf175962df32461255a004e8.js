@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3948bbb54a21c5efb526caa67680d92",
+    "revision": "81b3a264a2a6d20b35176def7fe5109f",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "f65e998cd405023f64c8",
+    "revision": "74d63fda26f985ab6fe9",
     "url": "/portfolio/static/css/main.35229cc0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.c0f005da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f65e998cd405023f64c8",
-    "url": "/portfolio/static/js/main.50372bcf.chunk.js"
+    "revision": "74d63fda26f985ab6fe9",
+    "url": "/portfolio/static/js/main.64ef1197.chunk.js"
   },
   {
     "revision": "88fbd3d397ae3690d5f2",
@@ -40,24 +40,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/experience.a9782ec0.md"
   },
   {
-    "revision": "929d8559690c86faa5cb61f48c09537c",
-    "url": "/portfolio/static/media/magiclife.929d8559.md"
+    "revision": "7ac4bd4e322be6ef9f5158e141e9bb78",
+    "url": "/portfolio/static/media/magiclife.7ac4bd4e.md"
   },
   {
     "revision": "0c225492e8926d5fb811d81de8da4cee",
     "url": "/portfolio/static/media/minesweeper.0c225492.md"
   },
   {
-    "revision": "3869e5f8a3835a762d0e2925f798050a",
-    "url": "/portfolio/static/media/portfolio.3869e5f8.md"
+    "revision": "831fe383ac5911c6fadf7ec95c4b6e7e",
+    "url": "/portfolio/static/media/portfolio.831fe383.md"
   },
   {
-    "revision": "3fecabd803be13c44ac7423e542d86bc",
-    "url": "/portfolio/static/media/profile.3fecabd8.md"
+    "revision": "3cea90abfb5d0a6ba253dc983bdb3354",
+    "url": "/portfolio/static/media/profile.3cea90ab.md"
   },
   {
-    "revision": "2861229603d514b138b18b275f42cddb",
-    "url": "/portfolio/static/media/skills.28612296.md"
+    "revision": "f1245e71896b9a9d2b2ca7a1bde05df0",
+    "url": "/portfolio/static/media/skills.f1245e71.md"
   },
   {
     "revision": "c1f7ed9da134bb0bcb50d0588992e281",

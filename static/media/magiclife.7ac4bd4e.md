@@ -5,7 +5,7 @@
 ---
 
 [Repositorio](https://github.com/cococov/magiclife)<br/>
-[Página del proyecto](https://cococov.github.io/magiclife/)
+[Página del proyecto](https://juanlamas.dev/magiclife/)
 
 ### Tecnologías
 

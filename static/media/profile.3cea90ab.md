@@ -14,7 +14,7 @@ Técnico electrónico y egresado de ingeniería en computación e informática e
 ---
 
 **Telefono:** `+569 90143906`<br/>
-**E-Mail:** `jclamas.95@gmail.com`<br/>
+**E-Mail:** `contact@juanlamas.dev`<br/>
 **GitHub:** `https://github.com/cococov`<br/>
 **LinkedIn:** `https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/`<br/>
 
