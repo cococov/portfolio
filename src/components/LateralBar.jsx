@@ -18,7 +18,7 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
     let url = null;
     switch (index) {
       case 'download':
-        url = cv;
+        url = `${process.env.PUBLIC_URL}${cv}`;
         break;
       case 'linkedin':
         url = linkedin;

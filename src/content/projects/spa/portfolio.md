@@ -5,7 +5,7 @@
 ---
 
 [Repositorio](https://github.com/cococov/portfolio)<br/>
-[Página de mi portafolio](https://cococov.github.io/portfolio/)
+[Página de mi portafolio](https://juanlamas.dev/portfolio/)
 
 ### Tecnologías
 

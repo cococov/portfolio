@@ -6,7 +6,7 @@
 | ----------- | ----------------- | ----------- |
 | JavaScript  | ⭐⭐⭐⭐⭐⭐🔳 | Años de experiencia con el lenguaje y al menos 1 año y medio de experiencia profesional, aplicandolo en desarrollo web y móvil.|
 | Java        | ⭐⭐⭐⭐🔳🔳🔳 | Varios años de experiencia con el lenguaje a un nivel intermedio para realizar aplicaciones de escritorio, además de realizar ayudantías del lenguaje en mi universidad. Nunca lo he utilizado para desarrollo web o entorno de servidor, pero me gustaría aprender.        |
-| Python3     | ⭐⭐⭐🔳🔳🔳🔳 | Utilizado profesionalmente para tareas de scripting y automatización en servidor, además de un poco en ciencia de datos en la universidad.        |
+| Python3     | ⭐⭐⭐🔳🔳🔳🔳 | Utilizado profesionalmente para tareas de scripting y automatización en servidor, además de un poco de ciencia de datos en la universidad.        |
 | C           | ⭐⭐⭐🔳🔳🔳🔳 | Aprendido por interes propio y realicé clases particulares del lenguaje durante un año. Personalmente lo he utilizado en proyectos de IOT y robótica.        |
 | C++         | ⭐⭐⭐🔳🔳🔳🔳 | Utilizado para ramos de la universidad. Ultimamente solo lo he utilizado en lecturas.        |
 | PHP         | ⭐⭐⭐🔳🔳🔳🔳 | Utilizado profesionalmente para trabajar sobre un sitema legacy de la empresa CAP.        |
