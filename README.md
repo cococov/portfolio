@@ -4,7 +4,7 @@ This project is my personal porfolio, to show my profile, education, experience 
 
 [Try the app here](https://cococov.github.io/portfolio/)
 
-## Tecnologies used
+## Technologies used
 
 - React
 - Material-UI
