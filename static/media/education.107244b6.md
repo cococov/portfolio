@@ -2,7 +2,7 @@
 
 ---
 
-![be](https://www.ucn.cl/wp-content/uploads/2018/05/Escudo-UCN-Full-Color.png "profile")
+![be](https://juanlamas.dev/portfolio/img/ucn.png "right")
 
 ### 2013 - Actualidad
 
@@ -15,7 +15,7 @@ Universidad Católica del Norte.
 Técnico en electrónica.<br/>
 Escuela industrial Salesiana San Ramón.
 
-![be](https://salesianoslaserena.cl/images/2018/03/01/insignia-la-serena.png "profile")
+![be](https://juanlamas.dev/portfolio/img/salesianos.png "right")
 
 ### 2009 - 2012
 

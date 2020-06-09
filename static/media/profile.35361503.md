@@ -1,6 +1,6 @@
 # Juan Carlos Lamas Alfaro
 
-![be](https://media-exp1.licdn.com/dms/image/C4E03AQGKYcZBx1HWyw/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=LJz3C1QXjnnBIReUp0mJg7Lxsv3YCBlUsPnEBcgk15w "profile")
+![be](https://juanlamas.dev/portfolio/img/profile.jpg "right")
 
 
 ### Objetivos personales
