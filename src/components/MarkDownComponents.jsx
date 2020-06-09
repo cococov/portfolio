@@ -132,7 +132,7 @@ export const Img = ({ src, className, title, classNameProfile }) => {
     <img
       src={src}
       alt={title}
-      className={clsx((title === 'profile') ? classNameProfile : '', className)}
+      className={clsx((title === 'right') ? classNameProfile : '', className)}
     />
   );
 };
