@@ -127,12 +127,16 @@ export const Pre = ({ children, className }) => {
  * @param {String} props.title
  * @param {String} props.classNameProfile
  */
-export const Img = ({ src, className, title, classNameProfile }) => {
+export const Img = ({ src, className, title, alt, classNameRight, classNameContent }) => {
   return (
     <img
       src={src}
       alt={title}
-      className={clsx((title === 'right') ? classNameProfile : '', className)}
+      className={clsx(
+        className,
+        (alt === 'content') ? classNameContent : '',
+        (alt === 'right') ? classNameRight : '',
+      )}
     />
   );
 };
@@ -252,7 +256,8 @@ export const override = (classes) => {
         component: Img,
         props: {
           className: classes.img,
-          classNameProfile: classes.imgProfile,
+          classNameRight: classes.imgRight,
+          classNameContent: classes.imgContent,
         },
       },
       table: {

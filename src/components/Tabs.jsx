@@ -72,7 +72,7 @@ const Tabs = withStyles(TabsStyles)(({ width, classes }) => {
       </AppBar>
       <AppBar className={clsx('subHeader', classes.subHeader)} position="sticky">
         <Typography variant="caption" className={clsx('m-1 ml-3')}>
-          src > portfolio > {
+          src {'>'} portfolio {'>'} {
             (() => {
               switch (selectedTab) {
                 case 0:

@@ -311,11 +311,14 @@ export const ContentStyles = theme => ({
     maxWidth: 250,
     maxHeigh: 250
   },
-  imgProfile: {
+  imgRight: {
     float: 'right',
     marginRight: '5%',
     marginLeft: '5%',
     marginTop: 30
+  },
+  imgContent: {
+    maxWidth: '80%'
   },
   tableContainer: {
     width: 'fit-content',

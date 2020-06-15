@@ -7,7 +7,7 @@
     "ico": "react"
   },
   "user-crud.jsx": {
-    "uri": "project/user-crud",
+    "uri": "project/usercrudjsx",
     "name": "userCrud.jsx",
     "title": "User CRUD - SQLite and MySQL Sync",
     "language": "javaScript",
@@ -19,6 +19,13 @@
     "title": "Magic Life",
     "language": "javaScript",
     "ico": "react"
+  },
+  "rest-alarm.js": {
+    "uri": "project/restalarmjs",
+    "name": "rest-alarm.js",
+    "title": "Rest Alarm",
+    "language": "javaScript",
+    "ico": "js-square"
   },
   "minesweeper.java": {
     "uri": "project/minesweepeerjava",

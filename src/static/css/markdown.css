@@ -25,6 +25,11 @@
   margin-bottom: 1rem;
 }
 
+.img-content-div {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 @media (max-width:1900px) {
   .box {
     max-width: 80%;
