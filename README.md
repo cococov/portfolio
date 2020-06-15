@@ -1,3 +1,5 @@
+![content](https://juanlamas.dev/portfolio/img/content/portfolio/profile.png "content-profile")
+
 # My portfolio.
 
 This project is my personal porfolio, to show my profile, education, experience and developer skills.
