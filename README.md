@@ -1,10 +1,10 @@
-![content](https://juanlamas.dev/portfolio/img/content/portfolio/profile.png "content-profile")
-
 # My portfolio.
 
 This project is my personal porfolio, to show my profile, education, experience and developer skills.
 
 [Try the app here](https://cococov.github.io/portfolio/)
+
+![content](https://juanlamas.dev/portfolio/img/content/portfolio/profile.png "content-profile")
 
 ## Technologies used
 
