@@ -69,7 +69,7 @@ const AboutModal = withStyles(About)(({ classes }) => {
               component="code"
               className={classes.mail}
             >
-              jclamas.95@gmail.com
+              contact@juanlamas.dev
           </Typography>
           </div>
           <div className={classes.lineContainer}>

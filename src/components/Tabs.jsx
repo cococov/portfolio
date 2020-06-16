@@ -13,11 +13,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
   Tabs Component
 */
-const Tabs = withStyles(TabsStyles)(({ width, classes }) => {
+const Tabs = withStyles(TabsStyles)(({ width, isMobil, classes }) => {
   const { selectedTab, selectedProject, handleChangeTab } = useContext(AppContext);
 
   return (
-    <div className={clsx('headerContainer', classes.headerContainer)} style={{ width: width }}>
+    <div className={clsx('headerContainer', classes.headerContainer)} style={!isMobil ? { width } : {}}>
       <AppBar className={clsx('header', classes.header)} position="sticky">
         <Toolbar className="pl-0">
           <Tab

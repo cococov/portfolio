@@ -11,12 +11,12 @@ import '../static/css/markdown.css';
 /*
   Content Component
 */
-const Container = withStyles(ContentStyles)(({ classes, width }) => {
+const Container = withStyles(ContentStyles)(({ classes, width, isMobil }) => {
   const { selectedContent } = useContext(ContentContext);
 
   return useMemo(() => (
     <div
-      style={{ width }}
+      style={!isMobil ? { width } : {}}
       className={clsx('Container', classes.container)}
     >
       <div
@@ -29,7 +29,7 @@ const Container = withStyles(ContentStyles)(({ classes, width }) => {
         </ReactMarkdown>
       </div>
     </div>
-  ), [classes, width, selectedContent])
+  ), [classes, width, isMobil, selectedContent])
 });
 
 /*

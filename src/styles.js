@@ -183,7 +183,7 @@ export const ProjectsStyles = theme => ({
  * @returns {Number} display Width - Drawer width
  */
 export const getWidth = () => {
-  if (window.innerWidth < 400)
+  if (window.innerWidth < 500)
     return window.innerWidth;
   let width = (window.innerWidth - 310);
   return width;
@@ -324,6 +324,7 @@ export const ContentStyles = theme => ({
     width: 'fit-content',
     maxWidth: '90%',
     marginLeft: '5%',
+    overflow: 'hidden',
     backgroundColor: primaryColor.light
   },
   table: {

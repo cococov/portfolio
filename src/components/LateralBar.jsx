@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
   LateralBar Component
 */
-const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
+const LateralBar = withStyles(lateralBarStyles)(({ classes, isMobil }) => {
   const { handleClickAbout } = useContext(AppContext);
 
   const onClickIcon = async index => {
@@ -38,7 +38,7 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
         className={classes.drawer}
         variant="persistent"
         anchor="left"
-        open={true}
+        open={!isMobil}
         classes={{
           paper: clsx('Content', classes.drawerPaper)
         }}
@@ -81,7 +81,7 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
         </List>
       </Drawer>
     </div>
-  ), [classes, handleClickAbout]);
+  ), [classes, isMobil, handleClickAbout]);
 });
 
 /*

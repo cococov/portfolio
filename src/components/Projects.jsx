@@ -13,7 +13,7 @@ const resetClasses = 'p-0 mb-0 mt-0';
 /*
   Projects Component
 */
-const Projects = withStyles(ProjectsStyles)(({ classes }) => {
+const Projects = withStyles(ProjectsStyles)(({ classes, isMobil }) => {
   const [isProjectsOpen] = useState(true);
   const { selectedProject, handleChangeProject } = useContext(AppContext);
 
@@ -23,7 +23,7 @@ const Projects = withStyles(ProjectsStyles)(({ classes }) => {
       role="presentation"
     >
       <Drawer
-        open={isProjectsOpen}
+        open={!isMobil}
         anchor="left"
         variant="persistent"
         className={classes.drawer}
@@ -76,7 +76,7 @@ const Projects = withStyles(ProjectsStyles)(({ classes }) => {
         </Box>
       </Drawer>
     </div>
-  ), [classes, isProjectsOpen, selectedProject, handleChangeProject]);
+  ), [classes, isMobil, isProjectsOpen, selectedProject, handleChangeProject]);
 });
 
 /*
