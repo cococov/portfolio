@@ -10,8 +10,8 @@ import { AppContext } from '../stores';
 /*
   LateralBar Component
 */
-const LateralBar = withStyles(lateralBarStyles)(({ classes, isMobil }) => {
-  const { handleClickAbout } = useContext(AppContext);
+const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
+  const { isMobil, handleClickAbout } = useContext(AppContext);
 
   const onClickIcon = async index => {
     let url = null;

@@ -11,9 +11,9 @@ import { AppContext } from '../stores';
   Projects Component
   TODO: improve CSS and classes
 */
-const Projects = withStyles(ProjectsStyles)(({ classes, isMobil }) => {
+const Projects = withStyles(ProjectsStyles)(({ classes }) => {
   const [isProjectsOpen] = useState(true);
-  const { selectedProject, handleChangeProject } = useContext(AppContext);
+  const { isMobil, selectedProject, handleChangeProject } = useContext(AppContext);
 
   return useMemo(() => (
     <div

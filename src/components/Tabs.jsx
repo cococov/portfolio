@@ -11,8 +11,14 @@ import { Tab } from '.';
 /*
   Tabs Component
 */
-const Tabs = withStyles(TabsStyles)(({ width, isMobil, classes }) => {
-  const { selectedTab, selectedProject, handleChangeTab } = useContext(AppContext);
+const Tabs = withStyles(TabsStyles)(({ classes }) => {
+  const {
+    width,
+    isMobil,
+    selectedTab,
+    selectedProject,
+    handleChangeTab
+  } = useContext(AppContext);
 
   return (
     <div className={classes.headerContainer} style={!isMobil ? { width } : {}}>

@@ -1,4 +1,5 @@
-import React, { createContext, useState, useCallback } from 'react';
+import React, { createContext, useState, useCallback, useLayoutEffect } from 'react';
+import { getWidth } from '../styles';
 
 /**
  * App Context.
@@ -11,9 +12,22 @@ const AppContext = createContext();
  * @param {Component} props.children
  */
 export const AppProvider = ({ children }) => {
+  const [isMobil, setMobil] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
   const [isAboutOpen, setAboutOpen] = useState(false);
+  const [width, setWidth] = useState(() => getWidth());
   const [selectedProject, setSelectedProject] = useState('');
+
+  useLayoutEffect(() => {
+    window.addEventListener("resize", resize);
+    resize();
+  }, []);
+
+  const resize = async () => {
+    let _width = getWidth();
+    setWidth(_width);
+    setMobil(_width < 500);
+  };
 
   const handleChangeProject = useCallback((project) => {
     setSelectedTab(4);
@@ -35,6 +49,8 @@ export const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
+        width,
+        isMobil,
         selectedTab,
         isAboutOpen,
         selectedProject,
