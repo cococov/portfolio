@@ -27,6 +27,13 @@
     "language": "javaScript",
     "ico": "js-square"
   },
+  "rom-price-scraping.js": {
+    "uri": "project/rompricescraping",
+    "name": "rom-price-scraping.js",
+    "title": "Price scraping and notification for Ragnarok Mobile",
+    "language": "javaScript",
+    "ico": "js-square"
+  },
   "minesweeper.java": {
     "uri": "project/minesweepeerjava",
     "name": "minesweeper.java",

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { profile, education, experience, skills } from '../content/spa';
-import { portfolio, usercrud, magiclife, minesweeper, restalarm } from '../content/projects/spa';
+import { portfolio, usercrud, magiclife, minesweeper, restalarm, rompricescraping } from '../content/projects/spa';
 import { error } from '../content';
 import AppContext from './appStore';
 
@@ -92,6 +92,9 @@ const fetchSelectedProject = async (selectedProject) => {
       break;
     case 'rest-alarm.js':
       result = (await fetch(restalarm));
+      break;
+    case 'rom-price-scraping.js':
+      result = (await fetch(rompricescraping));
       break;
     // put any other project here...
     default:

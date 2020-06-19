@@ -42,7 +42,7 @@ Este es un proyecto que surgió con motivo de dar a conocer mis habilidades como
 
 Quería que el diseño fuera algo original y no una simple 'landing page', por lo que se me ocurrió imitar la interfaz gráfica de ``VsCode``, ya que es algo que me identifica bien como programador y lo encuentro bastante estético para este fin.
 
-El proyecto inicialmente estaba pensado ser desarrollado con ``React``, usando clases, ``bootstrap`` y ``MobX``, cosa que fue cambiando a medida que fui aprendiendo nuevas cosas y tuve tiempo para ir implementándolas. Actualmente para manejar estados estoy haciendo uso de ``React-Contex`` en vez de ``MobX`` y substituí el uso de clases por componentes funcionales y hooks, además últimamente estoy reemplazando lo que hice con ``bootstrap`` por ``CSS3`` y ``JSS``.
+El proyecto inicialmente estaba pensado ser desarrollado con ``React``, usando clases, ``bootstrap`` y ``MobX``, cosa que fue cambiando a medida que fui aprendiendo nuevas cosas y tuve tiempo para ir implementándolas. Actualmente para manejar estados estoy haciendo uso de ``React-Contex`` en vez de ``MobX`` y substituí el uso de clases por componentes funcionales y hooks, además últimamente remplacé lo que hice con ``bootstrap`` por ``CSS3`` y ``JSS``.
 
 <div class="img-content-div">
 ![content](https://juanlamas.dev/portfolio/img/content/portfolio/profile.png "content-profile")
@@ -64,4 +64,10 @@ Para lo que es el flujo de trabajo, tareas e ideas, hice uso de la plataforma ``
 
 <div class="img-content-div">
 ![content](https://juanlamas.dev/portfolio/img/content/portfolio/trello.png "content-profile-trello")
+</div>
+
+Una de las cosas de las que me he preocupado mucho en este proyecto, es el rendimiento de la aplicación y el seguir buenas prácticas. Lo que se puede apreciar en el siguiente screenshot del reporte ofrecido por lighthouse de Google Chrome:
+
+<div class="img-content-div">
+![content](https://juanlamas.dev/portfolio/img/content/portfolio/lighthouse.png "content-profile-lighthouse")
 </div>
