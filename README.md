@@ -2,9 +2,9 @@
 
 This project is my personal porfolio, to show my profile, education, experience and developer skills.
 
-[Try the app here](https://juanlamas.dev/portfolio/)
+ [Try the app here](https://juanlamas.dev/portfolio/)
 
-<p align="center"><img src="https://juanlamas.dev/portfolio/img/content/portfolio/profile.png" alt="profile" width="600" /></p>
+<p align="center"><img src="https://juanlamas.dev/portfolio/img/content/portfolio/profile.png" alt="profile" width="700" /></p>
 
 ## Technologies used
 
