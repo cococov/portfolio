@@ -1,11 +1,10 @@
 import React, { useContext, memo, useMemo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { ContentStyles } from '../styles.js';
 import ReactMarkdown from 'markdown-to-jsx';
 import clsx from 'clsx';
 import { override } from './MarkDownComponents';
 import { ContentContext } from '../stores';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { ContentStyles } from '../styles';
 import '../static/css/markdown.css';
 
 /*
@@ -17,7 +16,7 @@ const Container = withStyles(ContentStyles)(({ classes, width, isMobil }) => {
   return useMemo(() => (
     <div
       style={!isMobil ? { width } : {}}
-      className={clsx('Container', classes.container)}
+      className={classes.container}
     >
       <div
         className={clsx('Content', classes.content)}

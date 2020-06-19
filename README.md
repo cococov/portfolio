@@ -4,7 +4,7 @@ This project is my personal porfolio, to show my profile, education, experience 
 
 [Try the app here](https://cococov.github.io/portfolio/)
 
-<img src="https://juanlamas.dev/portfolio/img/content/portfolio/profile.png" alt="profile" width="800"/>
+<p align="center"><img src="https://juanlamas.dev/portfolio/img/content/portfolio/profile.png" alt="profile" width="600" /></p>
 
 ## Technologies used
 

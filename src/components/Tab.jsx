@@ -1,9 +1,8 @@
 import React, { memo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 import { TabStyles } from '../styles';
 import clsx from 'clsx';
-import { Typography } from '@material-ui/core';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   Tab Component
@@ -23,7 +22,7 @@ const Tab = withStyles(TabStyles)(({
       onClick={() => handleClick(index)}
     >
       <Typography
-        className={clsx('text-left align-middle mt-1 ml-2')}
+        className={classes.tabText}
         variant="inherit"
       >
         {ico}{text}

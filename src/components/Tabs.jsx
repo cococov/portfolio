@@ -1,14 +1,12 @@
 import React, { memo, useMemo, useContext } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { TabsStyles } from '../styles';
-import clsx from 'clsx';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Person, School, Work, Build } from '@material-ui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { projects } from '../content/projects';
-import Tab from './Tab'
+import { TabsStyles } from '../styles';
 import { AppContext } from '../stores';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Tab } from '.';
 
 /*
   Tabs Component
@@ -17,40 +15,36 @@ const Tabs = withStyles(TabsStyles)(({ width, isMobil, classes }) => {
   const { selectedTab, selectedProject, handleChangeTab } = useContext(AppContext);
 
   return (
-    <div className={clsx('headerContainer', classes.headerContainer)} style={!isMobil ? { width } : {}}>
-      <AppBar className={clsx('header', classes.header)} position="sticky">
-        <Toolbar className="pl-0">
+    <div className={classes.headerContainer} style={!isMobil ? { width } : {}}>
+      <AppBar className={classes.header} position="sticky">
+        <Toolbar className={classes.toolbar}>
           <Tab
             index={0}
             text={width > 730 ? "Profile" : ""}
             selected={(selectedTab === 0)}
-            className="border border-dark"
             handleClick={handleChangeTab}
-            ico={useMemo(() => <Person className="mr-2" />, [])}
+            ico={useMemo(() => <Person className={classes.tabIco} />, [classes.tabIco])}
           />
           <Tab
             index={1}
             text={width > 730 ? "Experience" : ""}
             selected={(selectedTab === 1)}
-            className="border border-dark"
             handleClick={handleChangeTab}
-            ico={useMemo(() => <Work className="mr-2" />, [])}
+            ico={useMemo(() => <Work className={classes.tabIco} />, [classes.tabIco])}
           />
           <Tab
             index={2}
             text={width > 730 ? "Education" : ""}
             selected={(selectedTab === 2)}
-            className="border border-dark"
             handleClick={handleChangeTab}
-            ico={useMemo(() => <School className="mr-2" />, [])}
+            ico={useMemo(() => <School className={classes.tabIco} />, [classes.tabIco])}
           />
           <Tab
             index={3}
             text={width > 730 ? "Skills" : ""}
             selected={(selectedTab === 3)}
-            className="border border-dark"
             handleClick={handleChangeTab}
-            ico={useMemo(() => <Build className="mr-2" />, [])}
+            ico={useMemo(() => <Build className={classes.tabIco} />, [classes.tabIco])}
           />
           {
             (() => {
@@ -60,9 +54,8 @@ const Tabs = withStyles(TabsStyles)(({ width, isMobil, classes }) => {
                     index={4}
                     text={width > 730 ? projects[selectedProject]['name'] : ""}
                     selected={(selectedTab === 4)}
-                    className="border border-dark"
                     handleClick={handleChangeTab}
-                    ico={<FontAwesomeIcon className="mr-2 fa-lg" icon={['fab', projects[selectedProject]['ico']]} />}
+                    ico={<FontAwesomeIcon className={classes.tabIco} icon={['fab', projects[selectedProject]['ico']]} />}
                   />
                 )
               }
@@ -70,8 +63,8 @@ const Tabs = withStyles(TabsStyles)(({ width, isMobil, classes }) => {
           }
         </Toolbar>
       </AppBar>
-      <AppBar className={clsx('subHeader', classes.subHeader)} position="sticky">
-        <Typography variant="caption" className={clsx('m-1 ml-3')}>
+      <AppBar className={classes.subHeader} position="sticky">
+        <Typography variant="caption" className={classes.rute}>
           src {'>'} portfolio {'>'} {
             (() => {
               switch (selectedTab) {

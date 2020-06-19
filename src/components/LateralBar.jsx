@@ -6,7 +6,6 @@ import { cv, linkedin, github } from '../config.json';
 import { List, ListItem, Drawer, Typography } from '@material-ui/core';
 import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
 import { AppContext } from '../stores';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   LateralBar Component

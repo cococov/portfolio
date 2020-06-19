@@ -1,17 +1,15 @@
 import React, { useState, memo, useContext, useMemo } from 'react';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
-import { ProjectsStyles } from '../styles';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
 import { projects } from '../content/projects';
+import { ProjectsStyles } from '../styles';
 import { AppContext } from '../stores';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-const resetClasses = 'p-0 mb-0 mt-0';
 
 /*
   Projects Component
+  TODO: improve CSS and classes
 */
 const Projects = withStyles(ProjectsStyles)(({ classes, isMobil }) => {
   const [isProjectsOpen] = useState(true);
@@ -35,17 +33,17 @@ const Projects = withStyles(ProjectsStyles)(({ classes, isMobil }) => {
         >
           <Typography
             variant="caption"
-            className={clsx(resetClasses, 'ml-3')}
+            className={clsx(classes.resetClasses, classes.explorerTitle)}
           >
             EXPLORER
             </Typography>
         </Box>
         <div
-          className={clsx(classes.category, 'form-inline ml-3', resetClasses)}
+          className={clsx(classes.resetClasses, classes.category)}
         >
           {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
           <Typography
-            className={clsx('ml-2', resetClasses)}
+            className={clsx(classes.resetClasses, classes.categoryTitle)}
           >
             PROJECTS
             </Typography>

@@ -127,6 +127,11 @@ export const lateralBarStyles = theme => ({
 */
 const projectDrawerWidth = 250;
 export const ProjectsStyles = theme => ({
+  resetClasses: {
+    padding: 0,
+    marginBottom: 0,
+    marginTop: 0
+  },
   drawer: {
     width: projectDrawerWidth,
     flexShrink: 0,
@@ -146,11 +151,21 @@ export const ProjectsStyles = theme => ({
       backgroundColor: primaryColor.dark,
     }
   },
+  explorerTitle: {
+    marginLeft: '1rem'
+  },
   category: {
     boxShadow: '2px 2px 2px rgba(0, 0, 0, 0.16), 2px 2px 2px rgba(0, 0, 0, 0.23)',
     backgroundColor: primaryColor.light,
     color: primaryColor.text,
     height: 30,
+    display: 'flex',
+    marginLeft: '1rem',
+    flexFlow: 'row wrap',
+    alignItems: 'center'
+  },
+  categoryTitle: {
+    marginLeft: '0.5rem'
   },
   nestedList: {
     width: projectDrawerWidth - 20,
@@ -200,13 +215,26 @@ export const TabsStyles = theme => ({
   },
   header: {
     flexShrink: 0,
-    height: 35,
+    minHeight: 35,
     backgroundColor: primaryColor.main
   },
   subHeader: {
     flexShrink: 0,
     height: 25,
     backgroundColor: primaryColor.backgroundColor
+  },
+  toolbar: {
+    minHeight: 35,
+    paddingLeft: 0
+  },
+  tabIco: {
+    marginRight: '0.5rem',
+    fontSize: '1.3333333333em',
+    verticalAlign: 'middle'
+  },
+  rute: {
+    margin: '0.25rem',
+    marginLeft: '1rem'
   }
 });
 
@@ -219,17 +247,21 @@ export const TabStyles = theme => ({
     padding: 0,
     paddingLeft: 10,
     paddingRight: 20,
-    marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.main,
     cursor: 'pointer'
+  },
+  tabText: {
+    textAlign: 'left',
+    verticalAlign: 'middle',
+    marginTop: '0.25rem',
+    marginLeft: '0.5rem'
   },
   selected: {
     height: 35,
     padding: 0,
     paddingLeft: 10,
     paddingRight: 20,
-    marginTop: -30,
     color: primaryColor.text,
     backgroundColor: primaryColor.dark,
     cursor: 'pointer'

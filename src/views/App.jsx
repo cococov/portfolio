@@ -6,8 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faJava, faReact, faPython, faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { About, LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
 import { AppProvider, ContentProvider } from '../stores';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
   App - Main Component

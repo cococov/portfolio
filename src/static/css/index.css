@@ -16,7 +16,6 @@ code {
 html {
   --scrollbarBG: #1d2026;
   --thumbBG    : #333842;
-  overflow     : hidden;
 }
 
 .Content::-webkit-scrollbar {
