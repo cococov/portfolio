@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a8a87415.chunk.css",
-    "main.js": "/portfolio/static/js/main.cb7bfdaa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cb7bfdaa.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.0ba4bb60.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0ba4bb60.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.af3c1da9.chunk.css": "/portfolio/static/css/2.af3c1da9.chunk.css",
     "static/js/2.9e8021e8.chunk.js": "/portfolio/static/js/2.9e8021e8.chunk.js",
     "static/js/2.9e8021e8.chunk.js.map": "/portfolio/static/js/2.9e8021e8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.bec2c4fe4849681949144ee2d53676d6.js": "/portfolio/precache-manifest.bec2c4fe4849681949144ee2d53676d6.js",
+    "precache-manifest.9836752db0680358bd9202a8cba02431.js": "/portfolio/precache-manifest.9836752db0680358bd9202a8cba02431.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/portfolio/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.a8a87415.chunk.css.map": "/portfolio/static/css/main.a8a87415.chunk.css.map",
@@ -17,9 +17,9 @@
     "static/media/education.md": "/portfolio/static/media/education.f17e8b79.md",
     "static/media/error404.md": "/portfolio/static/media/error404.c361ca1d.md",
     "static/media/experience.md": "/portfolio/static/media/experience.a9782ec0.md",
-    "static/media/magiclife.md": "/portfolio/static/media/magiclife.7ac4bd4e.md",
+    "static/media/magiclife.md": "/portfolio/static/media/magiclife.c93ab994.md",
     "static/media/minesweeper.md": "/portfolio/static/media/minesweeper.0c225492.md",
-    "static/media/portfolio.md": "/portfolio/static/media/portfolio.1d1d7679.md",
+    "static/media/portfolio.md": "/portfolio/static/media/portfolio.7f342c58.md",
     "static/media/profile.md": "/portfolio/static/media/profile.3cbe7f5e.md",
     "static/media/restalarm.md": "/portfolio/static/media/restalarm.83dbd42c.md",
     "static/media/rompricescraping.md": "/portfolio/static/media/rompricescraping.ff0e81f1.md",
@@ -31,6 +31,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.9e8021e8.chunk.js",
     "static/css/main.a8a87415.chunk.css",
-    "static/js/main.cb7bfdaa.chunk.js"
+    "static/js/main.0ba4bb60.chunk.js"
   ]
 }
