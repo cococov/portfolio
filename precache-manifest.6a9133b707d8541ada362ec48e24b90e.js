@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2811be623b6f42f1b8525fd15d6a2804",
+    "revision": "ec19f1590f4a73fcef9c4ac41e51abe3",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "329942517192c9d3d69b",
+    "revision": "7213fd2e5ecc58d4bf3d",
     "url": "/portfolio/static/css/main.a8a87415.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.9e8021e8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "329942517192c9d3d69b",
-    "url": "/portfolio/static/js/main.0ba4bb60.chunk.js"
+    "revision": "7213fd2e5ecc58d4bf3d",
+    "url": "/portfolio/static/js/main.228a31b8.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/experience.a9782ec0.md"
   },
   {
-    "revision": "c93ab994e6b238e7752f7bc0fe2ec4ac",
-    "url": "/portfolio/static/media/magiclife.c93ab994.md"
+    "revision": "b0e79343deda1556c99e72fe310f6061",
+    "url": "/portfolio/static/media/magiclife.b0e79343.md"
   },
   {
-    "revision": "0c225492e8926d5fb811d81de8da4cee",
-    "url": "/portfolio/static/media/minesweeper.0c225492.md"
+    "revision": "dc73585158cdcd433cbce2139120b74c",
+    "url": "/portfolio/static/media/minesweeper.dc735851.md"
   },
   {
     "revision": "7f342c58400ac5f9aa9f0735065aed84",
@@ -56,19 +56,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/profile.3cbe7f5e.md"
   },
   {
-    "revision": "83dbd42cc042f93f960b00f7215fcf55",
-    "url": "/portfolio/static/media/restalarm.83dbd42c.md"
+    "revision": "30df0584ad04f4a09b98661e0ab244ee",
+    "url": "/portfolio/static/media/restalarm.30df0584.md"
   },
   {
-    "revision": "ff0e81f139883d5c4d0b6bd3e9c30154",
-    "url": "/portfolio/static/media/rompricescraping.ff0e81f1.md"
+    "revision": "65599fa5c64edcf1fc40575f9e696357",
+    "url": "/portfolio/static/media/rompricescraping.65599fa5.md"
   },
   {
     "revision": "f1245e71896b9a9d2b2ca7a1bde05df0",
     "url": "/portfolio/static/media/skills.f1245e71.md"
   },
   {
-    "revision": "c1f7ed9da134bb0bcb50d0588992e281",
-    "url": "/portfolio/static/media/usercrud.c1f7ed9d.md"
+    "revision": "66b1991fd9449a978e03aa3da91174b1",
+    "url": "/portfolio/static/media/usercrud.66b1991f.md"
   }
 ]);

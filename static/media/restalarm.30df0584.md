@@ -1,10 +1,10 @@
-# Busca Minas
+# Rest Alarm
 
 ### Links
 
 ---
 
-[Repositorio](https://github.com/cococov/Busca-Minas)
+[Repositorio](https://github.com/cococov/rest-alarm)
 
 ### Tecnologías
 
@@ -12,13 +12,21 @@
 
 <div class="list-super-index">
 + Lenguajes:
- - Java
+ - JavaScript
 </div>
 
 <div class="list-super-index">
 + Frameworks y Bibliotecas:
- - Swing
+ - Node.js
+ - Inquirer
+ - Node-notifier
 </div>
+
+### Estado
+
+---
+
+En desarrollo.
 
 ### Descripción
 

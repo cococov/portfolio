@@ -1,10 +1,10 @@
-# Rest Alarm
+# Price Scraper and Notifications for Ragnarok Mobile
 
 ### Links
 
 ---
 
-[Repositorio](https://github.com/cococov/rest-alarm)
+[Repositorio](https://github.com/cococov/rom-price-scraping)
 
 ### Tecnologías
 
@@ -18,9 +18,15 @@
 <div class="list-super-index">
 + Frameworks y Bibliotecas:
  - Node.js
- - Inquirer
- - Node-notifier
+ - inquirer.js
+ - node-notifier.js
 </div>
+
+### Estado
+
+---
+
+En desarrollo.
 
 ### Descripción
 

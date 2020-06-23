@@ -1,10 +1,10 @@
-# Price Scraper and Notifications for Ragnarok Mobile
+# CRUD de usuarios
 
 ### Links
 
 ---
 
-[Repositorio](https://github.com/cococov/rom-price-scraping)
+[Repositorio](https://github.com/cococov/user-crud)
 
 ### Tecnologías
 
@@ -17,10 +17,23 @@
 
 <div class="list-super-index">
 + Frameworks y Bibliotecas:
+ - React
+ - React Native
  - Node.js
- - inquirer.js
- - node-notifier.js
+ - Express
 </div>
+
+<div class="list-super-index">
++ Otros:
+ - SQL
+ - API REST
+</div>
+
+### Estado
+
+---
+
+Terminado.
 
 ### Descripción
 
