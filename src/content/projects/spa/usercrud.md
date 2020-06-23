@@ -29,6 +29,12 @@
  - API REST
 </div>
 
+### Estado
+
+---
+
+Terminado.
+
 ### Descripción
 
 ---

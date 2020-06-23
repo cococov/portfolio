@@ -6,17 +6,17 @@
     "language": "javaScript",
     "ico": "react"
   },
-  "user-crud.jsx": {
-    "uri": "project/usercrudjsx",
-    "name": "userCrud.jsx",
-    "title": "User CRUD - SQLite and MySQL Sync",
-    "language": "javaScript",
-    "ico": "react"
-  },
   "magiclife.jsx": {
     "uri": "project/magiclifejsx",
     "name": "magiclife.jsx",
     "title": "Magic Life",
+    "language": "javaScript",
+    "ico": "react"
+  },
+  "user-crud.jsx": {
+    "uri": "project/usercrudjsx",
+    "name": "userCrud.jsx",
+    "title": "User CRUD - SQLite and MySQL Sync",
     "language": "javaScript",
     "ico": "react"
   },

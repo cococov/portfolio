@@ -20,6 +20,12 @@
  - Swing
 </div>
 
+### Estado
+
+---
+
+Terminado y a la espera de ser reescrito con conocimientos y prácticas actuales.
+
 ### Descripción
 
 ---

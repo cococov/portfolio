@@ -22,6 +22,12 @@
  - node-notifier.js
 </div>
 
+### Estado
+
+---
+
+En desarrollo.
+
 ### Descripción
 
 ---
