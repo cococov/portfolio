@@ -1,3 +1,9 @@
+### Criterio de puntuación
+
+---
+
+Se que es difícil poner una nota al conocimiento que uno posee sobre alguna tecnología en particular, así que para clasificar mi conocimiento de alguna manera he usado un sistema de estrellas, que representan mi conocimiento relativo de esa materia, con respecto al total de conocimiento. Además, en ningún ítem he puesto 7/7, ya que considero que nunca se para de aprender y no puedo decir que se todo sobre una tecnología.
+
 ### Lenguajes de programación
 
 ---
