@@ -38,7 +38,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+        Desarrollador de software front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
       </p>
       <a
       href="https://cin.ucn.cl/Landing/"
@@ -61,14 +61,14 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+        Desarrollo de aplicación tipo GIS y otras funcionalidades, usando React-Native.
       </p>
       <a
-      href="https://cin.ucn.cl/Landing/"
+      href="https://www.aminerals.cl/"
       target="_blank"
       rel="noopener noreferrer"
       class="company-card-content-url">
-        www.cin.ucn.cl
+        www.aminerals.cl
       </a>
     </div>
   </div>
@@ -84,14 +84,14 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+        Desarrollo sobre sistema legacy, usando PHP.
       </p>
       <a
-      href="https://cin.ucn.cl/Landing/"
+      href="https://www.cap.cl/"
       target="_blank"
       rel="noopener noreferrer"
       class="company-card-content-url">
-        www.cin.ucn.cl
+        www.cap.cl
       </a>
     </div>
   </div>
@@ -107,14 +107,14 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+        Desarrollo de dashboard para seguimiento de trenes en tiempo real y proyección de recorridos de las siguientes 24 horas, usando React.
       </p>
       <a
-      href="https://cin.ucn.cl/Landing/"
+      href="https://www.fcab.cl/"
       target="_blank"
       rel="noopener noreferrer"
       class="company-card-content-url">
-        www.cin.ucn.cl
+        www.fcab.cl
       </a>
     </div>
   </div>
