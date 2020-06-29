@@ -1,0 +1,129 @@
+# Juan Carlos Lamas Alfaro
+
+![right](https://juanlamas.dev/portfolio/img/profile.jpg "profile-picture")
+
+
+### Objetivos personales
+
+---
+
+Técnico electrónico y egresado de ingeniería en computación e informática en la universidad Católica del Norte, en proceso de titulación. Con interés en el desarrollo de tecnologías y manejo de estas. Facilidad y rapidez, en lo que respecta a aprendizaje.
+
+### Contacto
+
+---
+
+**Telefono:** `+569 90143906`<br/>
+**E-Mail:** `contact@juanlamas.dev`<br/>
+**GitHub:** `https://github.com/cococov`<br/>
+**LinkedIn:** `https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/`<br/>
+
+
+### Empresas y entidades
+
+---
+
+Empresas y entidades con las que he trabajado, o para las que he trabajado.
+
+<span class="companies">
+
+  <div class="company-card">
+    <h2 class="company-card-title">
+      CIN
+    </h2>
+    <img
+    class="company-card-img"
+      src="https://juanlamas.dev/portfolio/img/companies/cin.png"
+      alt="CIN"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+      </p>
+      <a
+      href="https://cin.ucn.cl/Landing/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.cin.ucn.cl
+      </a>
+    </div>
+  </div>
+
+  <div class="company-card">
+    <h2 class="company-card-title">
+      AMSA
+    </h2>
+    <img
+    class="company-card-img"
+      src="https://juanlamas.dev/portfolio/img/companies/amsa.png"
+      alt="AMSA"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+      </p>
+      <a
+      href="https://cin.ucn.cl/Landing/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.cin.ucn.cl
+      </a>
+    </div>
+  </div>
+
+  <div class="company-card">
+    <h2 class="company-card-title">
+      CAP
+    </h2>
+    <img
+    class="company-card-img"
+      src="https://juanlamas.dev/portfolio/img/companies/cap.png"
+      alt="CAP"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+      </p>
+      <a
+      href="https://cin.ucn.cl/Landing/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.cin.ucn.cl
+      </a>
+    </div>
+  </div>
+
+  <div class="company-card">
+    <h2 class="company-card-title">
+      FCAB
+    </h2>
+    <img
+    class="company-card-img"
+      src="https://juanlamas.dev/portfolio/img/companies/fcab.png"
+      alt="FCAB"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Participé como desarrollador de software en front-end, back-end y móvil. Participé en varios proyectos durante 1 año y medio.
+      </p>
+      <a
+      href="https://cin.ucn.cl/Landing/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.cin.ucn.cl
+      </a>
+    </div>
+  </div>
+
+</span>
+
+
+### Referidos
+
+---
+
+Consultar por ellos en el correo o número de telefono anteriormente mencionados.
