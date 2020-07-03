@@ -122,8 +122,8 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
 </span>
 
 
-### Referidos
+### Referencias
 
 ---
 
-Consultar por ellos en el correo o número de telefono anteriormente mencionados.
+Consultar por ellas en el correo o número de telefono anteriormente mencionados.
