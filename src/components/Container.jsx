@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useContext, memo, useMemo } from 'react';
+import React, { useLayoutEffect, useContext, useRef, memo, useMemo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ReactMarkdown from 'markdown-to-jsx';
 import clsx from 'clsx';
@@ -13,10 +13,11 @@ import '../static/css/markdown.css';
 const Container = withStyles(ContentStyles)(({ classes }) => {
   const { selectedContent } = useContext(ContentContext);
   const { isMobil, width } = useContext(AppContext);
+  const contentRef = useRef();
 
   useLayoutEffect(() => {
-    let _this = document.getElementById('content');
-    _this.scrollTo(0, 0);
+    if (contentRef.current)
+      contentRef.current.scrollTo(0, 0);
   }, [selectedContent])
 
   return useMemo(() => (
@@ -25,7 +26,7 @@ const Container = withStyles(ContentStyles)(({ classes }) => {
       className={classes.container}
     >
       <div
-        id="content"
+        ref={contentRef}
         className={clsx('Content', classes.content)}
       >
         <ReactMarkdown
