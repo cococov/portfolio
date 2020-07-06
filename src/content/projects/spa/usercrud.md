@@ -48,27 +48,27 @@ La solución anteriormente mencionada funciona perfecto, pero hay un problema al
 
 <div class="img-content-flex-div">
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-home.png "content-user-crud-home")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-home.png "content-user-crud-home")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-updated.png "content-user-crud-updated")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-updated.png "content-user-crud-updated")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-setuser.png "content-user-crud-setuser")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-setuser.png "content-user-crud-setuser")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-register.png "content-user-crud-register")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-register.png "content-user-crud-register")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-update.png "content-user-crud-update")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-update.png "content-user-crud-update")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-user.png "content-user-crud-user")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-user.png "content-user-crud-user")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-users.png "content-user-crud-users")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-users.png "content-user-crud-users")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/portfolio/img/content/user-crud/user-crud-deleted.png "content-user-crud-deleted")
+![content](https://juanlamas.dev/img/content/user-crud/user-crud-deleted.png "content-user-crud-deleted")
 </div>
 </div>

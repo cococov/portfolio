@@ -42,5 +42,5 @@ Este es un proyecto que surgió debido a la pandemia que vivimos con el COVID-19
 Entre sus principales funciones, está el poder crear perfiles, llevar la cuenta de vidas de cada uno, win-rate y llevar el tiempo de partida. Y lo que lo hace tan útil, es el que todo es en tiempo real, todos los usuarios ven lo mismo en la pagina en el mismo tiempo.
 
 <div class="img-content-div">
-![content](https://juanlamas.dev/portfolio/img/content/magiclife/magiclife-main.png "content-magiclife-main")
+![content](https://juanlamas.dev/img/content/magiclife/magiclife-main.png "content-magiclife-main")
 </div>

@@ -1,6 +1,6 @@
 # Juan Carlos Lamas Alfaro
 
-![right](https://juanlamas.dev/portfolio/img/profile.jpg "profile-picture")
+![right](https://juanlamas.dev/img/profile.jpg "profile-picture")
 
 
 ### Objetivos personales
@@ -33,7 +33,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     </h2>
     <img
     class="company-card-img"
-      src="https://juanlamas.dev/portfolio/img/companies/cin.png"
+      src="https://juanlamas.dev/img/companies/cin.png"
       alt="CIN"
     />
     <div class="company-card-content">
@@ -56,7 +56,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     </h2>
     <img
     class="company-card-img"
-      src="https://juanlamas.dev/portfolio/img/companies/amsa.png"
+      src="https://juanlamas.dev/img/companies/amsa.png"
       alt="AMSA"
     />
     <div class="company-card-content">
@@ -79,7 +79,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     </h2>
     <img
     class="company-card-img"
-      src="https://juanlamas.dev/portfolio/img/companies/cap.png"
+      src="https://juanlamas.dev/img/companies/cap.png"
       alt="CAP"
     />
     <div class="company-card-content">
@@ -102,7 +102,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     </h2>
     <img
     class="company-card-img"
-      src="https://juanlamas.dev/portfolio/img/companies/fcab.png"
+      src="https://juanlamas.dev/img/companies/fcab.png"
       alt="FCAB"
     />
     <div class="company-card-content">
