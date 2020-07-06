@@ -126,4 +126,4 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
 
 ---
 
-Consultar por ellas en el correo o número de telefono anteriormente mencionados.
+Consultar por ellas en el correo o número de teléfono anteriormente mencionados.

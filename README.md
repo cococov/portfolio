@@ -1,6 +1,6 @@
 # My portfolio
 
-This project is my personal porfolio, to show my profile, education, experience and developer skills.
+This project is my personal portfolio, to show my profile, education, experience and developer skills.
 
  [Try the app here](https://juanlamas.dev/portfolio/)
 
