@@ -1,5 +1,5 @@
 .box {
-  background-color: #333842;
+  background-color: #282c34;
   max-width       : 60%;
   padding-left    : 1rem;
   padding-right   : 1rem;
@@ -59,7 +59,7 @@
   display         : flex;
   flex-direction  : column;
   margin          : 1rem;
-  position: relative;
+  position        : relative;
 }
 
 .company-card-title {
@@ -69,12 +69,12 @@
 }
 
 .company-card-img {
-  flex        : 1;
-  height      : 8rem;
-  padding     : 1rem;
-  align-self  : center;
-  justify-self: center;
-  border-radius: 20%!important;
+  flex         : 1;
+  height       : 8rem;
+  padding      : 1rem;
+  align-self   : center;
+  justify-self : center;
+  border-radius: 20% !important;
 }
 
 .company-card-content {
@@ -90,13 +90,14 @@
 }
 
 .company-card-content-url {
-  flex      : 1;
-  text-align: center;
-  font-size : 1rem;
-  position: absolute;
-  bottom: 0;
-  align-self: center;
+  bottom       : 0;
+  flex         : 1;
+  color        : #54a5fd;
+  font-size    : 1rem;
   margin-bottom: 1rem;
+  text-align   : center;
+  align-self   : center;
+  position     : absolute;
 }
 
 @media (max-width:1900px) {

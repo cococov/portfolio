@@ -48,27 +48,27 @@ La solución anteriormente mencionada funciona perfecto, pero hay un problema al
 
 <div class="img-content-flex-div">
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-home.png "content-user-crud-home")
+![content-user-crud-home](https://juanlamas.dev/img/content/user-crud/user-crud-home.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-updated.png "content-user-crud-updated")
+![content-user-crud-updated](https://juanlamas.dev/img/content/user-crud/user-crud-updated.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-setuser.png "content-user-crud-setuser")
+![content-user-crud-setuser](https://juanlamas.dev/img/content/user-crud/user-crud-setuser.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-register.png "content-user-crud-register")
+![content-user-crud-register](https://juanlamas.dev/img/content/user-crud/user-crud-register.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-update.png "content-user-crud-update")
+![content-user-crud-update](https://juanlamas.dev/img/content/user-crud/user-crud-update.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-user.png "content-user-crud-user")
+![content-user-crud-user](https://juanlamas.dev/img/content/user-crud/user-crud-user.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-users.png "content-user-crud-users")
+![content-user-crud-users](https://juanlamas.dev/img/content/user-crud/user-crud-users.png "content")
 </div>
 <div class="img-content-phoneview-div">
-![content](https://juanlamas.dev/img/content/user-crud/user-crud-deleted.png "content-user-crud-deleted")
+![content-user-crud-deleted](https://juanlamas.dev/img/content/user-crud/user-crud-deleted.png "content")
 </div>
 </div>

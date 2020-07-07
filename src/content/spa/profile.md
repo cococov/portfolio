@@ -1,6 +1,6 @@
 # Juan Carlos Lamas Alfaro
 
-![right](https://juanlamas.dev/img/profile.jpg "profile-picture")
+![profile-picture](https://juanlamas.dev/img/profile.jpg "right")
 
 
 ### Objetivos personales
@@ -13,7 +13,7 @@ Técnico electrónico y egresado de ingeniería en computación e informática e
 
 ---
 
-**Telefono:** `+569 90143906`<br/>
+**Teléfono:** `+569 90143906`<br/>
 **E-Mail:** `contact@juanlamas.dev`<br/>
 **GitHub:** `https://github.com/cococov`<br/>
 **LinkedIn:** `https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/`<br/>
@@ -32,9 +32,9 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       CIN
     </h2>
     <img
-    class="company-card-img"
+      class="company-card-img"
       src="https://juanlamas.dev/img/companies/cin.png"
-      alt="CIN"
+      alt="CIN-logo"
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
@@ -55,9 +55,9 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       AMSA
     </h2>
     <img
-    class="company-card-img"
+      class="company-card-img"
       src="https://juanlamas.dev/img/companies/amsa.png"
-      alt="AMSA"
+      alt="AMSA-logo"
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
@@ -78,9 +78,9 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       CAP
     </h2>
     <img
-    class="company-card-img"
+      class="company-card-img"
       src="https://juanlamas.dev/img/companies/cap.png"
-      alt="CAP"
+      alt="CAP-logo"
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
@@ -101,9 +101,9 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       FCAB
     </h2>
     <img
-    class="company-card-img"
+      class="company-card-img"
       src="https://juanlamas.dev/img/companies/fcab.png"
-      alt="FCAB"
+      alt="FCAB-logo"
     />
     <div class="company-card-content">
       <p class="company-card-content-text">

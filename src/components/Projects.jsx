@@ -53,15 +53,16 @@ const Projects = withStyles(ProjectsStyles)(({ classes }) => {
           className={classes.projects}
         >
           <List
-            component="nav"
+            component="ul"
             className={classes.list}
           >
             {
               Object.keys(projects).map((project, index) => (
                 <ListItem
-                  key={index}
-                  className={(project === selectedProject) ? classes.selectedItem : ''}
                   button
+                  key={index}
+                  component="li"
+                  className={(project === selectedProject) ? classes.selectedItem : ''}
                   onClick={() => {
                     handleChangeProject(project);
                   }}

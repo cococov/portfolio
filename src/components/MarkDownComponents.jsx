@@ -11,6 +11,44 @@ import {
 } from '@material-ui/core';
 
 /**
+ * A custom component (Title)
+ * @param {Object} props
+ * @param {String} props.rel
+ * @param {String} props.href
+ * @param {String} props.target
+ * @param {String} props.children
+ * @param {String} props.className
+ */
+export const Link = ({ children, href, target, rel, className }) => {
+  return (
+    <a
+      rel={rel}
+      href={href}
+      target={target}
+      className={className}
+    >
+      {children}
+    </a>
+  );
+};
+
+/**
+ * Code custom component (Title)
+ * @param {Object} props
+ * @param {String} props.children
+ * @param {String} props.className
+ */
+export const Code = ({ children, className }) => {
+  return (
+    <code
+      className={className}
+    >
+      {children}
+    </code>
+  );
+};
+
+/**
  * H1 custom component (Title)
  * @param {Object} props
  * @param {String} props.children
@@ -128,14 +166,15 @@ export const Pre = ({ children, className }) => {
  * @param {String} props.classNameProfile
  */
 export const Img = ({ src, className, title, alt, classNameRight, classNameContent }) => {
+  console.log(alt);
   return (
     <img
       src={src}
-      alt={title}
+      alt={alt}
       className={clsx(
         className,
-        (alt === 'content') ? classNameContent : '',
-        (alt === 'right') ? classNameRight : '',
+        (title === 'content') ? classNameContent : '',
+        (title === 'right') ? classNameRight : '',
       )}
     />
   );
@@ -210,60 +249,72 @@ export const CustomTable = ({ children, classes }) => {
 export const override = (classes) => {
   return {
     overrides: {
+      a: {
+        component: Link,
+        props: {
+          className: classes.a
+        }
+      },
+      code: {
+        component: Code,
+        props: {
+          className: classes.code
+        }
+      },
       h1: {
         component: Title,
         props: {
-          className: classes.h1,
-        },
+          className: classes.h1
+        }
       },
       h2: {
         component: SubTitle,
         props: {
-          className: classes.h2,
-        },
+          className: classes.h2
+        }
       },
       h3: {
         component: H3,
         props: {
-          className: classes.h3,
-        },
+          className: classes.h3
+        }
       },
       hr: {
         component: Hr,
         props: {
-          className: classes.hr,
-        },
+          className: classes.hr
+        }
       },
       p: {
         component: Paraph,
         props: {
-          className: classes.p,
-        },
+          className: classes.p
+        }
       },
       ul: {
         component: Ul,
         props: {
-          className: classes.ul,
-        },
+          className: classes.ul
+        }
       },
       pre: {
         component: Pre,
         props: {
-          className: classes.pre,
-        },
+          className: classes.pre
+        }
       },
       img: {
         component: Img,
         props: {
           className: classes.img,
           classNameRight: classes.imgRight,
-          classNameContent: classes.imgContent,
-        },
+          classNameContent: classes.imgContent
+        }
       },
       table: {
         component: CustomTable,
         props: {
-          classes: classes,
+          classes: classes
         }
       }
     },

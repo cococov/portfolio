@@ -45,7 +45,8 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
         <List className={classes.listInside}>
           <ListItem
             button
-            key={'Download'}
+            key="Download"
+            component="li"
             title="Download CV"
             onClick={() => onClickIcon('download')}
           >
@@ -53,30 +54,32 @@ const LateralBar = withStyles(lateralBarStyles)(({ classes }) => {
           </ListItem>
           <ListItem
             button
-            key={'LinkedIn'}
+            key="LinkedIn"
             title="LinkedIn"
+            component="li"
             onClick={() => onClickIcon('linkedin')}
           >
             <LinkedIn className={classes.lateralIcon} />
           </ListItem>
           <ListItem
             button
-            key={'GitHub'}
+            key="GitHub"
             title="GitHub"
+            component="li"
             onClick={() => onClickIcon('github')}
           >
             <GitHub className={classes.lateralIcon} />
           </ListItem>
-          <div className={classes.about}>
+          <li className={classes.about}>
             <ListItem
               button
-              key={'About'}
+              key="About"
               title="About"
               onClick={handleClickAbout}
             >
               <Typography className={classes.aboutText}>About</Typography>
             </ListItem>
-          </div>
+          </li>
         </List>
       </Drawer>
     </div>

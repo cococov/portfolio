@@ -300,6 +300,12 @@ export const ContentStyles = theme => ({
     fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
     paddingBottom: 60
   },
+  a: {
+    color: '#54a5fd'
+  },
+  code: {
+    color: '#f54495'
+  },
   h1: {
     textAlign: 'center',
     paddingTop: 10,
