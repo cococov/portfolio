@@ -166,7 +166,6 @@ export const Pre = ({ children, className }) => {
  * @param {String} props.classNameProfile
  */
 export const Img = ({ src, className, title, alt, classNameRight, classNameContent }) => {
-  console.log(alt);
   return (
     <img
       src={src}
