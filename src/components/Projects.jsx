@@ -53,7 +53,7 @@ const Projects = withStyles(ProjectsStyles)(({ classes }) => {
           className={classes.projects}
         >
           <List
-            component="ul"
+            component="nav"
             className={classes.list}
           >
             {
