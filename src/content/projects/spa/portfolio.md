@@ -57,17 +57,17 @@ Uno de los problemas a los que me vi enfrentado, fue el cómo crear contenido de
 Para lo que es el control de versiones utilicé ``GitHub``. Además hice uso de la herramienta ``GithubPages`` para desplegar mi aplicación con un dominio personal.
 
 <div class="img-content-div">
-![content-profile-github](https://juanlamas.dev/img/content/portfolio/portfolio-github.png "content")
+![content-portfolio-github](https://juanlamas.dev/img/content/portfolio/portfolio-github.png "content")
 </div>
 
 Para lo que es el flujo de trabajo, tareas e ideas, hice uso de la plataforma ``Trello``.
 
 <div class="img-content-div">
-![content-profile-trello](https://juanlamas.dev/img/content/portfolio/portfolio-trello.png "content")
+![content-portfolio-trello](https://juanlamas.dev/img/content/portfolio/portfolio-trello.png "content")
 </div>
 
 Una de las cosas de las que me he preocupado mucho en este proyecto, es el rendimiento de la aplicación y el seguir buenas prácticas. Lo que se puede apreciar en el siguiente screenshot del reporte ofrecido por lighthouse de Google Chrome:
 
 <div class="img-content-div">
-![content-profile-lighthouse](https://juanlamas.dev/img/content/portfolio/portfolio-lighthouse.png "content")
+![content-portfolio-lighthouse](https://juanlamas.dev/img/content/portfolio/portfolio-lighthouse.png "content")
 </div>
