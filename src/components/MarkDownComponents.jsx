@@ -165,7 +165,16 @@ export const Pre = ({ children, className }) => {
  * @param {String} props.title
  * @param {String} props.classNameProfile
  */
-export const Img = ({ src, className, title, alt, classNameRight, classNameContent }) => {
+export const Img = ({
+  src,
+  className,
+  title,
+  alt,
+  classNameRight,
+  classNameContent,
+  classNamePhoneLandscapeAlone,
+  classNamePhoneLandscapePair
+}) => {
   return (
     <img
       src={src}
@@ -174,6 +183,8 @@ export const Img = ({ src, className, title, alt, classNameRight, classNameConte
         className,
         (title === 'content') ? classNameContent : '',
         (title === 'right') ? classNameRight : '',
+        (title === 'content-phone-landscape-alone') ? classNamePhoneLandscapeAlone : '',
+        (title === 'content-phone-landscape-pair') ? classNamePhoneLandscapePair : '',
       )}
     />
   );
@@ -307,7 +318,9 @@ export const override = (classes) => {
         props: {
           className: classes.img,
           classNameRight: classes.imgRight,
-          classNameContent: classes.imgContent
+          classNameContent: classes.imgContent,
+          classNamePhoneLandscapeAlone: classes.classNamePhoneLandscapeAlone,
+          classNamePhoneLandscapePair: classes.classNamePhoneLandscapePair
         }
       },
       table: {

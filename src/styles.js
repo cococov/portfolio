@@ -358,6 +358,12 @@ export const ContentStyles = theme => ({
   imgContent: {
     maxWidth: '80%'
   },
+  classNamePhoneLandscapePair: {
+    maxWidth: '50%'
+  },
+  classNamePhoneLandscapeAlone: {
+    maxWidth: '100%'
+  },
   tableContainer: {
     width: 'fit-content',
     maxWidth: '90%',
