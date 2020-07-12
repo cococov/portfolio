@@ -1,51 +1,30 @@
 {
   "portfolio.jsx": {
-    "uri": "project/portfoliojsx",
     "name": "portfolio.jsx",
-    "title": "portfolio",
-    "language": "javaScript",
     "ico": "react"
   },
   "magiclife.jsx": {
-    "uri": "project/magiclifejsx",
     "name": "magiclife.jsx",
-    "title": "Magic Life",
-    "language": "javaScript",
     "ico": "react"
   },
   "user-crud.jsx": {
-    "uri": "project/usercrudjsx",
     "name": "userCrud.jsx",
-    "title": "User CRUD - SQLite and MySQL Sync",
-    "language": "javaScript",
     "ico": "react"
   },
   "rest-alarm.js": {
-    "uri": "project/restalarmjs",
     "name": "rest-alarm.js",
-    "title": "Rest Alarm",
-    "language": "javaScript",
     "ico": "js-square"
   },
   "rom-price-scraping.js": {
-    "uri": "project/rompricescraping",
     "name": "rom-price-scraping.js",
-    "title": "Price scraping and notification for Ragnarok Mobile",
-    "language": "javaScript",
     "ico": "js-square"
   },
   "minesweeper.java": {
-    "uri": "project/minesweepeerjava",
     "name": "minesweeper.java",
-    "title": "Minesweeper (Buscaminas)",
-    "language": "Java",
     "ico": "java"
   },
   "something.py": {
-    "uri": "project/somethingpy",
     "name": "something.py",
-    "title": "Something",
-    "language": "Something",
     "ico": "python"
   }
 }

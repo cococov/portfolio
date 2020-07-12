@@ -222,6 +222,14 @@
     max-width: 80%;
   }
 
+  .rom-center {
+    display: flex;
+    margin-bottom : 1rem;
+    flex-direction: column;
+    align-items   : center;
+
+  }
+
   .rom-img-wrapper {
     max-width: 80%;
   }

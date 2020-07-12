@@ -60,6 +60,24 @@ En el contexto anteriormente mencionado, muchas veces uno necesita algún item d
 
 La idea mencionada iba avanzando de forma excelente, pero noté que todo el flujo de información venía de una API en especifico, y luego de algunas pruebas, di con la configuración necesaria para nutrir mi sistema con la información que requería.
 
+<span class="rom-center">
+  <div class="rom-img-wrapper">
+    ![content-game](https://juanlamas.dev/img/content/rom-price-scraping/init.png "content-phone-landscape")
+  </div>
+</span>
+
 Una vez dejé el scraping de lado, desarrollé el siguiente ``sistema CLI``, que permite configurar uno o más items para observar su precio y si este va a la baja o subiendo, además de otros datos, como el stock o si el item está en periodo de snap. Sumado a la visualización de información se puede configurar un precio deseado y la herramienta te informará por medio de una notificación cuando este este por debajo de ese precio.
+
+<span class="rom-center">
+  <div class="rom-img-wrapper">
+    ![content-game](https://juanlamas.dev/img/content/rom-price-scraping/setup.png "content-phone-landscape")
+  </div>
+  <div class="rom-img-wrapper">
+    ![content-game](https://juanlamas.dev/img/content/rom-price-scraping/board.png "content-phone-landscape")
+  </div>
+  <div class="rom-img-wrapper">
+    ![content-game](https://juanlamas.dev/img/content/rom-price-scraping/notification.png "content-phone-landscape")
+  </div>
+</span>
 
 El sistema está desarrollado en ``Node.js``, haciendo uso de las bibliotecas ``inquirer.js`` para el setup de la aplicación y ``node-notifier.js`` para las notificaciones de escritorio.
