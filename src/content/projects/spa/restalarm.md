@@ -26,7 +26,7 @@
 
 ---
 
-En desarrollo.
+Terminado. (2020)
 
 ### Descripción
 

@@ -358,10 +358,7 @@ export const ContentStyles = theme => ({
   imgContent: {
     maxWidth: '80%'
   },
-  classNamePhoneLandscapePair: {
-    maxWidth: '50%'
-  },
-  classNamePhoneLandscapeAlone: {
+  classNamePhoneLandscape: {
     maxWidth: '100%'
   },
   tableContainer: {

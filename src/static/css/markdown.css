@@ -48,7 +48,7 @@
 
 /* ROM SCRAPER STYLES  */
 
-.img-content-phoneview-landscape {
+.rom-economy-left {
   display        : flex;
   flex           : 2;
   margin-bottom  : 1rem;
@@ -56,16 +56,38 @@
   justify-content: center;
 }
 
-.img-content-phoneview-landscape-flex {
+.rom-center {
+  display        : flex;
   flex           : 2;
+  margin-bottom  : 1rem;
+  align-items    : center;
+  justify-content: center;
+}
+
+.rom-economy-right {
+  flex           : 1;
   display        : flex;
   flex-wrap      : wrap;
   justify-content: space-between;
   flex-direction : column;
 }
 
-.img-content-phone-landscape-alone-wrapper {
-  flex: 2;
+.rom-economy-img-wrapper {
+  display        : flex;
+  flex           : 1;
+  margin-bottom  : 1rem;
+  align-items    : center;
+  justify-content: center;
+  max-width      : 80%;
+}
+
+.rom-img-wrapper {
+  display        : flex;
+  flex           : 1;
+  margin-bottom  : 1rem;
+  align-items    : center;
+  justify-content: center;
+  max-width      : 50%;
 }
 
 /* COMPANY CARDS  */
@@ -134,6 +156,8 @@
   .rom-economy-wrapper {
     display       : flex;
     flex-direction: row;
+    padding-left  : 10rem;
+    padding-right : 10rem;
   }
 }
 
@@ -143,6 +167,8 @@
   .rom-economy-wrapper {
     display       : flex;
     flex-direction: row;
+    padding-left  : 5rem;
+    padding-right : 5rem;
   }
 }
 
@@ -185,22 +211,18 @@
   }
 
   /* rom scraper */
-  .img-content-phoneview-landscape-flex-div {
+  .rom-economy-right {
     flex          : 2;
-    min-width     : 50%;
     margin-bottom : 1rem;
     flex-direction: column;
+    align-items   : center;
   }
 
-  .img-content-phoneview-landscape-div {
-    display        : flex;
-    flex           : 1;
-    margin-bottom  : 1rem;
-    align-items    : center;
-    justify-content: center;
+  .rom-economy-img-wrapper {
+    max-width: 80%;
   }
 
-  .img-content-phone-landscape-alone-wrapper {
+  .rom-img-wrapper {
     max-width: 80%;
   }
 }

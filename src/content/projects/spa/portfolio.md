@@ -54,7 +54,7 @@ Uno de los problemas a los que me vi enfrentado, fue el cómo crear contenido de
 ![content-profile-md](https://juanlamas.dev/img/content/portfolio/portfolio-profilemd.png "content")
 </div>
 
-Para lo que es el control de versiones utilicé ``GitHub``. Además hice uso de la herramienta ``GithubPages`` para desplegar mi aplicación con un dominio personal.
+Para lo que es el control de versiones utilicé ``GitHub``. Además en un inicio hice uso de la herramienta ``GithubPages`` para desplegar mi aplicación con un dominio personal, lo que hace un tiempo cambié a ``Vercel``, por las ventajas que esta plataforma ofrecía.
 
 <div class="img-content-div">
 ![content-portfolio-github](https://juanlamas.dev/img/content/portfolio/portfolio-github.png "content")

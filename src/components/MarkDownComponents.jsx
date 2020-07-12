@@ -172,8 +172,7 @@ export const Img = ({
   alt,
   classNameRight,
   classNameContent,
-  classNamePhoneLandscapeAlone,
-  classNamePhoneLandscapePair
+  classNamePhoneLandscape
 }) => {
   return (
     <img
@@ -183,8 +182,7 @@ export const Img = ({
         className,
         (title === 'content') ? classNameContent : '',
         (title === 'right') ? classNameRight : '',
-        (title === 'content-phone-landscape-alone') ? classNamePhoneLandscapeAlone : '',
-        (title === 'content-phone-landscape-pair') ? classNamePhoneLandscapePair : '',
+        (title === 'content-phone-landscape') ? classNamePhoneLandscape : '',
       )}
     />
   );
@@ -319,8 +317,7 @@ export const override = (classes) => {
           className: classes.img,
           classNameRight: classes.imgRight,
           classNameContent: classes.imgContent,
-          classNamePhoneLandscapeAlone: classes.classNamePhoneLandscapeAlone,
-          classNamePhoneLandscapePair: classes.classNamePhoneLandscapePair
+          classNamePhoneLandscape: classes.classNamePhoneLandscape
         }
       },
       table: {
