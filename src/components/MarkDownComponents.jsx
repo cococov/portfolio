@@ -15,16 +15,15 @@ import {
  * @param {Object} props
  * @param {String} props.rel
  * @param {String} props.href
- * @param {String} props.target
  * @param {String} props.children
  * @param {String} props.className
  */
-export const Link = ({ children, href, target, rel, className }) => {
+export const Link = ({ children, href, rel, className }) => {
   return (
     <a
       rel={rel}
       href={href}
-      target={target}
+      target="_blank"
       className={className}
     >
       {children}
