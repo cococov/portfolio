@@ -22,9 +22,5 @@
   "minesweeper.java": {
     "name": "minesweeper.java",
     "ico": "java"
-  },
-  "something.py": {
-    "name": "something.py",
-    "ico": "python"
   }
 }

@@ -11,12 +11,12 @@ const ContentContext = createContext();
 
 /**
    * Fetch and save the selected content if this isn't exists.
-   * @param {Number} selectedTab - selectect tab.
-   * @param {String} selectedProject - selectect project.
+   * @param {Number} selectedTab - selected tab.
+   * @param {String} selectedProject - selected project.
    */
 const addNewContent = async (selectedTab, selectedProject, content, setContent) => {
 
-  // check if the doocument exists in memory.
+  // check if the document exists in memory.
   if (selectedTab !== 4 && content[selectedTab])
     return false;
 
@@ -39,9 +39,9 @@ const addNewContent = async (selectedTab, selectedProject, content, setContent) 
 };
 
 /**
- * Fetch the selectect content.
- * @param {Number} selectedTab - selectect tab.
- * @param {String} selectedProject - selectect project.
+ * Fetch the selected content.
+ * @param {Number} selectedTab - selected tab.
+ * @param {String} selectedProject - selected project.
  * @return {Document} result - Markdown document.
  */
 const fetchSelected = async (selectedTab, selectedProject) => {
@@ -70,8 +70,8 @@ const fetchSelected = async (selectedTab, selectedProject) => {
 };
 
 /**
- * Fetch the selectect project.
- * @param {String} selectedProject - selectect project.
+ * Fetch the selected project.
+ * @param {String} selectedProject - selected project.
  * @return {Document} result - Markdown document.
  */
 const fetchSelectedProject = async (selectedProject) => {

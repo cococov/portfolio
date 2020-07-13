@@ -34,7 +34,7 @@
 
 ---
 
-Terminado.
+Terminado. (2020)
 
 ### Descripción
 
@@ -47,28 +47,28 @@ La solución es que cada vez que se envíe información al servidor, la app veri
 La solución anteriormente mencionada funciona perfecto, pero hay un problema al cerrar la aplicación, ya que al hacerlo se pierden todos los listener. Para solucionar este problema se hizo uso de una base de datos local con ``SQlite`` en donde cada modificación quedaba guardada con un flag de si está sincronizado o no (el cual cambia una vez se sincroniza). Y al abrir la aplicación nuevamente, se verifica todos los items que no han sido sincronizados y se sincronizan.
 
 <div class="img-content-flex-div">
-<div class="img-content-phoneview-div">
-![content-user-crud-home](https://juanlamas.dev/img/content/user-crud/user-crud-home.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-updated](https://juanlamas.dev/img/content/user-crud/user-crud-updated.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-setuser](https://juanlamas.dev/img/content/user-crud/user-crud-setuser.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-register](https://juanlamas.dev/img/content/user-crud/user-crud-register.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-update](https://juanlamas.dev/img/content/user-crud/user-crud-update.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-user](https://juanlamas.dev/img/content/user-crud/user-crud-user.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-users](https://juanlamas.dev/img/content/user-crud/user-crud-users.png "content")
-</div>
-<div class="img-content-phoneview-div">
-![content-user-crud-deleted](https://juanlamas.dev/img/content/user-crud/user-crud-deleted.png "content")
-</div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-home](https://juanlamas.dev/img/content/user-crud/user-crud-home.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-updated](https://juanlamas.dev/img/content/user-crud/user-crud-updated.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-setuser](https://juanlamas.dev/img/content/user-crud/user-crud-setuser.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-register](https://juanlamas.dev/img/content/user-crud/user-crud-register.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-update](https://juanlamas.dev/img/content/user-crud/user-crud-update.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-user](https://juanlamas.dev/img/content/user-crud/user-crud-user.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-users](https://juanlamas.dev/img/content/user-crud/user-crud-users.png "content")
+  </div>
+  <div class="img-content-phoneview-div">
+    ![content-user-crud-deleted](https://juanlamas.dev/img/content/user-crud/user-crud-deleted.png "content")
+  </div>
 </div>

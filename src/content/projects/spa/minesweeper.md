@@ -24,7 +24,7 @@
 
 ---
 
-Terminado y a la espera de ser reescrito con conocimientos y prácticas actuales.
+Terminado. (2020)
 
 ### Descripción
 
