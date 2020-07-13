@@ -4,7 +4,7 @@
 
 ---
 
-[Repositorio](https://github.com/cococov/rest-alarm)
+[Repositorio](https://github.com/cococov/rest-alarm)<br/>
 [Técnica Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
 ### Tecnologías
