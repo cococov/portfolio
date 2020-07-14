@@ -47,7 +47,7 @@ Tengo experiencia principalmente con metodologías ágiles, entre las que destac
 | ----------- | ----------------- | ----------- |
 | Jira         | ⭐⭐⭐⭐⭐🔳🔳 | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizándolo en mi memoria. |
 | Confluence   | ⭐⭐⭐⭐🔳🔳🔳 | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizándolo en mi memoria. |
-| Trello       | ⭐⭐⭐⭐🔳🔳🔳 | Utilizado para proyectos personales. |
+| Trello       | ⭐⭐⭐⭐⭐🔳🔳 | Utilizado para proyectos personales. |
 <br/>
 
 ### Idiomas
