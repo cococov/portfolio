@@ -150,6 +150,16 @@
   position     : absolute;
 }
 
+/* REST ALARM STYLES*/
+
+.rest-alarm-center {
+  display        : flex;
+  flex           : 1;
+  margin-bottom  : 1rem;
+  align-items    : center;
+  justify-content: center;
+}
+
 /* HD SCREEN  */
 
 @media(min-width:1901px) {
@@ -232,5 +242,14 @@
 
   .rom-img-wrapper {
     max-width: 80%;
+  }
+
+  /* rest alarm */
+  .rest-alarm-center {
+    display: flex;
+    margin-bottom : 1rem;
+    flex-direction: column;
+    align-items   : center;
+
   }
 }
