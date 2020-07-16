@@ -29,7 +29,8 @@ Se que es difícil poner una nota al conocimiento que uno posee sobre alguna tec
 | SQL         | ⭐⭐⭐⭐⭐🔳🔳 | Fui ayudante del ramo de 'Bases de datos' en mi universidad y poseo 1 año y medio de uso profesional, principalmente en PostgreSQL y un poco SQL Sever.|
 | HTML5       | ⭐⭐⭐⭐⭐🔳🔳 | La base del desarrollo web, lo conozco lo suficiente para desempeñarme sin problemas en la industria, además de conocer algunas prácticas para mejorar el SEO.        |
 | Linux       | ⭐⭐⭐⭐⭐🔳🔳 | Sistema operativo que llevo usando desde los 15 años y que actualmente, gracias a WSL, lo uso a diario.        |
-| MobX        | ⭐⭐⭐⭐🔳🔳🔳 | Toda mi experiencia usando react, ha sido acompañada de este manejador de estados, que domino lo suficiente para hacer aplicaciones completamente reactivas.        |
+| MobX        | ⭐⭐⭐⭐🔳🔳🔳 | Casi toda mi experiencia usando react, ha sido acompañada de este manejador de estados, que domino lo suficiente para hacer aplicaciones completamente reactivas.        |
+| React-Context   | ⭐⭐⭐⭐⭐⭐🔳 | Este último año, además de reemplazar los componentes de clase por componentes funcionales + hooks, he estado utilizando el Context API de React como manejador de estados en todos mis proyectos personales y profesionales. |
 | CSS3        | ⭐⭐⭐⭐🔳🔳🔳 | A pesar de que no soy un experto en diseño, en la practica he tenido que usar mucho CSS y por ello me considero capáz de hacer uso de el para lograr el objetivo gráfico que busque.        |
 | Node.js     | ⭐⭐⭐⭐🔳🔳🔳 | Gran parte de mi experiencia en backend ha sido en el entorno de Node.js, junto al framework express, PostgreSQL y algunas otras herramientas.        |
 | Express     | ⭐⭐⭐⭐🔳🔳🔳 | Casi todas las API REST que he hecho, han sido usando esta herramienta. Aunque últimamente estuve usando Koa.js      |
