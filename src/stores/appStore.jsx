@@ -1,4 +1,10 @@
-import React, { createContext, useState, useCallback, useLayoutEffect } from 'react';
+import React, {
+  createContext,
+  useState,
+  useCallback,
+  useLayoutEffect,
+} from 'react';
+import PropTypes from 'prop-types';
 import { getWidth } from '../styles';
 
 /**
@@ -18,16 +24,16 @@ export const AppProvider = ({ children }) => {
   const [width, setWidth] = useState(() => getWidth());
   const [selectedProject, setSelectedProject] = useState('');
 
+  const resize = async () => {
+    const actualWidth = getWidth();
+    setWidth(actualWidth);
+    setMobil(actualWidth < 500);
+  };
+
   useLayoutEffect(() => {
-    window.addEventListener("resize", resize);
+    window.addEventListener('resize', resize);
     resize();
   }, []);
-
-  const resize = async () => {
-    let _width = getWidth();
-    setWidth(_width);
-    setMobil(_width < 500);
-  };
 
   const handleChangeProject = useCallback((project) => {
     setSelectedTab(4);
@@ -63,6 +69,10 @@ export const AppProvider = ({ children }) => {
       {children}
     </AppContext.Provider>
   );
+};
+
+AppProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default AppContext;

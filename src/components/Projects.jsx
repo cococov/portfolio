@@ -13,69 +13,60 @@ import { AppContext } from '../stores';
 */
 const Projects = withStyles(ProjectsStyles)(({ classes }) => {
   const [isProjectsOpen] = useState(true);
-  const { isMobil, selectedProject, handleChangeProject } = useContext(AppContext);
+  const { isMobil, selectedProject, handleChangeProject } = useContext(
+    AppContext
+  );
 
-  return useMemo(() => (
-    <div
-      className={classes.list}
-      role="presentation"
-    >
-      <Drawer
-        open={!isMobil}
-        anchor="left"
-        variant="persistent"
-        className={classes.drawer}
-        classes={{ paper: clsx('Content', classes.drawerPaper) }}
-      >
-        <Box
-          component="span"
-          className={classes.box}
+  return useMemo(
+    () => (
+      <div className={classes.list} role="presentation">
+        <Drawer
+          open={!isMobil}
+          anchor="left"
+          variant="persistent"
+          className={classes.drawer}
+          classes={{ paper: clsx('Content', classes.drawerPaper) }}
         >
-          <Typography
-            variant="caption"
-            className={clsx(classes.resetClasses, classes.explorerTitle)}
-          >
-            EXPLORER
+          <Box component="span" className={classes.box}>
+            <Typography
+              variant="caption"
+              className={clsx(classes.resetClasses, classes.explorerTitle)}
+            >
+              EXPLORER
             </Typography>
-        </Box>
-        <div
-          className={clsx(classes.resetClasses, classes.category)}
-        >
-          {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
-          <Typography
-            className={clsx(classes.resetClasses, classes.categoryTitle)}
-          >
-            PROJECTS
+          </Box>
+          <div className={clsx(classes.resetClasses, classes.category)}>
+            {isProjectsOpen ? <ExpandMore /> : <ExpandLess />}
+            <Typography
+              className={clsx(classes.resetClasses, classes.categoryTitle)}
+            >
+              PROJECTS
             </Typography>
-        </div>
-        <Box
-          component="span"
-          className={classes.projects}
-        >
-          <List
-            component="nav"
-            className={classes.list}
-          >
-            {
-              Object.keys(projects).map((project, index) => (
+          </div>
+          <Box component="span" className={classes.projects}>
+            <List component="nav" className={classes.list}>
+              {Object.keys(projects).map((project) => (
                 <ListItem
                   button
-                  key={index}
+                  key={project}
                   component="li"
-                  className={(project === selectedProject) ? classes.selectedItem : ''}
+                  className={
+                    project === selectedProject ? classes.selectedItem : ''
+                  }
                   onClick={() => {
                     handleChangeProject(project);
                   }}
                 >
-                  <Typography>{projects[project]['name']}</Typography>
+                  <Typography>{projects[project].name}</Typography>
                 </ListItem>
-              ))
-            }
-          </List>
-        </Box>
-      </Drawer>
-    </div>
-  ), [classes, isMobil, isProjectsOpen, selectedProject, handleChangeProject]);
+              ))}
+            </List>
+          </Box>
+        </Drawer>
+      </div>
+    ),
+    [classes, isMobil, isProjectsOpen, selectedProject, handleChangeProject]
+  );
 });
 
 /*

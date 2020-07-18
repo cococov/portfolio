@@ -14,22 +14,23 @@ const useWhyDidYouUpdate = (name, props) => {
       const allKeys = Object.keys({ ...previousProps.current, ...props });
       const changesObj = {};
 
-      allKeys.forEach(key => {
+      allKeys.forEach((key) => {
         if (previousProps.current[key] !== props[key]) {
           changesObj[key] = {
             from: previousProps.current[key],
-            to: props[key]
+            to: props[key],
           };
         }
       });
 
       if (Object.keys(changesObj).length) {
+        // eslint-disable-next-line no-console
         console.log('[why-did-you-update]', name, changesObj);
       }
     }
 
     previousProps.current = props;
   });
-}
+};
 
 export default useWhyDidYouUpdate;

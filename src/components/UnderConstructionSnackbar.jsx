@@ -15,17 +15,18 @@ const UnderConstructionSnackbar = () => {
   return (
     <Snackbar
       autoHideDuration={8000}
-      key={'underConstructionSnackbar'}
+      key="underConstructionSnackbar"
       open={open}
       onClose={handleCloseUnderConstructionSnackbar}
       anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
     >
       <Alert severity="info">
         <AlertTitle>Información</AlertTitle>
-        Esta página aún está en construcción, por lo que puede haber secciones sin contenido o con contenido a la mitad.
+        Esta página aún está en construcción, por lo que puede haber secciones
+        sin contenido o con contenido a la mitad.
       </Alert>
     </Snackbar>
   );
-}
+};
 
 export default UnderConstructionSnackbar;

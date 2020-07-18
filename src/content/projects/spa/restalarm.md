@@ -52,15 +52,3 @@ Este proyecto viene a solucionar un poco esto, haciendo uso de la ``Técnica Pom
 </div>
 
 La aplicación ``CLI`` usa como base la ``Técnica Pomodoro`` (25 minutos de trabajo, 5 minutos de descanso y 30 minutos de descanso largo cada 4 ciclos), pero además permite configurarla, para así adaptarla a lo que uno se sienta más comodo.
-
-<div class="rest-alarm-center">
-  <div class="img-content-div">
-    ![rest-alarm-rest](https://juanlamas.dev/img/content/rest-alarm/board.png "content")
-  </div>
-  <div class="img-content-div">
-    ![rest-alarm-rest](https://juanlamas.dev/img/content/rest-alarm/work.png "content")
-  </div>
-  <div class="img-content-div">
-    ![rest-alarm-rest](https://juanlamas.dev/img/content/rest-alarm/end.png "content")
-  </div>
-</div>

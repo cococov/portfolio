@@ -1,11 +1,23 @@
 import React, { useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faJava, faReact, faPython, faJsSquare } from '@fortawesome/free-brands-svg-icons'
-import { About, LateralBar, Container, Projects, Tabs, Snackbar } from '../components';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faJava,
+  faReact,
+  faPython,
+  faJsSquare,
+} from '@fortawesome/free-brands-svg-icons';
+import clsx from 'clsx';
+import {
+  About,
+  LateralBar,
+  Container,
+  Projects,
+  Tabs,
+  Snackbar,
+} from '../components';
 import { AppProvider, ContentProvider } from '../stores';
 import { baseStyles } from '../styles';
-import clsx from 'clsx';
 import '../static/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,14 +25,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   App - Main Component
 */
 const App = withStyles(baseStyles)(({ classes }) => {
-
   useEffect(() => {
-    library.add([
-      faJava,
-      faReact,
-      faPython,
-      faJsSquare
-    ]);
+    library.add([faJava, faReact, faPython, faJsSquare]);
   });
 
   return (

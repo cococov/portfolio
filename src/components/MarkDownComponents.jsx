@@ -1,5 +1,6 @@
-import React from "react";
-import clsx from "clsx";
+import React from 'react';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
 import {
   Table,
   TableBody,
@@ -8,7 +9,7 @@ import {
   TableHead,
   TableRow,
   Paper,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
 /**
  * A custom component (Title)
@@ -31,6 +32,12 @@ export const Link = ({ children, href, className }) => {
   );
 };
 
+Link.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
 /**
  * Code custom component (Title)
  * @param {Object} props
@@ -39,6 +46,11 @@ export const Link = ({ children, href, className }) => {
  */
 export const Code = ({ children, className }) => {
   return <code className={className}>{children}</code>;
+};
+
+Code.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 /**
@@ -51,6 +63,11 @@ export const Title = ({ children, className }) => {
   return <h1 className={className}>{children}</h1>;
 };
 
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
 /**
  * H2 custom component (SubTitle)
  * @param {Object} props
@@ -59,6 +76,11 @@ export const Title = ({ children, className }) => {
  */
 export const SubTitle = ({ children, className }) => {
   return <h2 className={className}>{children}</h2>;
+};
+
+SubTitle.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 /**
@@ -71,6 +93,11 @@ export const H3 = ({ children, className }) => {
   return <h3 className={className}>{children}</h3>;
 };
 
+H3.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
 /**
  * HR custom component
  * @param {Object} props
@@ -78,6 +105,10 @@ export const H3 = ({ children, className }) => {
  */
 export const Hr = ({ className }) => {
   return <hr className={className} />;
+};
+
+Hr.propTypes = {
+  className: PropTypes.string.isRequired,
 };
 
 /**
@@ -90,6 +121,11 @@ export const Paraph = ({ children, className }) => {
   return <p className={className}>{children}</p>;
 };
 
+Paraph.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
 /**
  * UL custom component
  * @param {Object} props
@@ -100,6 +136,11 @@ export const Ul = ({ children, className }) => {
   return <ul className={className}>{children}</ul>;
 };
 
+Ul.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
 /**
  * PRE custom component
  * @param {Object} props
@@ -108,6 +149,11 @@ export const Ul = ({ children, className }) => {
  */
 export const Pre = ({ children, className }) => {
   return <pre className={className}>{children}</pre>;
+};
+
+Pre.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 /**
@@ -133,12 +179,22 @@ export const Img = ({
       alt={alt}
       className={clsx(
         className,
-        title === "content" ? classNameContent : "",
-        title === "right" ? classNameRight : "",
-        title === "content-phone-landscape" ? classNamePhoneLandscape : ""
+        title === 'content' ? classNameContent : '',
+        title === 'right' ? classNameRight : '',
+        title === 'content-phone-landscape' ? classNamePhoneLandscape : ''
       )}
     />
   );
+};
+
+Img.propTypes = {
+  src: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  classNameRight: PropTypes.string.isRequired,
+  classNameContent: PropTypes.string.isRequired,
+  classNamePhoneLandscape: PropTypes.string.isRequired,
 };
 
 /**
@@ -149,52 +205,56 @@ export const Img = ({
  * @param {HTMLTableElement} props.children[1]
  * @param {Object} props.classes
  */
-export const CustomTable = ({ children, classes }) => {
-  let thead = children[0];
-  let tbody = children[1];
-  let th = thead.props.children.props.children;
-  let tr = tbody.props.children;
-  let thNames = [];
-  let baseRow = {};
-  let rows = [];
+export const CustomTable = ({
+  children,
+  table,
+  tableContainer,
+  tableTitleBar,
+  tableTitle,
+  tableRow,
+  tableData,
+}) => {
+  const thead = children[0];
+  const tbody = children[1];
+  const th = thead.props.children.props.children;
+  const tr = tbody.props.children;
+  const thNames = [];
+  const baseRow = {};
+  const rows = [];
 
   th.map((data, index) => {
-    thNames[index] = data.props.children[0];
-    baseRow[thNames[index]] = "";
+    thNames[index] = [...data.props.children[0]];
+    baseRow[thNames[index]] = '';
     return true;
   });
 
   tr.map((data, index) => {
-    let td = data.props.children;
-    let temporalRow = { ...baseRow };
-    Object.keys(baseRow).map(
-      (key, index) => (temporalRow[key] = td[index].props.children[0])
-    );
+    const td = data.props.children;
+    const temporalRow = { ...baseRow };
+    Object.keys(baseRow).forEach((key, subIndex) => {
+      temporalRow[key] = [...td[subIndex].props.children[0]];
+    });
     rows[index] = temporalRow;
     return true;
   });
 
   return (
-    <TableContainer className={classes.tableContainer} component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
+    <TableContainer className={tableContainer} component={Paper}>
+      <Table className={table} aria-label="simple table">
         <TableHead>
-          <TableRow className={classes.tableTitleBar}>
-            {thNames.map((title, index) => (
-              <TableCell key={index} className={classes.tableTitle}>
+          <TableRow className={tableTitleBar}>
+            {thNames.map((title) => (
+              <TableCell key={title} className={tableTitle}>
                 {title}
               </TableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row, index) => (
-            <TableRow key={index} className={classes.tableRow}>
-              {Object.keys(row).map((key, index) => (
-                <TableCell
-                  scope="row"
-                  key={`${key}-${index}`}
-                  className={classes.tableData}
-                >
+          {rows.map((row) => (
+            <TableRow key={`${row}`} className={tableRow}>
+              {Object.keys(row).map((key) => (
+                <TableCell scope="row" key={`${key}`} className={tableData}>
                   {row[key]}
                 </TableCell>
               ))}
@@ -204,6 +264,16 @@ export const CustomTable = ({ children, classes }) => {
       </Table>
     </TableContainer>
   );
+};
+
+CustomTable.propTypes = {
+  children: PropTypes.node.isRequired,
+  table: PropTypes.string.isRequired,
+  tableContainer: PropTypes.string.isRequired,
+  tableTitleBar: PropTypes.string.isRequired,
+  tableTitle: PropTypes.string.isRequired,
+  tableRow: PropTypes.string.isRequired,
+  tableData: PropTypes.string.isRequired,
 };
 
 /**
@@ -279,7 +349,12 @@ export const override = (classes) => {
       table: {
         component: CustomTable,
         props: {
-          classes: classes,
+          table: classes.table,
+          tableContainer: classes.tableContainer,
+          tableTitleBar: classes.tableTitleBar,
+          tableTitle: classes.tableTitle,
+          tableRow: classes.tableRow,
+          tableData: classes.tableData,
         },
       },
     },

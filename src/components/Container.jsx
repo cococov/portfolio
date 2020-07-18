@@ -1,4 +1,10 @@
-import React, { useLayoutEffect, useContext, useRef, memo, useMemo } from 'react';
+import React, {
+  useLayoutEffect,
+  useContext,
+  useRef,
+  memo,
+  useMemo,
+} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ReactMarkdown from 'markdown-to-jsx';
 import clsx from 'clsx';
@@ -16,27 +22,21 @@ const Container = withStyles(ContentStyles)(({ classes }) => {
   const contentRef = useRef();
 
   useLayoutEffect(() => {
-    if (contentRef.current)
-      contentRef.current.scrollTo(0, 0);
-  }, [selectedContent])
+    if (contentRef.current) contentRef.current.scrollTo(0, 0);
+  }, [selectedContent]);
 
-  return useMemo(() => (
-    <div
-      style={!isMobil ? { width } : {}}
-      className={classes.container}
-    >
-      <div
-        ref={contentRef}
-        className={clsx('Content', classes.content)}
-      >
-        <ReactMarkdown
-          options={override(classes)}
-        >
-          {selectedContent}
-        </ReactMarkdown>
+  return useMemo(
+    () => (
+      <div style={!isMobil ? { width } : {}} className={classes.container}>
+        <div ref={contentRef} className={clsx('Content', classes.content)}>
+          <ReactMarkdown options={override(classes)}>
+            {selectedContent}
+          </ReactMarkdown>
+        </div>
       </div>
-    </div>
-  ), [classes, width, isMobil, selectedContent])
+    ),
+    [classes, width, isMobil, selectedContent]
+  );
 });
 
 /*
