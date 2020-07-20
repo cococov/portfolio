@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   parserOptions: {
@@ -16,7 +18,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', 'jest', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'prettier'],
   rules: {
     'import/prefer-default-export': 0,
     'prettier/prettier': [
@@ -29,5 +31,8 @@ module.exports = {
     ],
     'react/jsx-fragments': 0,
     'react/jsx-wrap-multilines': 0,
+    // TODO: maybe remove this
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
+  parser: '@typescript-eslint/parser',
 };
