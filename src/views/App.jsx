@@ -8,14 +8,7 @@ import {
   faJsSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import clsx from 'clsx';
-import {
-  About,
-  LateralBar,
-  Container,
-  Projects,
-  Tabs,
-  Snackbar,
-} from '../components';
+import { About, LateralBar, Container, Projects, Tabs } from '../components';
 import { AppProvider, ContentProvider } from '../stores';
 import { baseStyles } from '../styles';
 import '../static/css/App.css';
@@ -31,7 +24,6 @@ const App = withStyles(baseStyles)(({ classes }) => {
 
   return (
     <AppProvider>
-      <Snackbar />
       <About />
       <Tabs />
       <div className={clsx('App', classes.app)}>
