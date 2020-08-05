@@ -44,3 +44,11 @@ Entre sus principales funciones, está el poder crear perfiles, llevar la cuenta
 <div class="img-content-div">
 ![content-magiclife-main](https://juanlamas.dev/img/content/magiclife/magiclife-main.png "content")
 </div>
+
+<div class="img-content-div">
+![content-magiclife-playing](https://juanlamas.dev/img/content/magiclife/magiclife-playing.png "content")
+</div>
+
+<div class="img-content-div">
+![content-magiclife-game-end](https://juanlamas.dev/img/content/magiclife/magiclife-game-end.png "content")
+</div>
