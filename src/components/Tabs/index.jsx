@@ -3,9 +3,9 @@ import { withStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Person, School, Work, Build } from '@material-ui/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { projects } from '../content/projects';
-import { TabsStyles } from '../styles';
-import { AppContext } from '../stores';
+import { projects } from '../../content/projects';
+import { TabsStyles } from './styles';
+import { AppContext } from '../../stores';
 import Tab from './Tab';
 
 /*

@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { List, ListItem, Drawer, Typography } from '@material-ui/core';
 import { CloudDownload, LinkedIn, GitHub } from '@material-ui/icons';
-import { lateralBarStyles } from '../styles';
-import { cv, linkedin, github } from '../config.json';
-import { AppContext } from '../stores';
+import { lateralBarStyles } from './styles';
+import { cv, linkedin, github } from '../../config.json';
+import { AppContext } from '../../stores';
 
 /*
   LateralBar Component

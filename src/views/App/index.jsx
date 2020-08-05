@@ -8,10 +8,10 @@ import {
   faJsSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import clsx from 'clsx';
-import { About, LateralBar, Container, Projects, Tabs } from '../components';
-import { AppProvider, ContentProvider } from '../stores';
-import { baseStyles } from '../styles';
-import '../static/css/App.css';
+import { About, LateralBar, Container, Projects, Tabs } from '../../components';
+import { AppProvider, ContentProvider } from '../../stores';
+import { baseStyles } from './styles';
+import '../../static/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*

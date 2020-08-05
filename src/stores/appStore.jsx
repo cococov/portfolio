@@ -5,7 +5,16 @@ import React, {
   useLayoutEffect,
 } from 'react';
 import PropTypes from 'prop-types';
-import { getWidth } from '../styles';
+
+/**
+ * Display Width getter
+ * @returns {Number} display Width - Drawer width
+ */
+export const getWidth = () => {
+  if (window.innerWidth < 500) return window.innerWidth;
+  const width = window.innerWidth - 310;
+  return width;
+};
 
 /**
  * App Context.

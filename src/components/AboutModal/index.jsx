@@ -11,9 +11,9 @@ import {
   CardContent,
 } from '@material-ui/core';
 import { LinkedIn, GitHub, Close } from '@material-ui/icons';
-import { linkedin, github } from '../config.json';
-import { AppContext } from '../stores';
-import { About } from '../styles';
+import { linkedin, github } from '../../config.json';
+import { AppContext } from '../../stores';
+import { About } from './styles';
 
 /*
   About Modal Component

@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import { List, ListItem, Typography, Box, Drawer } from '@material-ui/core';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
-import { projects } from '../content/projects';
-import { ProjectsStyles } from '../styles';
-import { AppContext } from '../stores';
+import { projects } from '../../content/projects';
+import { ProjectsStyles } from './styles';
+import { AppContext } from '../../stores';
 
 /*
   Projects Component

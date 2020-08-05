@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import clsx from 'clsx';
-import { TabStyles } from '../styles';
+import { TabStyles } from './styles';
 
 /*
   Tab Component
