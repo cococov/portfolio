@@ -18,7 +18,7 @@ import '../../static/css/markdown.css';
 */
 const Container = withStyles(ContentStyles)(({ classes }) => {
   const { selectedContent } = useContext(ContentContext);
-  const { isMobil, width } = useContext(AppContext);
+  const { isMobil, isBigMobil, width } = useContext(AppContext);
   const contentRef = useRef();
 
   useLayoutEffect(() => {
@@ -29,13 +29,13 @@ const Container = withStyles(ContentStyles)(({ classes }) => {
     () => (
       <div style={!isMobil ? { width } : {}} className={classes.container}>
         <div ref={contentRef} className={clsx('Content', classes.content)}>
-          <ReactMarkdown options={override(classes)}>
+          <ReactMarkdown options={override(classes, isMobil, isBigMobil)}>
             {selectedContent}
           </ReactMarkdown>
         </div>
       </div>
     ),
-    [classes, width, isMobil, selectedContent]
+    [classes, width, isMobil, isBigMobil, selectedContent]
   );
 });
 

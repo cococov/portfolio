@@ -7,13 +7,21 @@ import React, {
 import PropTypes from 'prop-types';
 
 /**
- * Display Width getter
+ * content Width getter
  * @returns {Number} display Width - Drawer width
  */
 export const getWidth = () => {
   if (window.innerWidth < 500) return window.innerWidth;
   const width = window.innerWidth - 310;
   return width;
+};
+
+/**
+ * Display Width getter
+ * @returns {Number} display Width
+ */
+export const getFullWidth = () => {
+  return window.innerWidth;
 };
 
 /**
@@ -28,15 +36,18 @@ const AppContext = createContext();
  */
 export const AppProvider = ({ children }) => {
   const [isMobil, setMobil] = useState(false);
+  const [isBigMobil, setBigMobil] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
   const [isAboutOpen, setAboutOpen] = useState(false);
   const [width, setWidth] = useState(() => getWidth());
   const [selectedProject, setSelectedProject] = useState('');
 
   const resize = async () => {
+    const actualScreenWidth = getFullWidth();
     const actualWidth = getWidth();
     setWidth(actualWidth);
     setMobil(actualWidth < 500);
+    setBigMobil(actualScreenWidth < 800 && actualScreenWidth > 500);
   };
 
   useLayoutEffect(() => {
@@ -66,6 +77,7 @@ export const AppProvider = ({ children }) => {
       value={{
         width,
         isMobil,
+        isBigMobil,
         selectedTab,
         isAboutOpen,
         selectedProject,

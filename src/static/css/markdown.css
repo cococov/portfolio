@@ -269,6 +269,10 @@
 
 @media (max-width:1200px) {
 
+  .company-card {
+    min-width       : 19.21rem;
+  }
+
   /* general */
   .box {
     max-width: 100%;
