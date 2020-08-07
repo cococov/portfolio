@@ -3,4 +3,5 @@ export { default as portfolio } from './portfolio.md';
 export { default as restalarm } from './restalarm.md';
 export { default as magiclife } from './magiclife.md';
 export { default as minesweeper } from './minesweeper.md';
+export { default as rewrite } from './rewrite.md';
 export { default as rompricescraping } from './rompricescraping.md';

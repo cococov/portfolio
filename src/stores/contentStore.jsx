@@ -5,9 +5,10 @@ import {
   portfolio,
   usercrud,
   magiclife,
-  minesweeper,
   restalarm,
   rompricescraping,
+  minesweeper,
+  rewrite,
 } from '../content/projects/spa';
 import { error } from '../content';
 import AppContext from './appStore';
@@ -35,14 +36,17 @@ const fetchSelectedProject = async (selectedProject) => {
     case 'magiclife.jsx':
       result = await fetch(magiclife);
       break;
-    case 'minesweeper.java':
-      result = await fetch(minesweeper);
-      break;
     case 'rest-alarm.js':
       result = await fetch(restalarm);
       break;
     case 'rom-price-scraping.js':
       result = await fetch(rompricescraping);
+      break;
+    case 'minesweeper.java':
+      result = await fetch(minesweeper);
+      break;
+    case 'rewrite.c':
+      result = await fetch(rewrite);
       break;
     // put any other project here...
     default:

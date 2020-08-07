@@ -22,5 +22,9 @@
   "minesweeper.java": {
     "name": "minesweeper.java",
     "ico": "java"
+  },
+  "rewrite.c": {
+    "name": "rewrite.c",
+    "ico": "c"
   }
 }
