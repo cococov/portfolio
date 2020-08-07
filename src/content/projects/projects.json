@@ -1,30 +1,37 @@
 {
   "portfolio.jsx": {
     "name": "portfolio.jsx",
-    "ico": "react"
+    "ico": "react",
+    "icoType": "fab"
   },
   "magiclife.jsx": {
     "name": "magiclife.jsx",
-    "ico": "react"
+    "ico": "react",
+    "icoType": "fab"
   },
   "user-crud.jsx": {
     "name": "userCrud.jsx",
-    "ico": "react"
+    "ico": "react",
+    "icoType": "fab"
   },
   "rest-alarm.js": {
     "name": "rest-alarm.js",
-    "ico": "js-square"
+    "ico": "js-square",
+    "icoType": "fab"
   },
   "rom-price-scraping.js": {
     "name": "rom-price-scraping.js",
-    "ico": "js-square"
+    "ico": "js-square",
+    "icoType": "fab"
   },
   "minesweeper.java": {
     "name": "minesweeper.java",
-    "ico": "java"
+    "ico": "java",
+    "icoType": "fab"
   },
   "rewrite.c": {
     "name": "rewrite.c",
-    "ico": "c"
+    "ico": "copyright",
+    "icoType": "fas"
   }
 }

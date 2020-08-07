@@ -83,7 +83,10 @@ const Tabs = withStyles(TabsStyles)(({ classes }) => {
                   ico={
                     <FontAwesomeIcon
                       className={classes.tabIco}
-                      icon={['fab', projects[selectedProject].ico]}
+                      icon={[
+                        projects[selectedProject].icoType,
+                        projects[selectedProject].ico,
+                      ]}
                     />
                   }
                 />

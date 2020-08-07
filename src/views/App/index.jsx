@@ -7,6 +7,7 @@ import {
   faPython,
   faJsSquare,
 } from '@fortawesome/free-brands-svg-icons';
+import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import clsx from 'clsx';
 import { About, LateralBar, Container, Projects, Tabs } from '../../components';
 import { AppProvider, ContentProvider } from '../../stores';
@@ -19,7 +20,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 */
 const App = withStyles(baseStyles)(({ classes }) => {
   useEffect(() => {
-    library.add([faJava, faReact, faPython, faJsSquare]);
+    library.add([faJava, faReact, faPython, faJsSquare, faCopyright]);
   });
 
   return (
