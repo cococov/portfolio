@@ -16,7 +16,6 @@ Me defino a mi mismo como una persona proactiva y fanático del mundo de la comp
 
 ---
 
-**Teléfono:** `+569 90143906`<br/>
 **E-Mail:** `contact@juanlamas.dev`<br/>
 **GitHub:** `https://github.com/cococov`<br/>
 **LinkedIn:** `https://www.linkedin.com/in/juan-carlos-lamas-alfaro-95153212a/`<br/>
