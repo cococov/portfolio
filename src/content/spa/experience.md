@@ -11,7 +11,7 @@
 - Desarrollo backend con `node.js` y `postgresql`
 
 
-Metodología de desarrollo: Scrum<br/>
+Metodología de desarrollo: `Scrum`<br/>
 Desarrollo de dashboard web para visualización del estado actual e histórico, de
 los contratos de consignación de materiales y el movimiento que los materiales han tenido en el tiempo.<br/>
 
@@ -30,7 +30,7 @@ los contratos de consignación de materiales y el movimiento que los materiales 
 - Scripting con `Python3`
 
 
-Metodología de desarrollo: Scrum<br/>
+Metodología de desarrollo: `Scrum`<br/>
 Desarrollo de proyectos para distintas empresas, entre las que se encuentran: CAP, FCAB y Minera Los Pelambres.
 
 </div>
