@@ -44,7 +44,7 @@ export const Img = ({
 Img.propTypes = {
   src: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   alt: PropTypes.string.isRequired,
   classNameRight: PropTypes.string.isRequired,
   classNameContent: PropTypes.string.isRequired,
@@ -56,4 +56,5 @@ Img.propTypes = {
 Img.defaultProps = {
   isMobil: false,
   isBigMobil: false,
+  title: 'Image',
 };

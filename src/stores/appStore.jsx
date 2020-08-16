@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  * @returns {Number} display Width - Drawer width
  */
 export const getWidth = () => {
-  if (window.innerWidth < 500) return window.innerWidth;
+  if (window.innerWidth < 550) return window.innerWidth;
   const width = window.innerWidth - 310;
   return width;
 };
@@ -46,8 +46,8 @@ export const AppProvider = ({ children }) => {
     const actualScreenWidth = getFullWidth();
     const actualWidth = getWidth();
     setWidth(actualWidth);
-    setMobil(actualWidth < 500);
-    setBigMobil(actualScreenWidth < 800 && actualScreenWidth > 500);
+    setMobil(actualWidth < 550);
+    setBigMobil(actualScreenWidth < 860 && actualScreenWidth > 550);
   };
 
   useLayoutEffect(() => {
