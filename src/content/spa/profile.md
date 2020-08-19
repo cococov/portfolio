@@ -47,7 +47,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       target="_blank"
       rel="noopener noreferrer"
       class="company-card-content-url">
-        www.cin.ucn.cl
+        cin.ucn.cl
       </a>
     </div>
   </div>
