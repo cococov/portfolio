@@ -52,7 +52,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     </div>
   </div>
 
-  <div class="company-card">
+   <div class="company-card">
     <h2 class="company-card-title">
       AMSA
     </h2>
@@ -63,7 +63,7 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Desarrollo de aplicación tipo GIS y otras funcionalidades, usando React-Native.
+        Desarrollo de dashboard con objetivo de visualización de estados de contratos y materiales, usando React, node.js y PostgreSQL.
       </p>
       <a
       href="https://www.aminerals.cl/"
@@ -77,23 +77,23 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
 
   <div class="company-card">
     <h2 class="company-card-title">
-      CAP
+      Los Pelambres
     </h2>
     <img
       class="company-card-img"
-      src="https://juanlamas.dev/img/companies/cap.png"
-      alt="CAP-logo"
+      src="https://juanlamas.dev/img/companies/lospelambres.png"
+      alt="Los-Pelambres-logo"
     />
     <div class="company-card-content">
       <p class="company-card-content-text">
-        Desarrollo sobre sistema legacy, usando PHP.
+        Desarrollo de aplicación tipo GIS y otras funcionalidades, usando React-Native.
       </p>
       <a
-      href="https://www.cap.cl/"
+      href="http://web.pelambres.cl/"
       target="_blank"
       rel="noopener noreferrer"
       class="company-card-content-url">
-        www.cap.cl
+        web.pelambres.cl
       </a>
     </div>
   </div>
@@ -117,6 +117,29 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
       rel="noopener noreferrer"
       class="company-card-content-url">
         www.fcab.cl
+      </a>
+    </div>
+  </div>
+
+  <div class="company-card">
+    <h2 class="company-card-title">
+      CAP
+    </h2>
+    <img
+      class="company-card-img"
+      src="https://juanlamas.dev/img/companies/cap.png"
+      alt="CAP-logo"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Desarrollo sobre sistema legacy, usando PHP.
+      </p>
+      <a
+      href="https://www.cap.cl/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.cap.cl
       </a>
     </div>
   </div>
