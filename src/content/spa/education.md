@@ -4,7 +4,7 @@
 
 ![ucn-logo](https://juanlamas.dev/img/ucn.png "right")
 
-### 2013 - Actualidad
+### 2013 - 2020
 
 Ingeniería civil en computación e informática.<br/>
 Universidad Católica del Norte.

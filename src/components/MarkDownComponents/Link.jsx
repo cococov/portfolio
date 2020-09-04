@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -9,10 +10,10 @@ import PropTypes from 'prop-types';
  * @param {String} props.children
  * @param {String} props.className
  */
-export const Link = ({ children, href, className }) => {
+export const Link = ({ children, href, rel, className }) => {
   return (
     <a
-      rel="noopener noreferrer"
+      rel={`${rel} noopener noreferrer`}
       href={href}
       target="_blank"
       className={className}
@@ -25,5 +26,10 @@ export const Link = ({ children, href, className }) => {
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
+  rel: PropTypes.string,
   className: PropTypes.string.isRequired,
+};
+
+Link.defaultProps = {
+  rel: '',
 };

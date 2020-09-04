@@ -9,6 +9,7 @@
 
 - Desarrollo frontend con `JavaScript` y `React`
 - Desarrollo backend con `node.js` y `postgresql`
+- Scripting con `Python3`
 
 
 Metodología de desarrollo: `Scrum`<br/>

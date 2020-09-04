@@ -62,7 +62,7 @@ export const CustomTable = ({
               if (isMobil && !isBigMobil && index > 1) return null;
               return (
                 <TableCell key={title} className={tableTitle}>
-                  {title}
+                  {title.reduce((current, newItem) => `${current}${newItem}`)}
                 </TableCell>
               );
             })}
@@ -75,7 +75,9 @@ export const CustomTable = ({
                 if (isMobil && !isBigMobil && index > 1) return null;
                 return (
                   <TableCell scope="row" key={`${key}`} className={tableData}>
-                    {row[key]}
+                    {row[key].reduce(
+                      (current, newItem) => `${current}${newItem}`
+                    )}
                   </TableCell>
                 );
               })}

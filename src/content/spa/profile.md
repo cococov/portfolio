@@ -16,9 +16,9 @@ Me defino a mi mismo como una persona proactiva y fanático del mundo de la comp
 
 ---
 
-**E-Mail:** `contact@juanlamas.dev`<br/>
-**GitHub:** `https://github.com/cococov`<br/>
-**LinkedIn:** `https://www.linkedin.com/in/juan-carlos-lamas-alfaro`<br/>
+**E-Mail:** <a href="mailto:contact@juanlamas.dev" rel="author" class="code-link"> `contact@juanlamas.dev` </a><br/>
+**GitHub:** <a href="https://github.com/cococov/" rel="author" class="code-link"> `https://github.com/cococov` </a><br/>
+**LinkedIn:** <a href="https://www.linkedin.com/in/juan-carlos-lamas-alfaro/" rel="author" class="code-link"> `https://www.linkedin.com/in/juan-carlos-lamas-alfaro` </a><br/>
 
 
 ### Empresas y entidades

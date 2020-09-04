@@ -32,6 +32,11 @@
   margin-bottom: 1rem;
 }
 
+.code-link {
+  color: #f54495 !important;
+  padding-left: 0.5rem;
+}
+
 /* USER CRUD STYLES  */
 
 .img-content-phoneview-div {

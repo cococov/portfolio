@@ -72,12 +72,14 @@ const AboutModal = withStyles(About)(({ classes }) => {
           </CardContent>
           <CardActions>
             <IconButton
+              title="LinkedIn"
               className={classes.icon}
               onClick={() => goPage('linkedin')}
             >
               <LinkedIn />
             </IconButton>
             <IconButton
+              title="GitHub"
               className={classes.icon}
               onClick={() => goPage('github')}
             >
