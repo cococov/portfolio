@@ -2,7 +2,7 @@
 
 ---
 
-**Abril 2020 – Actualidad.**<br/>
+**Abril 2020 – Septiembre 2020.**<br/>
 **Memorista . Antofagasta Minerals.**
 
 <div class="box  no-has-paraph">
