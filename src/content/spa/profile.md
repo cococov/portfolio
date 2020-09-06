@@ -1,7 +1,8 @@
 # Juan Carlos Lamas Alfaro
 
-![profile-picture](https://juanlamas.dev/img/profile.jpg "right")
-
+<p class="profile-photo">
+  ![profile-picture](https://juanlamas.dev/img/profile.jpg "right")
+</p>
 
 ### Objetivos personales
 
