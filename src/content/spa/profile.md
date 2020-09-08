@@ -8,7 +8,7 @@
 
 ---
 
-Egresado de ingeniería en computación e informática en la universidad Católica del Norte, en proceso de titulación. Con interés en el desarrollo de tecnologías y manejo de estas. Facilidad y rapidez, en lo que respecta a aprendizaje.
+Egresado de ingeniería en computación e informática en la universidad Católica del Norte. Con interés en el desarrollo de tecnologías y manejo de estas. Facilidad y rapidez, en lo que respecta a aprendizaje.
 
 Me defino a mi mismo como una persona proactiva y fanático del mundo de la computación, en constante proceso aprendizaje y atento a todo lo nuevo que pueda aprender. Preocupado por la calidad de las cosas que hago y de metas altas.
 
