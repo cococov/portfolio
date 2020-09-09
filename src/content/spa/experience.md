@@ -51,12 +51,11 @@ Desarrollo de sistema web, con el objetivo de información, tracking y proyecci�
 </div>
 
 **Enero 2014 – Octubre 2019.**<br/>
-**Técnico electrónico e informático. Servicio técnico Mundo reparación.**
+**Técnico electrónico e informático. Servicio técnico Lenac.**
 
 <div class="box no-has-paraph">
 
-- Encargado de reparar problemas electrónicos en notebooks, PCs, celulares y similares.
-- Encargado de reparar problemas de software en notebooks, PCs, celulares y similares.
+- Encargado de reparar problemas electrónicos y de software en notebooks, PCs, celulares y similares.
 - Armado de computadores.
 - Atención de público.
 
