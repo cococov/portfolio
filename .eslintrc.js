@@ -18,7 +18,11 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'jest', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'prettier', 'import'],
+  settings: {
+    react: { version: 'detect' },
+    'import/resolver': { typescript: {} },
+  },
   rules: {
     'import/prefer-default-export': 0,
     'prettier/prettier': [
@@ -33,6 +37,7 @@ module.exports = {
     'react/jsx-wrap-multilines': 0,
     // TODO: maybe remove this
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    'no-use-before-define': 0,
   },
   parser: '@typescript-eslint/parser',
 };
