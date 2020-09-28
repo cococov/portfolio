@@ -32,6 +32,29 @@ Empresas y entidades con las que he trabajado, o para las que he trabajado.
 
   <div class="company-card">
     <h2 class="company-card-title">
+      BUK
+    </h2>
+    <img
+      class="company-card-img"
+      src="https://juanlamas.dev/img/companies/buk.png"
+      alt="BUK-logo"
+    />
+    <div class="company-card-content">
+      <p class="company-card-content-text">
+        Software Engineer.
+      </p>
+      <a
+      href="https://www.buk.cl/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="company-card-content-url">
+        www.buk.cl
+      </a>
+    </div>
+  </div>
+
+  <div class="company-card">
+    <h2 class="company-card-title">
       CIN
     </h2>
     <img

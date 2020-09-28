@@ -2,6 +2,15 @@
 
 ---
 
+**Abril 2020 – Actualidad.**<br/>
+**Software Engineer . Buk.**
+
+<div class="box  no-has-paraph">
+
+`En proceso...`
+
+</div>
+
 **Abril 2020 – Septiembre 2020.**<br/>
 **Memorista . Antofagasta Minerals.**
 
