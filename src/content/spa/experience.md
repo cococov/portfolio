@@ -2,7 +2,7 @@
 
 ---
 
-**Abril 2020 – Actualidad.**<br/>
+**Septiembre 2020 – Actualidad.**<br/>
 **Software Engineer . Buk.**
 
 <div class="box  no-has-paraph">
