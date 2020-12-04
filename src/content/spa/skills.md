@@ -10,12 +10,13 @@ Se que es difícil poner una nota al conocimiento que uno posee sobre alguna tec
 
 | Lenguaje  |    Conocimiento   | Descripción |
 | ----------- | ----------------- | ----------- |
-| JavaScript  | ⭐⭐⭐⭐⭐ | Años de experiencia con el lenguaje y al menos 1 año y medio de experiencia profesional, aplicándolo en desarrollo web y móvil.|
-| Java        | ⭐⭐⭐ | Varios años de experiencia con el lenguaje a un nivel intermedio para realizar aplicaciones de escritorio, además de realizar ayudantías del lenguaje en mi universidad. Nunca lo he utilizado para desarrollo web o entorno de servidor, pero me gustaría aprender.        |
-| Python3     | ⭐⭐ | Utilizado profesionalmente para tareas de scripting y automatización en servidor, además de un poco de ciencia de datos en la universidad.        |
-| C           | ⭐⭐ | Aprendido por interés propio y realicé clases particulares del lenguaje durante un año. Personalmente lo he utilizado en proyectos de IOT y robótica.        |
-| C++         | ⭐⭐ | Utilizado para ramos de la universidad. Últimamente solo lo he utilizado en lecturas.        |
-| PHP         | ⭐⭐ | Utilizado profesionalmente para trabajar sobre un sistema legacy de la empresa CAP.        |
+| JavaScript  | ⭐⭐⭐⭐⭐ | 2 años de experiencia, móvil y web. |
+| Ruby        | ⭐⭐⭐⭐ | Medio año de experiencia profesional. |
+| Python3     | ⭐⭐⭐ | Utilizado para scripting. |
+| Java        | ⭐⭐ | Conocimiento medio. |
+| PHP         | ⭐⭐ | Medio año de experiencia en proyecto legacy.  |
+| C           | ⭐⭐ | Hice clases particulares del lenguaje. |
+| C++         | ⭐ | Conocimiento básico.  |
 <br/>
 
 ### Tecnologías
@@ -24,18 +25,20 @@ Se que es difícil poner una nota al conocimiento que uno posee sobre alguna tec
 
 | Tecnología  |    Conocimiento   | Descripción |
 | ----------- | ----------------- | ----------- |
-| React       | ⭐⭐⭐⭐⭐ | Poseo 1 año y medio de experiencia profesional con esta biblioteca/framework , aplicándola en desarrollo web y móvil. Es una de las tecnologías que más me apasiona.|
-| React-Context   | ⭐⭐⭐⭐⭐ | Este último año, además de reemplazar los componentes de clase por componentes funcionales + hooks, he estado utilizando el Context API de React como manejador de estados en todos mis proyectos personales y profesionales. |
-| React Native| ⭐⭐⭐⭐ | 4 meses de experiencia profesional en esta tecnología, aplicada en problemas complejos, como la necesidad de sincronizar sin acceso constante a internet.
-| SQL         | ⭐⭐⭐⭐ | Fui ayudante del ramo de 'Bases de datos' en mi universidad y poseo 1 año y medio de uso profesional, principalmente en PostgreSQL y un poco SQL Sever.|
-| HTML5       | ⭐⭐⭐⭐ | La base del desarrollo web, lo conozco lo suficiente para desempeñarme sin problemas en la industria, además de conocer algunas prácticas para mejorar el SEO.        |
-| Linux       | ⭐⭐⭐⭐ | Sistema operativo que llevo usando desde los 15 años y que actualmente, gracias a WSL, lo uso a diario.        |
-| MobX        | ⭐⭐⭐ | Casi toda mi experiencia usando react, ha sido acompañada de este manejador de estados, que domino lo suficiente para hacer aplicaciones completamente reactivas.        |
-| CSS3        | ⭐⭐⭐ | A pesar de que no soy un experto en diseño, en la practica he tenido que usar mucho CSS y por ello me considero capáz de hacer uso de el para lograr el objetivo gráfico que busque.        |
-| Node.js     | ⭐⭐⭐ | Gran parte de mi experiencia en backend ha sido en el entorno de Node.js, junto al framework express, PostgreSQL y algunas otras herramientas.        |
-| Express     | ⭐⭐⭐ | Casi todas las API REST que he hecho, han sido usando esta herramienta. Aunque últimamente estuve usando Koa.js      |
-| GIT         | ⭐⭐⭐ | Utilizado principalmente para proyectos personales y trabajos de la universidad. Unicamente he utilizado GitHub como repositorio, pero lo he usado lo suficiente como para controlar las versiones de un proyecto básico sin problemas.       |
-| SVN         | ⭐⭐⭐ | Utilizado profesionalmente para el control de versiones de proyectos grandes, durante 1 año y medio. Ademas, usado en proyectos personales anteriormente.     |
+| React       | ⭐⭐⭐⭐⭐ | 2 años de experiencia profesional. |
+| React-Context   | ⭐⭐⭐⭐⭐ | 1 año de experiencia. |
+| HTML5       | ⭐⭐⭐⭐⭐ | 2 años de experiencia profesional. |
+| React Native| ⭐⭐⭐⭐ | Medio año de experiencia. |
+| SQL         | ⭐⭐⭐⭐ | 2 años de experiencia profesional y fui ayudante por 1 año en la universidad. |
+| Linux       | ⭐⭐⭐⭐ | Dominio a nivel de desarrollador y un poco de devops.  |
+| GIT         | ⭐⭐⭐⭐ | Manejo medio-avanzado del controlador de versiones. |
+| GitHub         | ⭐⭐⭐⭐ | Utilizado en proyectos personales. |
+| GitLab         | ⭐⭐⭐⭐ | Medio año de experiencia. |
+| MobX        | ⭐⭐⭐ | 1 año de experiencia.  |
+| CSS3        | ⭐⭐⭐ | 2 años de experiencia.  |
+| Node.js     | ⭐⭐⭐ | 2 años de experiencia.  |
+| Express     | ⭐⭐⭐ | 2 años de experiencia.  |
+| SVN         | ⭐⭐⭐ | 1 año y medio de experiencia |
 <br/>
 
 ### Metodologías
@@ -46,9 +49,9 @@ Tengo experiencia principalmente con metodologías ágiles, entre las que destac
 
 | Herramienta  |    Conocimiento   | Descripción |
 | ----------- | ----------------- | ----------- |
-| Trello       | ⭐⭐⭐⭐ | Utilizado para proyectos personales. |
-| Jira         | ⭐⭐⭐⭐ | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizándolo en mi memoria. |
-| Confluence   | ⭐⭐⭐ | Utilizado profesionalmente por un año y medio, y actualmente me encuentro utilizándolo en mi memoria. |
+| Trello       | ⭐⭐⭐⭐⭐ | 2 años de experiencia. |
+| Jira         | ⭐⭐⭐⭐ | 2 años de experiencia. |
+| Confluence   | ⭐⭐⭐ | 1 año de experiencia. |
 <br/>
 
 ### Idiomas

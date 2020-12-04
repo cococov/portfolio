@@ -22,11 +22,11 @@ Me defino a mi mismo como una persona proactiva y fanático del mundo de la comp
 **LinkedIn:** <a href="https://www.linkedin.com/in/juan-carlos-lamas-alfaro/" rel="author" class="code-link"> `https://www.linkedin.com/in/juan-carlos-lamas-alfaro` </a><br/>
 
 
-### Empresas y entidades
+### Donde he estado
 
 ---
 
-Empresas y entidades con las que he trabajado, o para las que he trabajado.
+Empresas por las que he pasado, directa o indirectamente.
 
 <span class="companies">
 
