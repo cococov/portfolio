@@ -26,7 +26,7 @@ Me defino a mi mismo como una persona proactiva y fanático del mundo de la comp
 
 ---
 
-Empresas por las que he pasado, directa o indirectamente.
+Empresas en las que he participado, directa o indirectamente.
 
 <span class="companies">
 
