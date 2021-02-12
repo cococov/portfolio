@@ -32,8 +32,7 @@ Terminado. (2017)
 
 ---
 
-Este fue mi primer proyecto personal de programación hecho solo con el interés de ver qué era capaz de hacer en un día, con el conocimiento que tenía en aquel entonces.
-La idea surgió la noche de año nuevo entre el 2016 y 2017, año en que acababa de pasar mi segunda asignatura de programación en la universidad y al no tener nada que hacer esa noche, debido a que mis planes se cancelaron, me propuse a mi mismo el reto de hacer un buscaminas con el conocimiento que tenía (había estado jugando mucho el juego últimamente). El total del juego, con la funcionalidad básica, fue terminado en esa misma noche y posterior a ello le hice algunas mejoras durante ese año.
+Este fue mi primer proyecto personal de programación, para probarme a mi mismo lo que aprendí en la universidad ese semestre.
 
 El juego básicamente utiliza una ``matriz`` para representar el tablero y con una serie de códigos se define el estado de cada casilla:
 
