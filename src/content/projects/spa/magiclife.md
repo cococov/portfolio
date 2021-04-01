@@ -37,13 +37,9 @@ En desarrollo.
 
 ---
 
-Este es un proyecto que surgió debido a la pandemia que vivimos con el COVID-19, que tiene como objetivo el facilitar a mí y a mis amigos jugar el juego de cartas `Magic: The Gathering` (commander más que nada) a distancia y así no tener la necesidad de usar otros métodos menos eficientes y más incómodos.
+Este es un proyecto que surgió debido a la pandemia que vivimos con el COVID-19, que tiene como objetivo el facilitar a mí y a mis amigos jugar el juego de cartas `Magic: The Gathering` a distancia.
 
 Entre sus principales funciones, está el poder crear perfiles, llevar la cuenta de vidas de cada uno, win-rate, llevar el tiempo de partida y un ``log`` de esta. Y lo que lo hace tan útil, es el que todo es en tiempo real, todos los usuarios ven lo mismo en la pagina en el mismo tiempo.
-
-Para el frontend de la aplicación usé ``React`` junto a ``Material-UI`` y como base de datos y backend, utilicé ``Firebase`` debido a la facilidad que esta plataforma presenta para trabajar con ``sockets``.
-
-Como planes futuros para la plataforma, tengo el recopilar toda la información posible de la partida y crear una vista para estadísticas de cada jugador, permitiendo descargar los datos como archivo ``.CSV`` para posterior análisis.
 
 <div class="img-content-div">
 ![content-magiclife-main](https://juanlamas.dev/img/content/magiclife/magiclife-main.png "content")
