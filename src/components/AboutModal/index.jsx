@@ -66,7 +66,7 @@ const AboutModal = withStyles(About)(({ classes }) => {
             </div>
             <div className={classes.lineContainer}>
               <Typography variant="body1" className={classes.copyright}>
-                © Juan Carlos Lamas Alfaro. All rights reserved.
+                © 2021 Juan Carlos Lamas Alfaro. All rights reserved.
               </Typography>
             </div>
           </CardContent>
