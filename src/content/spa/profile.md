@@ -10,7 +10,7 @@
 
 Ingeniero Civil en Computación e informática, con interés en el desarrollo de tecnologías y manejo de estas. Facilidad y rapidez, en lo que respecta a aprendizaje.
 
-Me defino a mi mismo como una persona proactiva y fanático del mundo de la computación, en constante proceso aprendizaje y atento a todo lo nuevo que pueda aprender. Preocupado por la calidad de las cosas que hago y de metas altas.
+Me defino a mi mismo como una persona proactiva, apasionada por la computación y en constante proceso aprendizaje. Preocupado por la calidad de las cosas que hago y de metas altas.
 
 
 ### Contacto
@@ -169,10 +169,3 @@ Empresas en las que he participado, directa o indirectamente.
   </div>
 
 </span>
-
-
-### Referencias
-
----
-
-Consultar por ellas en el correo anteriormente mencionado.

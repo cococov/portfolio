@@ -32,7 +32,7 @@ Terminado. (2020)
 
 ---
 
-Durante parte del 2020 jugué un videojuego de celular llamado "Ragnarok M: Eternal Love", qué es la versión móvil y modernizada del MMORPG "Ragnarok Online". Y como ya es conocido de los MMORPG, en el existe una economía muy fluctuante y diversa, en donde un "Item" que se ve a un precio un día, en los siguientes puede estar al doble o a la mitad, con un stock y demanda igual de fluctuantes.
+Durante parte del 2020 jugué un videojuego de celular llamado "Ragnarok M: Eternal Love". Y como ya es conocido de los MMORPG, en el existe una economía muy fluctuante y diversa, en donde un "Item" que se ve a un precio un día, en los siguientes puede estar al doble o a la mitad, con un stock y demanda igual de fluctuantes.
 
 <div class="rom-economy-wrapper">
   <span class="rom-economy-left">

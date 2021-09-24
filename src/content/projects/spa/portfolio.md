@@ -38,7 +38,7 @@ En desarrollo.
 
 ---
 
-Este es un proyecto que surgió con motivo de dar a conocer mis habilidades como programador, perfil profesional y los proyectos que he hecho de forma personal, además de alguno que haya hecho en el trabajo, del cual tenga permiso para hablar.
+Este es un proyecto que surgió con motivo de dar a conocer mis habilidades como programador, perfil profesional y algunos proyectos que he hecho de forma personal.
 
 Quería que el diseño fuera algo original y no una simple 'landing page', por lo que se me ocurrió imitar la interfaz gráfica de ``VsCode``, ya que es algo que me identifica bien como programador y lo encuentro bastante estético para este fin.
 
@@ -58,12 +58,6 @@ Para lo que es el control de versiones utilicé ``GitHub``. Además en un inicio
 
 <div class="img-content-div">
 ![content-portfolio-github](https://juanlamas.dev/img/content/portfolio/portfolio-github.png "content")
-</div>
-
-Para lo que es el flujo de trabajo, tareas e ideas, hice uso de la plataforma ``Trello``.
-
-<div class="img-content-div">
-![content-portfolio-trello](https://juanlamas.dev/img/content/portfolio/portfolio-trello.png "content")
 </div>
 
 Una de las cosas de las que me he preocupado mucho en este proyecto, es el rendimiento de la aplicación y el seguir buenas prácticas. Lo que se puede apreciar en el siguiente screenshot del reporte ofrecido por lighthouse de Google Chrome:
