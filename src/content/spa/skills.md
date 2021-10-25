@@ -1,58 +1,53 @@
-### Criterio de puntuación
-
----
-
-Se que es difícil poner una nota al conocimiento que uno posee sobre alguna tecnología en particular, así que para clasificar mi conocimiento de alguna manera he usado un sistema de estrellas, que representan mi conocimiento relativo de esa materia, con respecto al total de conocimiento.
-
 ### Lenguajes de programación
 
 ---
 
-| Lenguaje  |    Conocimiento   | Descripción |
-| ----------- | ----------------- | ----------- |
-| JavaScript  | ⭐⭐⭐⭐⭐ | 2 años de experiencia, móvil y web. |
-| Ruby        | ⭐⭐⭐⭐ | 1 año de experiencia profesional. |
-| Python3     | ⭐⭐⭐ | Utilizado para scripting. |
-| Java        | ⭐⭐ | Conocimiento medio. |
-| PHP         | ⭐⭐ | Medio año de experiencia en proyecto legacy.  |
-| C           | ⭐⭐ | Hice clases particulares del lenguaje. |
-| C++         | ⭐ | Conocimiento básico.  |
+| Lenguaje  | Descripción |
+| ----------- | ----------- |
+| JavaScript  | 3 años de experiencia, móvil y web. Con y sin frameworks. |
+| Ruby        | 1 año de experiencia profesional. |
+| Python3     | Utilizado para scripting. |
+| Elixir     | Lo aprendí para adentrarme al mundo funcional. |
+| Java        | Conocimiento medio. |
+| PHP         | Medio año de experiencia en proyecto legacy.  |
+| C           | Hice clases particulares del lenguaje. |
+| C++         | Conocimiento básico.  |
 <br/>
 
 ### Tecnologías
 
 ---
 
-| Tecnología  |    Conocimiento   | Descripción |
-| ----------- | ----------------- | ----------- |
-| React       | ⭐⭐⭐⭐⭐ | 2 años de experiencia profesional. |
-| React-Context   | ⭐⭐⭐⭐⭐ | 1 año de experiencia. |
-| HTML5       | ⭐⭐⭐⭐⭐ | 2 años de experiencia profesional. |
-| React Native| ⭐⭐⭐⭐ | Medio año de experiencia. |
-| SQL         | ⭐⭐⭐⭐ | 2 años de experiencia profesional y fui ayudante por 1 año en la universidad. |
-| Linux       | ⭐⭐⭐⭐ | Dominio a nivel de desarrollador y un poco de devops.  |
-| GIT         | ⭐⭐⭐⭐ | Manejo medio-avanzado del controlador de versiones. |
-| GitHub         | ⭐⭐⭐⭐ | Utilizado en proyectos personales. |
-| GitLab         | ⭐⭐⭐⭐ | Medio año de experiencia. |
-| Rails        | ⭐⭐⭐ | 1 año de experiencia profesional. |
-| MobX        | ⭐⭐⭐ | 1 año de experiencia.  |
-| CSS3        | ⭐⭐⭐ | 2 años de experiencia.  |
-| Node.js     | ⭐⭐⭐ | 2 años de experiencia.  |
-| Express     | ⭐⭐⭐ | 2 años de experiencia.  |
-| SVN         | ⭐⭐⭐ | 1 año y medio de experiencia |
+| Tecnología  | Descripción |
+| ----------- | ----------- |
+| React       | 2 años de experiencia profesional. |
+| HTML5       | 3 años de experiencia profesional. |
+| React Native| Medio año de experiencia profesional. |
+| SQL         | 2 años de experiencia profesional y fui ayudante por 1 año en la universidad. |
+| Linux       | Dominio a nivel de desarrollador y un poco de devops.  |
+| GIT         | 2 años de experiencia profesional. |
+| GitHub         | Utilizado en proyectos personales. |
+| GitLab         | 1 año de experiencia profesional. |
+| Rails        | 1 año de experiencia profesional. |
+| MobX        | 1 año de experiencia profesional.  |
+| CSS3        | 3 años de experiencia profesional.  |
+| Node.js     | 2 años de experiencia profesional.  |
+| Express     | 2 años de experiencia profesional.  |
+| SVN         | 1 año y medio de experiencia profesional. |
 <br/>
 
 ### Metodologías
 
 ---
 
-Tengo experiencia principalmente con metodologías ágiles, entre las que destaca ``Scrum`` como la metodología que he utilizado por 1 año y medio de trabajo. Lo siguiente es una serie de herramientas relacionadas, con las que tengo experiencia.
+Tengo experiencia principalmente con metodologías ágiles, entre las que destaca ``Scrum`` como la metodología que he utilizado por 3 años de trabajo. Lo siguiente es una serie de herramientas relacionadas, con las que tengo experiencia.
 
-| Herramienta  |    Conocimiento   | Descripción |
-| ----------- | ----------------- | ----------- |
-| Trello       | ⭐⭐⭐⭐⭐ | 2 años de experiencia. |
-| Jira         | ⭐⭐⭐⭐ | 3 años de experiencia. |
-| Confluence   | ⭐⭐⭐ | 1 año de experiencia. |
+| Herramienta  | Descripción |
+| ----------- | ----------- |
+| Trello       | 3 años de experiencia. |
+| Jira         | 3 años de experiencia. |
+| Confluence   | 1 año de experiencia. |
+| Notion   | Medio año de experiencia. |
 <br/>
 
 ### Idiomas
@@ -61,8 +56,8 @@ Tengo experiencia principalmente con metodologías ágiles, entre las que destac
 
 | Idioma      |    Fluidez        |
 | ----------- | ----------------- |
-| Español     | ⭐⭐⭐⭐⭐ |
-| Inglés      | ⭐⭐⭐ |
+| Español     | Nativo |
+| Inglés      | Medio-avanzado (Capaz de comunicarme verbalmente) |
 <br/>
 
 ### Habilidades blandas
