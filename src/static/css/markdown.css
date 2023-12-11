@@ -376,5 +376,6 @@
 
   .profile-photo {
     text-align: center;
+    float: none;
   }
 }
