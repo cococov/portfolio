@@ -4,7 +4,7 @@ This project is my personal portfolio, to show my profile, education, experience
 
  [Try the app here](https://juanlamas.dev/)
 
-<p align="center"><img src="/doc/portfolio-profile.png" alt="profile" width="700" /></p>
+<p align="center"><img src="/doc/portfolio-profile-doc.png" alt="profile" width="700" /></p>
 
 ## Technologies used
 
